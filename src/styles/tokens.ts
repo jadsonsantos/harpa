@@ -7,7 +7,7 @@ export const colors = {
   danger: '#dc3545',
   light: '#f8f9fa',
   dark: '#343a40',
-  background: '#ffffff',
+  background: '#fafafa',
   text: '#333333'
 }
 

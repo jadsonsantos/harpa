@@ -4,6 +4,7 @@ import { media } from '@/styles/mediaQueries'
 
 export const Wrapper = styled.footer`
   padding: 30px 0 30px;
+  background-color: ${colors.background};
   color: ${colors.secondary};
   text-align: center;
   font-size: 12px;
