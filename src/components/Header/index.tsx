@@ -1,10 +1,13 @@
 import Container from '../Container'
+import Logo from '../Logo'
+import Menu from '../Menu'
 import * as S from './styles'
 
 const Header = () => (
   <S.Wrapper>
     <Container>
-      <h1>Header</h1>
+      <Logo />
+      <Menu />
     </Container>
   </S.Wrapper>
 )
