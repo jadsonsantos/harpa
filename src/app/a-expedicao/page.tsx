@@ -1,15 +1,15 @@
 'use client'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Harpa from '@/components/Harpa'
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
 import News from '@/components/News'
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Header />
-      <Hero />
+      <Harpa />
       <News />
       <Contact />
       <Footer />
