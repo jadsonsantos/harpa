@@ -1,3 +1,4 @@
+import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
 export const Wrapper = styled.nav`
@@ -9,6 +10,14 @@ export const Wrapper = styled.nav`
 `
 
 export const MenuList = styled.ul`
-  display: flex;
-  gap: 58px;
+  display: none;
+
+  ${media.tabletUp} {
+    display: flex;
+    gap: 24px;
+  }
+
+  ${media.desktopUp} {
+    gap: 58px;
+  }
 `
