@@ -8,7 +8,7 @@ const Founder = () => {
 
   return (
     <S.Wrapper>
-      <Container>
+      <Container hasCustomWidth>
         <S.FounderImage>
           <Image
             src="/images/founder.jpg"

@@ -1,5 +1,5 @@
 import { media } from '@/styles/mediaQueries'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 interface ContainerProps {
   hasCustomWidth?: boolean
