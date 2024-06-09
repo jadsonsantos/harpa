@@ -18,7 +18,18 @@ export const Content = styled.div`
 
   h3 {
     color: ${colors.light};
-    margin: auto;
+    margin: 0 auto 64px;
+  }
+
+  a {
+    background-color: ${colors.light};
+    color: ${colors.primary};
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: -0.18px;
+    padding: 20px 32px;
+    border-radius: 60px;
   }
 
   ${media.tabletUp} {

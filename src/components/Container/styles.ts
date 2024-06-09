@@ -1,9 +1,13 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+interface ContainerProps {
+  hasCustomWidth?: boolean
+}
+
+export const Wrapper = styled.div<ContainerProps>`
   width: 100%;
-  max-width: 1600px;
+  max-width: ${(props) => (props.hasCustomWidth ? '1290px' : '1600px')};
   margin: 0 auto;
   padding: 0 24px;
 
@@ -11,7 +15,7 @@ export const Wrapper = styled.div`
     padding: 0 64px;
   }
 
-  ${media.desktopUp} {
-    /* padding: 0 128px; */
+  ${media.largeDesktopUp} {
+    padding: ${(props) => (props.hasCustomWidth ? '0' : '0 64px')};
   }
 `
