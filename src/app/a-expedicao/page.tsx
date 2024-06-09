@@ -5,14 +5,16 @@ import Harpa from '@/components/Harpa'
 import Header from '@/components/Header'
 import News from '@/components/News'
 
-export default function About() {
+export default function Expedition() {
   return (
     <>
       <Header />
       <Harpa />
-      <News />
-      <Contact />
-      <Footer />
+      <main>
+        <News />
+        <Contact />
+        <Footer />
+      </main>
     </>
   )
 }
