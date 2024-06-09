@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
     transition: 0.35s ease-out;
@@ -29,6 +30,10 @@ const GlobalStyles = createGlobalStyle`
 
   ul {
     list-style: none;
+  }
+
+  img {
+    height: auto;
   }
 `
 
