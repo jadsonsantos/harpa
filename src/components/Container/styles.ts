@@ -16,6 +16,6 @@ export const Wrapper = styled.div<ContainerProps>`
   }
 
   ${media.largeDesktopUp} {
-    padding: ${(props) => (props.hasCustomWidth ? '0' : '0 64px')};
+    padding: 0;
   }
 `

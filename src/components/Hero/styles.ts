@@ -41,5 +41,6 @@ export const HeroTitle = styled.h1`
 export const HeroSubTitle = styled(HeroTitle).attrs({
   as: 'h2'
 })`
+  max-width: 1326px;
   font-weight: 100;
 `
