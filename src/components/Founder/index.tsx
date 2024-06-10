@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Container from '../Container'
 import * as S from './styles'
 import useIsMobile from '@/hooks/isMobile'
 
@@ -8,7 +7,7 @@ const Founder = () => {
 
   return (
     <S.Wrapper>
-      <Container hasCustomWidth>
+      <S.FounderContainer>
         <S.FounderImage>
           <Image
             src="/images/founder.jpg"
@@ -27,7 +26,7 @@ const Founder = () => {
             pessoa que foi. E isso é lindo.”
           </S.FounderTestimony>
         </div>
-      </Container>
+      </S.FounderContainer>
     </S.Wrapper>
   )
 }

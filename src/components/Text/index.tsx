@@ -3,7 +3,7 @@ import * as S from './styles'
 type TextProps = ComponentProps<'p'>
 
 const Text = ({ children }: TextProps) => {
-  return <S.Wrapper>{children}</S.Wrapper>
+  return <S.Text>{children}</S.Text>
 }
 
 export default Text

@@ -1,7 +1,7 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
-export const Wrapper = styled.p`
+export const Text = styled.p`
   line-height: 130%;
   font-size: 16px;
   font-style: normal;

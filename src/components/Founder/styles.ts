@@ -1,28 +1,25 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
+import { SmallerContainer } from '../Container/styles'
 
 export const Wrapper = styled.section`
   padding: 128px 0;
+`
 
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-  }
+export const FounderContainer = styled(SmallerContainer)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 
   ${media.tabletUp} {
-    > div {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 24px;
-    }
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
   }
 
   ${media.desktopUp} {
-    > div {
-      gap: 120px;
-    }
+    gap: 120px;
   }
 `
 
