@@ -2,6 +2,7 @@ import Container from '../Container'
 import Text from '../Text'
 import * as S from './styles'
 import Logo from '../Logo'
+import CustomLink from '../CustomLink'
 
 const Contact = () => (
   <S.Wrapper>
@@ -13,7 +14,9 @@ const Contact = () => (
           <br /> São Paulo/SP, Brasil
         </Text>
       </S.Address>
-      <Text>+55 (11) 9 9584-2594</Text>
+      <Text>
+        <CustomLink href="tel:551195824594">+55 (11) 9 9584-2594</CustomLink>
+      </Text>
     </Container>
   </S.Wrapper>
 )

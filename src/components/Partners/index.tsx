@@ -25,10 +25,13 @@ const Partners = () => {
           </Heading>
           <S.PartnersText>
             A HÁRPÁ possui uma parceria exclusiva com um dos melhores SPAs da
-            Islândia. O Blue Lagoon é notado por sua experiência única e
-            inesquecível. Clientes HÁRPÁ possuem direito ao pacote premium, além
-            de entrada exclusiva no espaço. Conheça nossa expedição e saiba
-            mais.
+            Islândia. O{' '}
+            <CustomLink href="https://www.bluelagoon.com/">
+              Blue Lagoon
+            </CustomLink>{' '}
+            é notado por sua experiência única e inesquecível. Clientes HÁRPÁ
+            possuem direito ao pacote premium, além de entrada exclusiva no
+            espaço. Conheça nossa expedição e saiba mais.
           </S.PartnersText>
           <Text>
             <CustomLink>CONHEÇA NOSSOS PACOTES {'>'}</CustomLink>
