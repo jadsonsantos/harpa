@@ -1,13 +1,19 @@
+import React from 'react'
 import Container from '../Container'
 import * as S from './styles'
 
-const Hero = () => (
-  <S.Wrapper>
+interface HeroProps {
+  title?: string | TrustedHTML
+  subtitle?: string
+}
+
+export const Hero = ({ title = '', subtitle, ...rest }: HeroProps) => (
+  <S.HeroWrapper {...rest}>
     <Container>
-      <S.HeroTitle>Islândia</S.HeroTitle>
-      <S.HeroSubTitle>Terra do gelo e do fogo</S.HeroSubTitle>
+      <S.HeroTitle dangerouslySetInnerHTML={{ __html: title }} />
+      <S.HeroSubTitle>{subtitle}</S.HeroSubTitle>
     </Container>
-  </S.Wrapper>
+  </S.HeroWrapper>
 )
 
 export default Hero
