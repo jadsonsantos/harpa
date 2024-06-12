@@ -1,4 +1,3 @@
-'use client'
 import Harpa from '@/components/Harpa'
 import HeroExpedition from '@/components/HeroExpedition'
 

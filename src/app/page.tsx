@@ -1,4 +1,3 @@
-'use client'
 import HeroHome from '@/components/HeroHome'
 import Partners from '@/components/Partners'
 
