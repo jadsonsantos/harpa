@@ -1,3 +1,4 @@
+'use client'
 import useIsMobile from '@/hooks/isMobile'
 import Container from '../Container'
 import Logo from '../Logo'

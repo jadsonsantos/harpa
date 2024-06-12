@@ -1,3 +1,4 @@
+'use client'
 import styled from 'styled-components'
 import Hero from '../Hero'
 import { colors } from '@/styles/tokens'

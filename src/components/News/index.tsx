@@ -1,3 +1,4 @@
+'use client'
 import Container from '../Container'
 import CustomLink from '../CustomLink'
 import Heading from '../Heading'

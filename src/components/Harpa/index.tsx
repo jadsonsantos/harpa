@@ -1,3 +1,4 @@
+'use client'
 import Container from '../Container'
 import Heading from '../Heading'
 import * as S from './styles'

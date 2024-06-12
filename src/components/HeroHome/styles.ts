@@ -1,3 +1,4 @@
+'use client'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 import Hero from '../Hero'
