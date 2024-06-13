@@ -11,13 +11,17 @@ export const HomeHeroWrapper = styled(Hero)`
 
   ${media.tabletUp} {
     background-image: url('/images/hero-home-tablet.jpg');
+
+    h1 {
+      max-width: 706px;
+    }
   }
 
-  ${media.desktopUp} {
+  ${media.largeDesktopUp} {
     background-image: url('/images/hero-home.jpg');
-  }
 
-  h1 {
-    max-width: 1326px;
+    h1 {
+      max-width: 1326px;
+    }
   }
 `

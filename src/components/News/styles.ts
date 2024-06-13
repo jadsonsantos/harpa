@@ -33,14 +33,9 @@ export const Content = styled.div`
   }
 
   ${media.tabletUp} {
-    h3 {
-      max-width: 390px;
-    }
+    padding: 164px 155px;
   }
 
   ${media.desktopUp} {
-    h3 {
-      max-width: 1290px;
-    }
   }
 `
