@@ -1,3 +1,4 @@
+'use client'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 

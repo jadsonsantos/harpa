@@ -1,3 +1,4 @@
+'use client'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
@@ -24,7 +25,7 @@ export const HeroTitle = styled.h1`
     letter-spacing: -1.24px;
   }
 
-  ${media.desktopUp} {
+  ${media.largeDesktopUp} {
     font-size: 198px;
     letter-spacing: -1.98px;
   }
