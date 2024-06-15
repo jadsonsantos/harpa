@@ -17,9 +17,11 @@ export const HomeHeroWrapper = styled(Hero)`
     }
   }
 
-  ${media.largeDesktopUp} {
+  ${media.desktopUp} {
     background-image: url('/images/hero-home.jpg');
+  }
 
+  ${media.largeDesktopUp} {
     h1 {
       max-width: 1326px;
     }
