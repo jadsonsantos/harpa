@@ -1,3 +1,5 @@
+'use client'
+
 export const media = {
   largeDesktopUp: '@media (min-width: 1720px)',
   desktopUp: '@media (min-width: 1024px)',
