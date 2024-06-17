@@ -1,5 +1,11 @@
-import Main from '@/components/Main'
+import HeroHome from '@/components/HeroHome'
+import Partners from '@/components/Partners'
 
 export default function Home() {
-  return <Main />
+  return (
+    <>
+      <HeroHome title="<span>Islândia</span><br/> Terra do gelo e do fogo" />
+      <Partners />
+    </>
+  )
 }
