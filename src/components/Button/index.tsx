@@ -1,9 +1,8 @@
+import { ComponentProps } from 'react'
 import * as S from './styles'
 
-const Button = () => (
-  <S.Wrapper>
-    <h1>Button</h1>
-  </S.Wrapper>
-)
+type ButtonProps = ComponentProps<'button'>
+
+const Button = ({ children }: ButtonProps) => <S.Wrapper>{children}</S.Wrapper>
 
 export default Button
