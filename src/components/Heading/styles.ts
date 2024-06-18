@@ -5,6 +5,7 @@ import { fonts } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.h3`
+  margin-bottom: 32px;
   font-family: ${fonts.sans};
   font-size: 28px;
   font-weight: normal;

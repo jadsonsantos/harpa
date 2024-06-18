@@ -9,9 +9,11 @@ const News = () => (
     <Container>
       <S.Content>
         <Heading>Fique por dentro de datas e novidades em primeira mão</Heading>
-        <CustomLink href="https://www.instagram.com/harpa.me/">
-          Conheça nosso Instagram
-        </CustomLink>
+        <S.Button>
+          <CustomLink href="https://www.instagram.com/harpa.me/">
+            Conheça nosso Instagram
+          </CustomLink>
+        </S.Button>
       </S.Content>
     </Container>
   </S.Wrapper>
