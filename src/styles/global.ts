@@ -35,6 +35,10 @@ const GlobalStyles = createGlobalStyle`
   img {
     height: auto;
   }
+
+  button {
+    border: none;
+  }
 `
 
 export default GlobalStyles
