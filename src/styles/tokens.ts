@@ -19,7 +19,7 @@ export const fonts = {
 }
 
 export const spacings = {
-  small: '24px', // 4px
-  medium: '64px', // 16px
-  large: '2rem' // 32px
+  small: '24px',
+  medium: '64px',
+  large: '164px'
 }
