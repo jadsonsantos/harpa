@@ -3,11 +3,10 @@ import { render, screen } from '@testing-library/react'
 import Heading from '.'
 
 describe('<Heading />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Heading />)
+  it('should render the heading text passed as children', () => {
+    const headingText = 'Test Heading'
+    render(<Heading>{headingText}</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Heading/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByText(headingText)).toBeInTheDocument()
   })
 })

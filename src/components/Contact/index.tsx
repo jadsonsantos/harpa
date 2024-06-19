@@ -1,5 +1,5 @@
 'use client'
-import Container from '../Container'
+import Container from '../../patterns/Container'
 import Text from '../Text'
 import * as S from './styles'
 import Logo from '../Logo'

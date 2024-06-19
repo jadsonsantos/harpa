@@ -28,12 +28,17 @@ const GlobalStyles = createGlobalStyle`
     transition: 0.35s ease-out;
   }
 
-  ul {
+  ul, li {
     list-style: none;
   }
 
   img {
+    max-width: 100%;
     height: auto;
+  }
+
+  button {
+    border: none;
   }
 `
 
