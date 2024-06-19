@@ -1,6 +1,6 @@
 'use client'
 import useIsMobile from '@/hooks/isMobile'
-import Container from '../Container'
+import Container from '../../patterns/Container'
 import Logo from '../Logo'
 import Menu from '../Menu'
 import * as S from './styles'

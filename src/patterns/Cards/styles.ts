@@ -1,5 +1,5 @@
 'use client'
-import { SmallerContainer } from '@/components/Container/styles'
+import { SmallerContainer } from '@/patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 

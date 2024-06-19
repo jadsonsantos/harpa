@@ -1,4 +1,4 @@
-import Container from '../Container'
+import Container from '../../patterns/Container'
 import * as S from './styles'
 
 interface HeroProps {

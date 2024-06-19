@@ -1,6 +1,6 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
-import { SmallerContainer } from '../Container/styles'
+import { SmallerContainer } from '../../patterns/Container/styles'
 
 export const Wrapper = styled.section`
   padding: 128px 0;

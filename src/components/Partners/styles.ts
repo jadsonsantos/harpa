@@ -3,7 +3,7 @@
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Text } from '../Text/styles'
-import { SmallerContainer } from '../Container/styles'
+import { SmallerContainer } from '../../patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
 
 export const PartnersWrapper = styled.section`

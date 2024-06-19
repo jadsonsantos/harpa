@@ -3,8 +3,11 @@ import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1;
   height: 82px;
   display: flex;
