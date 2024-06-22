@@ -1,7 +1,7 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
-import { SmallerContainer } from '../Container/styles'
+import { Container } from '../Container/styles'
 
 export const Wrapper = styled.section`
   ${media.tabletUp} {
@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
   }
 `
 
-export const GalleryContainer = styled(SmallerContainer)`
+export const GalleryContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   gap: 24px;

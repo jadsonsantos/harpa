@@ -2,9 +2,10 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
   width: 100%;
-  max-width: 1600px;
+  max-width: 1290px;
+
   margin: 0 auto;
   padding: 0 24px;
 
@@ -17,6 +18,6 @@ export const Wrapper = styled.div`
   }
 `
 
-export const SmallerContainer = styled(Wrapper)`
-  max-width: 1290px;
+export const LargeContainer = styled(Container)`
+  max-width: 1600px;
 `

@@ -1,5 +1,5 @@
 'use client'
-import { SmallerContainer } from '@/patterns/Container/styles'
+import { Container } from '@/patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
@@ -19,4 +19,4 @@ export const Wrapper = styled.section`
   }
 `
 
-export const CardsContainer = styled(SmallerContainer)``
+export const CardsContainer = styled(Container)``

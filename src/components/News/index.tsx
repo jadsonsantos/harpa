@@ -1,12 +1,11 @@
 'use client'
-import Container from '../../patterns/Container'
 import CustomLink from '../CustomLink'
 import Heading from '../Heading'
 import * as S from './styles'
 
 const News = () => (
   <S.Wrapper>
-    <Container>
+    <S.Container>
       <S.Content>
         <Heading>Fique por dentro de datas e novidades em primeira mão</Heading>
         <S.Button>
@@ -15,7 +14,7 @@ const News = () => (
           </CustomLink>
         </S.Button>
       </S.Content>
-    </Container>
+    </S.Container>
   </S.Wrapper>
 )
 

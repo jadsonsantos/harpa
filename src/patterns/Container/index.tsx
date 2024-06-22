@@ -5,6 +5,6 @@ type Props = {
   children: React.ReactNode
 }
 
-const Container = ({ children }: Props) => <S.Wrapper>{children}</S.Wrapper>
+const Container = ({ children }: Props) => <S.Container>{children}</S.Container>
 
 export default Container

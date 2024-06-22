@@ -1,12 +1,12 @@
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
-import { SmallerContainer } from '../../patterns/Container/styles'
+import { Container } from '../../patterns/Container/styles'
 
 export const Wrapper = styled.section`
   padding: 128px 0;
 `
 
-export const FounderContainer = styled(SmallerContainer)`
+export const FounderContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 82px;
   }
 
   a {
@@ -33,7 +34,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   img {
-    max-width: 100%;
     height: auto;
   }
 

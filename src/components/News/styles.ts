@@ -3,6 +3,7 @@ import { media } from '@/styles/mediaQueries'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 import { PrimaryButton } from '../Button/styles'
+import { LargeContainer } from '@/patterns/Container/styles'
 
 export const Wrapper = styled.section`
   padding-top: 128px;
@@ -12,6 +13,8 @@ export const Wrapper = styled.section`
     padding-top: 164px;
   }
 `
+
+export const Container = styled(LargeContainer)``
 
 export const Content = styled.div`
   padding: 164px 20px;

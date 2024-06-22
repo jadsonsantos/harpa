@@ -9,7 +9,7 @@ const Presentation = () => {
 
   return (
     <S.Wrapper>
-      <S.Container>
+      <S.LocalContainer>
         {!isMobile && (
           <Image
             src="/images/animations/animation-1.png"
@@ -27,7 +27,7 @@ const Presentation = () => {
           </S.Title>
           <Text>CONHEÇA NOSSOS PACOTES {'>'}</Text>
         </article>
-      </S.Container>
+      </S.LocalContainer>
     </S.Wrapper>
   )
 }

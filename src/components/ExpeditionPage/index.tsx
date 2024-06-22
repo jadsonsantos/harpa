@@ -15,7 +15,7 @@ const ExpeditionPageContent = () => {
       {!isMobile && (
         <>
           <Image
-            src={'/images/hero-expedition.png'}
+            src={'/images/hero-expedition-middle.png'}
             alt="Ilustração da expedição"
             width={1812}
             height={1210}

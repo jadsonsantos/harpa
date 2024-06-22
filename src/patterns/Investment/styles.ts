@@ -1,6 +1,5 @@
 'use client'
 import styled from 'styled-components'
-import { SmallerContainer } from '../Container/styles'
 import { colors } from '@/styles/tokens'
 import { media } from '@/styles/mediaQueries'
 
@@ -17,8 +16,6 @@ export const Wrapper = styled.section`
     max-width: 414px;
   }
 `
-
-export const Container = styled(SmallerContainer)``
 
 export const InvestmentList = styled.ul`
   display: flex;

@@ -3,7 +3,7 @@
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Text } from '../Text/styles'
-import { SmallerContainer } from '../../patterns/Container/styles'
+import { Container } from '../../patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
 
 export const PartnersWrapper = styled.section`
@@ -16,7 +16,7 @@ export const PartnersWrapper = styled.section`
   }
 `
 
-export const PartnersContainer = styled(SmallerContainer)`
+export const PartnersContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

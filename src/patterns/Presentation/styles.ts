@@ -1,6 +1,6 @@
 'use client'
 import styled from 'styled-components'
-import { SmallerContainer } from '../Container/styles'
+import { Container } from '../Container/styles'
 import { media } from '@/styles/mediaQueries'
 import { spacings } from '@/styles/tokens'
 import { Heading } from '@/components/Heading/styles'
@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
   }
 `
 
-export const Container = styled(SmallerContainer)`
+export const LocalContainer = styled(Container)`
   display: flex;
   flex-direction: column;
 
