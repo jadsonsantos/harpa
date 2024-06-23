@@ -1,9 +1,9 @@
 'use client'
+import TextGrid from '@/components/TextGrid'
+import { media } from '@/styles/mediaQueries'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Container } from '../Container/styles'
-import TextGrid from '@/components/TextGrid'
-import { colors, spacings } from '@/styles/tokens'
-import { media } from '@/styles/mediaQueries'
 
 export const Wrapper = styled.section`
   background-color: ${colors.background};

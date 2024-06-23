@@ -1,9 +1,9 @@
 'use client'
 import Container from '../../patterns/Container'
+import CustomLink from '../CustomLink'
+import Logo from '../Logo'
 import Text from '../Text'
 import * as S from './styles'
-import Logo from '../Logo'
-import CustomLink from '../CustomLink'
 
 const Contact = () => (
   <S.Wrapper>

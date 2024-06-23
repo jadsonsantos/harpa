@@ -1,6 +1,6 @@
 const data = [
   {
-    title: `Nossa expedição tem a duração total de 10 dias, sendo 9 deles desfrutando das belezas em solo islandês`,
+    title: `Nossa expedição tem a duração total de <strong>10 dias</strong>, sendo 9 deles desfrutando das belezas em solo islandês`,
     description: [
       'Partimos da capital, Reykjavík, seguindo pela costa sul até atravessarmos a ilha, chegando à cidade de Hofn.'
     ]
