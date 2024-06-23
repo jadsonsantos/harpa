@@ -2,10 +2,11 @@ import Text from '@/components/Text'
 import Heading from '../../components/Heading'
 import * as S from './styles'
 import data from './data'
+import Container from '../Container'
 
 const Investment = () => (
   <S.Wrapper>
-    <S.Container>
+    <Container>
       <Heading>Valores de todas estas vantagens</Heading>
       <Text>
         O valor disposto abaixo contempla todas as vantagens exclusivas para
@@ -24,7 +25,7 @@ const Investment = () => (
           </li>
         ))}
       </S.InvestmentList>
-    </S.Container>
+    </Container>
   </S.Wrapper>
 )
 

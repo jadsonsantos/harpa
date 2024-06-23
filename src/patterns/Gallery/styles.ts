@@ -24,6 +24,7 @@ export const GalleryContainer = styled(Container)`
   }
 
   img {
+    max-width: 100%;
     border-radius: 32px;
   }
 `
