@@ -1,10 +1,22 @@
 'use client'
 import { ComponentProps } from 'react'
 import * as S from './styles'
-type TextProps = ComponentProps<'p'>
+
+type TextProps = ComponentProps<'p'> & {
+  children: React.ReactNode
+}
 
 const Text = ({ children }: TextProps) => {
-  return <S.Text>{children}</S.Text>
+  if (typeof children !== 'string') {
+    return <S.Text> {children} </S.Text>
+  }
+
+  const htmlString =
+    typeof children === 'string' && children !== null && children !== undefined
+      ? children
+      : ''
+
+  return <S.Text dangerouslySetInnerHTML={{ __html: htmlString }} />
 }
 
 export default Text
