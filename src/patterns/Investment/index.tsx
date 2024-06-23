@@ -1,8 +1,8 @@
 import Text from '@/components/Text'
 import Heading from '../../components/Heading'
-import * as S from './styles'
-import data from './data'
 import Container from '../Container'
+import data from './data'
+import * as S from './styles'
 
 const Investment = () => (
   <S.Wrapper>
@@ -15,10 +15,8 @@ const Investment = () => (
       <S.InvestmentList>
         {data.map((data) => (
           <li key={data.title}>
-            <div>{data.icon}</div>
-            <Text>
-              <strong>{data.title}</strong>
-            </Text>
+            <S.InvestmentIcon>{data.icon}</S.InvestmentIcon>
+            <S.InvestmentTitle>{data.title}</S.InvestmentTitle>
             {data.description.map((desc, index) => (
               <Text key={index}>{desc}</Text>
             ))}
