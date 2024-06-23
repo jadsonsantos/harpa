@@ -5,6 +5,7 @@ import Gallery from '@/patterns/Gallery'
 import Investment from '@/patterns/Investment'
 import Cards from '@/patterns/Cards'
 import useIsMobile from '@/hooks/isMobile'
+import Details from '@/patterns/Details'
 
 const ExpeditionPageContent = () => {
   const isMobile = useIsMobile()
@@ -24,6 +25,7 @@ const ExpeditionPageContent = () => {
           <Gallery />
         </>
       )}
+      <Details />
       <Investment />
       <Cards />
     </>
