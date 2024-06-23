@@ -1,23 +1,13 @@
 'use client'
+import AnimatedIllustration from '@/components/AnimatedIllustration'
 import * as S from './styles'
 import Text from '@/components/Text'
-import useIsMobile from '@/hooks/isMobile'
-import Image from 'next/image'
 
 const Presentation = () => {
-  const isMobile = useIsMobile()
-
   return (
     <S.Wrapper>
       <S.LocalContainer>
-        {!isMobile && (
-          <Image
-            src="/images/animations/animation-1.png"
-            width={317}
-            height={350}
-            alt="Hárpá"
-          />
-        )}
+        <AnimatedIllustration />
         <article>
           <S.Title>
             Com o itinerário mais completo do mercado e a autonomia que
