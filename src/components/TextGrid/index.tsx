@@ -10,8 +10,8 @@ interface TextGridProps {
 const TextGrid = ({ title = '', description }: TextGridProps) => (
   <S.TextGrid>
     <Heading>{title}</Heading>
-    {description.map((desc, index) => (
-      <Text key={index}>{desc}</Text>
+    {description.map((desc) => (
+      <Text key={desc}>{desc}</Text>
     ))}
   </S.TextGrid>
 )

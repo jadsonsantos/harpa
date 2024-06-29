@@ -2,7 +2,7 @@ const data = [
   {
     title: 'Trechos aéreos',
     description: [
-      'Não estão contemplados no valor e não são gerenciados pela HÁRPÁ.',
+      '<span style="color: #C6285E;">Não estão contemplados no valor e não são gerenciados pela HÁRPÁ.</span>',
       'Em nossa assessoria, orientamos sobre as melhores formas de chegada à Islândia, além de dicas de melhores momentos para adquirir as tarifas aéreas.'
     ],
     icon: '✈️'

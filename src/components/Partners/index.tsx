@@ -1,10 +1,10 @@
 'use client'
+import useIsMobile from '@/hooks/isMobile'
 import Image from 'next/image'
 import CustomLink from '../CustomLink'
 import Heading from '../Heading'
 import Text from '../Text'
 import * as S from './styles'
-import useIsMobile from '@/hooks/isMobile'
 
 const Partners = () => {
   const isMobile = useIsMobile()

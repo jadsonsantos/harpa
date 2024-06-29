@@ -17,8 +17,8 @@ const Investment = () => (
           <li key={data.title}>
             <S.InvestmentIcon>{data.icon}</S.InvestmentIcon>
             <S.InvestmentTitle>{data.title}</S.InvestmentTitle>
-            {data.description.map((desc, index) => (
-              <Text key={index}>{desc}</Text>
+            {data.description.map((desc) => (
+              <Text key={desc}>{desc}</Text>
             ))}
           </li>
         ))}
