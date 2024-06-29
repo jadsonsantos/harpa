@@ -1,10 +1,11 @@
 'use client'
 
+import { media } from '@/styles/mediaQueries'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
-import { Text } from '../Text/styles'
 import { Container } from '../../patterns/Container/styles'
-import { media } from '@/styles/mediaQueries'
+import CustomLink from '../CustomLink'
+import { Text } from '../Text/styles'
 
 export const PartnersWrapper = styled.section`
   padding: 128px 0;
@@ -41,4 +42,8 @@ export const PartnersContent = styled.div`
 
 export const PartnersText = styled(Text)`
   margin: 64px 0;
+`
+
+export const PartnersLink = styled(CustomLink)`
+  text-decoration: underline;
 `

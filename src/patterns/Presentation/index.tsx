@@ -1,7 +1,7 @@
 'use client'
 import AnimatedIllustration from '@/components/AnimatedIllustration'
+import GoToSection from '@/components/GoToSection'
 import * as S from './styles'
-import Text from '@/components/Text'
 
 const Presentation = () => {
   return (
@@ -15,7 +15,9 @@ const Presentation = () => {
             a HÁRPÁ proporciona aos seus clientes uma experiência premium e
             intimista, com muita liberdade e exclusividade.
           </S.Title>
-          <Text>CONHEÇA NOSSOS PACOTES {'>'}</Text>
+          <GoToSection link="/a-expedicao#detalhes">
+            CONHEÇA NOSSOS PACOTES {'>'}
+          </GoToSection>
         </article>
       </S.LocalContainer>
     </S.Wrapper>

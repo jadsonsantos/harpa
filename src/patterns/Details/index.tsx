@@ -4,7 +4,7 @@ import { data, hotelsDetails } from './data'
 import * as S from './styles'
 
 const Details = () => (
-  <S.Wrapper>
+  <S.Wrapper id="detalhes">
     <S.DetailsContainer>
       <AnimatedIllustration />
       <div>
