@@ -1,16 +1,20 @@
 'use client'
 import { Text } from '@/components/Text/styles'
 import { media } from '@/styles/mediaQueries'
-import { colors } from '@/styles/tokens'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   background: ${colors.background};
-  padding: 164px 0;
+  padding: 128px 0;
 
   p {
     margin-bottom: 20px;
     max-width: 414px;
+  }
+
+  ${media.desktopUp} {
+    padding: 164px 0;
   }
 `
 
@@ -30,6 +34,7 @@ export const InvestmentTitle = styled(Text)`
   margin-bottom: 20px;
 `
 
-export const InvestmentIcon = styled.span`
+export const InvestmentIcon = styled.p`
+  margin-bottom: ${spacings.xSmall};
   font-size: 30px;
 `

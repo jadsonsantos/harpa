@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
   display: none;
 
-  ${media.tabletUp} {
+  ${media.desktopUp} {
     display: block;
   }
 `

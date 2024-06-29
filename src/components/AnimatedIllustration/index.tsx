@@ -1,20 +1,15 @@
-import * as S from './styles'
 import Image from 'next/image'
-import useIsMobile from '@/hooks/isMobile'
+import * as S from './styles'
 
 const AnimatedIllustration = () => {
-  const isMobile = useIsMobile()
-
   return (
     <S.Wrapper>
-      {!isMobile && (
-        <Image
-          src="/images/animations/animation-1.png"
-          width={317}
-          height={350}
-          alt="Hárpá"
-        />
-      )}
+      <Image
+        src="/images/animations/animation-1.png"
+        width={317}
+        height={350}
+        alt="Hárpá"
+      />
     </S.Wrapper>
   )
 }

@@ -19,6 +19,8 @@ export const fonts = {
 }
 
 export const spacings = {
+  xSmall: '16px',
+  gap: '24px',
   small: '32px',
   medium: '64px',
   large: '164px'
