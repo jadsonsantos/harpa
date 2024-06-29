@@ -1,21 +1,26 @@
 'use client'
 import { Container } from '@/patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
+import { spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  padding-top: 164px;
+  padding-top: ${spacings.xlarge};
 
   > div {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: ${spacings.small};
   }
 
-  ${media.desktopUp} {
+  ${media.tabletUp} {
     > div {
       flex-direction: row;
     }
+  }
+
+  ${media.desktopUp} {
+    padding-top: ${spacings.xxlarge};
   }
 `
 

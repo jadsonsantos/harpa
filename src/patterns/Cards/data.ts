@@ -8,7 +8,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: 'https://wa.me/5551999999999'
+      href: 'https://wa.me/5511995842594'
     }
   },
   {
@@ -20,7 +20,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: 'https://wa.me/5551999999999'
+      href: 'https://wa.me/5511995842594'
     }
   }
 ]
