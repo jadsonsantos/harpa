@@ -9,7 +9,7 @@ export const Wrapper = styled.article``
 export const HotelsDetailsContent = styled.div`
   ${media.desktopUp} {
     display: flex;
-    gap: ${spacings.gap};
+    gap: ${spacings.small};
   }
 `
 

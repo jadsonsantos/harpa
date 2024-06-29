@@ -35,6 +35,6 @@ export const InvestmentTitle = styled(Text)`
 `
 
 export const InvestmentIcon = styled.p`
-  margin-bottom: ${spacings.xSmall};
+  margin-bottom: ${spacings.xsmall};
   font-size: 30px;
 `

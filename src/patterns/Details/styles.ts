@@ -7,20 +7,20 @@ import { Container } from '../Container/styles'
 
 export const Wrapper = styled.section`
   background-color: ${colors.background};
-  padding: 128px 0;
+  padding: ${spacings.large} 0;
 
   ${media.desktopUp} {
-    padding: ${spacings.large} 0;
+    padding: ${spacings.xxlarge} 0;
   }
 `
 
 export const DetailsContainer = styled(Container)`
   article:not(:last-of-type) {
-    margin-bottom: ${spacings.medium};
+    margin-bottom: ${spacings.large};
   }
 
   h3 {
-    margin-bottom: ${spacings.small};
+    margin-bottom: ${spacings.medium};
   }
 
   ${media.tabletUp} {
@@ -34,7 +34,7 @@ export const DetailsContainer = styled(Container)`
     }
 
     h3 {
-      margin-bottom: ${spacings.medium};
+      margin-bottom: ${spacings.large};
     }
   }
 `

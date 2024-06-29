@@ -1,9 +1,9 @@
 'use client'
-import styled from 'styled-components'
-import { Container } from '../Container/styles'
+import { Heading } from '@/components/Heading/styles'
 import { media } from '@/styles/mediaQueries'
 import { spacings } from '@/styles/tokens'
-import { Heading } from '@/components/Heading/styles'
+import styled from 'styled-components'
+import { Container } from '../Container/styles'
 
 export const Wrapper = styled.section`
   padding: 128px 0;
@@ -28,5 +28,5 @@ export const LocalContainer = styled(Container)`
 `
 
 export const Title = styled(Heading)`
-  margin-bottom: ${spacings.medium};
+  margin-bottom: ${spacings.large};
 `
