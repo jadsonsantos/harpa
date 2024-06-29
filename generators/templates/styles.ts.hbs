@@ -1,4 +1,12 @@
 'use client'
 import styled from 'styled-components'
+import { media } from '@/styles/mediaQueries'
+import { spacings } from '@/styles/tokens'
 
-export const Wrapper = styled.section``
+export const Wrapper = styled.section`
+  padding: ${spacings.xlarge} 0;
+
+  ${media.desktopUp} {
+    padding: ${spacings.xxlarge} 0;
+  }
+`
