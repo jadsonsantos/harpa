@@ -1,3 +1,5 @@
+import { WHATSSAPP_URL } from '@/constants'
+
 const data = [
   {
     title: 'Viagens em grupo',
@@ -8,7 +10,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: 'https://wa.me/5511995842594'
+      href: WHATSSAPP_URL
     }
   },
   {
@@ -20,7 +22,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: 'https://wa.me/5511995842594'
+      href: WHATSSAPP_URL
     }
   }
 ]

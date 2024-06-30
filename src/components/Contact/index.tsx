@@ -1,4 +1,5 @@
 'use client'
+import { WHATSSAPP_NUMBER } from '@/constants'
 import Container from '../../patterns/Container'
 import CustomLink from '../CustomLink'
 import Logo from '../Logo'
@@ -16,7 +17,9 @@ const Contact = () => (
         </Text>
       </S.Address>
       <Text>
-        <CustomLink href="tel:551195824594">+55 (11) 9 9584-2594</CustomLink>
+        <CustomLink href={`tel:${WHATSSAPP_NUMBER}`}>
+          +55 (11) 9 9584-2594
+        </CustomLink>
       </Text>
     </Container>
   </S.Wrapper>

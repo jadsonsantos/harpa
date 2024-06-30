@@ -1,4 +1,5 @@
 'use client'
+
 type CustomLinkProps = React.ComponentProps<'a'> & {
   target?: string
 }
