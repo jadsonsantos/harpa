@@ -1,11 +1,12 @@
-import StyledComponentsRegistry from '@/lib/registry'
-import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
-import { Providers } from './providers'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import News from '@/components/News'
+import StyledComponentsRegistry from '@/lib/registry'
+import NextExpeditions from '@/patterns/NextExpeditions'
+import type { Metadata } from 'next'
+import { Roboto } from 'next/font/google'
+import { Providers } from './providers'
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700'],
@@ -31,6 +32,7 @@ export default function RootLayout({
           <Providers>
             <Header />
             {children}
+            <NextExpeditions />
             <News />
             <Contact />
             <Footer />

@@ -26,3 +26,16 @@ export const spacings = {
   xlarge: '128px', // Extra Large spacing
   xxlarge: '164px' // Double Extra Large spacing
 }
+
+export const borders = {
+  radius: '8px',
+  width: '2px',
+  style: 'solid',
+  color: colors.primary,
+  xsmall: '16px',
+  small: '24px',
+  medium: '32px',
+  large: '64px',
+  xlarge: '128px',
+  xxlarge: '164px'
+}

@@ -22,6 +22,10 @@ const GlobalStyles = createGlobalStyle`
     padding-top: 82px;
   }
 
+  h3, h4 {
+    font-weight: normal;
+  }
+
   a {
     display: inline-block;
     color: inherit;
