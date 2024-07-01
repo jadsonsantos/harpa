@@ -8,7 +8,7 @@ export const Wrapper = styled.header`
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   height: 82px;
   display: flex;
   background-color: ${colors.light};

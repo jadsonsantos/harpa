@@ -10,6 +10,12 @@ export const Wrapper = styled.section`
   ${media.desktopUp} {
     padding: ${spacings.xxlarge} 0;
   }
+
+  swiper-slide,
+  img {
+    border-radius: ${spacings.medium};
+    max-width: 100%;
+  }
 `
 
 export const IcelandText = styled.article`
