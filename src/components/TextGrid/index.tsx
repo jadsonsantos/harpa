@@ -1,22 +1,10 @@
 'use client'
 import useIsMobile from '@/hooks/isMobile'
+import { InitiativeData } from '@/types'
 import Details from '../Details'
 import Heading from '../Heading'
 import Text from '../Text'
 import * as S from './styles'
-
-interface Content {
-  title: string
-  description: string[]
-}
-
-interface TextGridProps {
-  title: string
-  description?: string[]
-  content?: Content[]
-  cta?: { href: string; text: string }
-  hasAccordion?: boolean
-}
 
 const TextGrid = ({
   title = '',
@@ -24,7 +12,7 @@ const TextGrid = ({
   content,
   cta,
   hasAccordion
-}: TextGridProps) => {
+}: InitiativeData) => {
   const isMobile = useIsMobile()
 
   return (
@@ -35,7 +23,11 @@ const TextGrid = ({
           content.map(({ title, description }) => {
             if (isMobile && hasAccordion) {
               return (
-                <Details key={title} title={title} description={description} />
+                <Details
+                  key={title}
+                  title={title || ''}
+                  description={description}
+                />
               )
             }
             return (

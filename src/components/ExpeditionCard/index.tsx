@@ -17,7 +17,7 @@ const ExpeditionCard = ({ status, date }: ExpeditionCardProps) => (
     </S.ExpeditionMonth>
     <S.ExpeditionStatus>{status}</S.ExpeditionStatus>
     <S.ExpeditionDate>
-      {date.startDate}→{date.endDate} • {date.month.substring(0, 3)}
+      {date.startDate} → {date.endDate} • {date.month.substring(0, 3)}
     </S.ExpeditionDate>
   </S.Wrapper>
 )

@@ -1,15 +1,15 @@
 import AnimatedIllustration from '@/components/AnimatedIllustration'
 import TextGrid from '@/components/TextGrid'
+import { InitiativeData } from '@/types'
 import { Fragment } from 'react'
-import data from './data'
 import * as S from './styles'
 
-const Initiatives = () => (
+const Initiatives = ({ data }: { data: InitiativeData[] }) => (
   <S.Wrapper>
     <S.InitiativesContainer>
       <AnimatedIllustration />
       <S.InitiativesText>
-        {data.map((item) => {
+        {data.map((item: InitiativeData) => {
           return (
             <Fragment key={item.title}>
               <TextGrid {...item} />

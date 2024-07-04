@@ -1,6 +1,7 @@
 import { WHATSSAPP_URL } from '@/constants'
+import { InitiativeData } from '@/types'
 
-const data = [
+const data: InitiativeData[] = [
   {
     title: 'Soluções educacionais',
     content: [
