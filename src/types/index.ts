@@ -15,7 +15,7 @@ interface CTA {
 
 export interface InitiativeData {
   title: string
-  content: ContentItem[]
+  content?: ContentItem[]
   description?: string[]
   cta?: CTA
   hasAccordion?: boolean // Opcional, pois nem todos os itens têm accordion
