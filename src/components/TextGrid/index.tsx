@@ -32,8 +32,10 @@ const TextGrid = ({
             }
             return (
               <div key={title}>
-                <Text>{title}</Text>
-                <Text>{description}</Text>
+                <S.ItemTitle>{title}</S.ItemTitle>
+                {description.map((desc) => (
+                  <Text key={desc}>{desc}</Text>
+                ))}
               </div>
             )
           })}
@@ -41,9 +43,9 @@ const TextGrid = ({
           description.map((desc) => <Text key={desc}>{desc}</Text>)}
       </S.Content>
       {cta && (
-        <Text>
+        <S.LinkContainer>
           <S.Link href={cta.href}>{cta.text}</S.Link>
-        </Text>
+        </S.LinkContainer>
       )}
     </S.TextGrid>
   )

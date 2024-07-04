@@ -3,6 +3,7 @@ import { media } from '@/styles/mediaQueries'
 import { spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import CustomLink from '../CustomLink'
+import { Text } from '../Text/styles'
 
 export const TextGrid = styled.article`
   &:not(:last-of-type) {
@@ -18,9 +19,16 @@ export const TextGrid = styled.article`
   p {
     &:not(:last-of-type) {
       margin-bottom: 20px;
-      font-weight: 700;
     }
   }
+`
+
+export const ItemTitle = styled(Text)`
+  font-weight: 700;
+`
+
+export const LinkContainer = styled(Text)`
+  margin-top: 64px;
 `
 
 export const Link = styled(CustomLink)`
@@ -28,9 +36,8 @@ export const Link = styled(CustomLink)`
 `
 
 export const Content = styled.div`
-  margin-bottom: 64px;
-
   ${media.tabletUp} {
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;

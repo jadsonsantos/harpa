@@ -1,11 +1,13 @@
 'use client'
+import useIsMobile from '@/hooks/isMobile'
+import Cards from '@/patterns/Cards'
+import Details from '@/patterns/Details'
+import Gallery from '@/patterns/Gallery'
+import Initiatives from '@/patterns/Initiatives'
+import Investment from '@/patterns/Investment'
 import Image from 'next/image'
 import HeroExpedition from '../HeroExpedition'
-import Gallery from '@/patterns/Gallery'
-import Investment from '@/patterns/Investment'
-import Cards from '@/patterns/Cards'
-import useIsMobile from '@/hooks/isMobile'
-import Details from '@/patterns/Details'
+import data from './data'
 
 const ExpeditionPageContent = () => {
   const isMobile = useIsMobile()
@@ -13,6 +15,7 @@ const ExpeditionPageContent = () => {
   return (
     <>
       <HeroExpedition title="Islândia<br/> Do sonho à <span>realidade</span>" />
+      <Initiatives data={data} />
       {!isMobile && (
         <>
           <Image

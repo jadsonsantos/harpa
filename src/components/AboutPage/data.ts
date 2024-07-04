@@ -67,7 +67,7 @@ const data: InitiativeData[] = [
     title: 'Collab',
     content: [
       {
-        title: '<strong>Parcerias de sucesso</strong>',
+        title: 'Parcerias de sucesso',
         description: [
           'Para parcerias entre sua empresa e a HÁRPA, entre em contato conosco e saiba como podemos colaborar.'
         ]
