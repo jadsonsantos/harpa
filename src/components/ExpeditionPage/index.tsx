@@ -15,7 +15,7 @@ const ExpeditionPageContent = () => {
   return (
     <>
       <HeroExpedition title="Islândia<br/> Do sonho à <span>realidade</span>" />
-      <Initiatives data={data} />
+      <Initiatives data={data} id="curiosidades" />
       {!isMobile && (
         <>
           <Image

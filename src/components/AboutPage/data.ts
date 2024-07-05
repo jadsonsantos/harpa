@@ -1,7 +1,7 @@
 import { WHATSSAPP_URL } from '@/constants'
 import { InitiativeData } from '@/types'
 
-const data: InitiativeData[] = [
+export const data: InitiativeData[] = [
   {
     title: 'Soluções educacionais',
     content: [
@@ -80,4 +80,4 @@ const data: InitiativeData[] = [
   }
 ]
 
-export default data
+export const presentationTitle = `Com o itinerário mais completo do mercado, a HÁRPÁ proporciona aos seus clientes uma experiência exclusiva e intimista.`

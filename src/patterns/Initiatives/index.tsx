@@ -4,9 +4,14 @@ import { InitiativeData } from '@/types'
 import { Fragment } from 'react'
 import * as S from './styles'
 
-const Initiatives = ({ data }: { data: InitiativeData[] }) => {
+interface InitiativesProps {
+  data: InitiativeData[]
+  id?: string
+}
+
+const Initiatives = ({ data, id }: InitiativesProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id={id}>
       <S.InitiativesContainer>
         <AnimatedIllustration />
         <S.InitiativesText>

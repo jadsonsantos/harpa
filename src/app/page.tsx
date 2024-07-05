@@ -1,15 +1,5 @@
-import HeroHome from '@/components/HeroHome'
-import Partners from '@/components/Partners'
-import Iceland from '@/patterns/Iceland'
-import Presentation from '@/patterns/Presentation'
+import HomePage from '@/components/HomePage'
 
 export default function Home() {
-  return (
-    <>
-      <HeroHome title="<span>Islândia</span><br/> Terra do gelo e do fogo" />
-      <Presentation />
-      <Iceland />
-      <Partners />
-    </>
-  )
+  return <HomePage />
 }
