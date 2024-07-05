@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1290px;
+  max-width: 1418px;
 
   margin: 0 auto;
   padding: 0 24px;
@@ -12,12 +12,8 @@ export const Container = styled.div`
   ${media.tabletUp} {
     padding: 0 64px;
   }
-
-  ${media.largeDesktopUp} {
-    padding: 0;
-  }
 `
 
 export const LargeContainer = styled(Container)`
-  max-width: 1600px;
+  max-width: 1728px;
 `
