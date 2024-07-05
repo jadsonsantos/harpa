@@ -27,7 +27,7 @@ const data = [
       'À vista, com desconto, ou parcelado em até 5 parcelas, sujeito à taxas aderentes ao parcelamento.',
       'Para o parcelamento, é necessário que a última parcela seja compensada até 40 dias antes do embarque.'
     ],
-    icon: '✈️'
+    icon: '🤞'
   }
 ]
 

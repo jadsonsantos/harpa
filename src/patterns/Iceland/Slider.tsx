@@ -10,6 +10,7 @@ const Slider = () => {
       draggable={false}
       pagination={{ clickable: true }}
       autoplay={true}
+      effect="fade"
     >
       {images.map(({ alt, src }) => {
         return (

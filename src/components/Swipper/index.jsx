@@ -1,38 +1,3 @@
-// import { ReactNode, useEffect, useRef } from 'react'
-// import { SwiperOptions } from 'swiper/types'
-
-// interface SwiperProps
-//   extends React.PropsWithChildren<Omit<SwiperOptions, 'init'>> {}
-
-// type SwiperSlideProps = {
-//   children: ReactNode
-// }
-
-// export function Swiper({ children, ...props }: SwiperProps) {
-//   const swiperRef = useRef<HTMLElement>(null)
-
-//   useEffect(() => {
-//     // Não é necessário registrar manualmente o Swiper como um elemento personalizado
-//     // se você estiver usando o Swiper 7 ou superior que suporta Web Components nativamente
-
-//     // Pega as props do componente e as atribui ao elemento Swiper
-//     const swiperInstance = swiperRef.current
-//     if (swiperInstance) {
-//       Object.assign(swiperInstance, props)
-//       // Inicializa o Swiper manualmente, se necessário
-//       // Note que isso pode não ser necessário dependendo da sua configuração do Swiper
-//     }
-//   }, [props])
-
-//   return (
-//     <div id="swiper-container">
-//       <swiper-container ref={swiperRef}>{children}</swiper-container>
-//     </div>
-//   )
-// }
-// export function SwiperSlide({ children }: SwiperSlideProps) {
-//   return <div id="swiper-slide">{children}</div>
-// }
 'use client'
 import { useEffect, useRef } from 'react'
 import { register } from 'swiper/element/bundle'
@@ -59,7 +24,7 @@ export function Swiper(props) {
 
   return (
     <swiper-container
-      init="true"
+      init="false"
       ref={swiperRef}
       style={{
         '--swiper-navigation-color': '#fff',
