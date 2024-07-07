@@ -32,7 +32,7 @@ const ExpeditionPageContent = () => {
       <Details />
       <Investment />
       <Cards />
-      {!isMobile && <Hall />}
+      <Hall />
     </>
   )
 }

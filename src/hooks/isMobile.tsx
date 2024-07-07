@@ -1,8 +1,8 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia('(max-width: 767px)')

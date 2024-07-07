@@ -29,5 +29,10 @@ export const Wrapper = styled.section`
   swiper-container::part(button-prev),
   swiper-container::part(button-next) {
     border-radius: 100%;
+    display: none;
+
+    ${media.desktopUp} {
+      display: block;
+    }
   }
 `
