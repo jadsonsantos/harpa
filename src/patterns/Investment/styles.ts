@@ -8,13 +8,17 @@ export const Wrapper = styled.section`
   background: ${colors.background};
   padding: 128px 0;
 
-  p {
+  .text {
     margin-bottom: 20px;
-    max-width: 414px;
+    max-width: 596px;
   }
 
   ${media.desktopUp} {
     padding: 164px 0;
+
+    .text {
+      max-width: 414px;
+    }
   }
 `
 

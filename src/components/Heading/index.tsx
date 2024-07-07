@@ -14,7 +14,12 @@ const Heading = ({ children }: HeadingProps) => {
       ? children
       : ''
 
-  return <S.Heading dangerouslySetInnerHTML={{ __html: htmlString }} />
+  return (
+    <S.Heading
+      className="heading"
+      dangerouslySetInnerHTML={{ __html: htmlString }}
+    />
+  )
 }
 
 export default Heading

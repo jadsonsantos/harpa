@@ -16,7 +16,9 @@ const Text = ({ children }: TextProps) => {
       ? children
       : ''
 
-  return <S.Text dangerouslySetInnerHTML={{ __html: htmlString }} />
+  return (
+    <S.Text className="text" dangerouslySetInnerHTML={{ __html: htmlString }} />
+  )
 }
 
 export default Text

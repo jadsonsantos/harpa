@@ -7,7 +7,7 @@ import CustomLink from '../CustomLink'
 export const Wrapper = styled.article``
 
 export const HotelsDetailsContent = styled.div`
-  ${media.desktopUp} {
+  ${media.tabletUp} {
     display: flex;
     gap: ${spacings.small};
   }
