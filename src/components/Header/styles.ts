@@ -13,9 +13,15 @@ export const Wrapper = styled.header`
   display: flex;
   background-color: ${colors.light};
 
-  & > div {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+`
+
+export const MenuWrapper = styled.div`
+  > .text {
+    font-weight: 700;
   }
 `

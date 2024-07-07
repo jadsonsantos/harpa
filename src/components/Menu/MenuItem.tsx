@@ -8,8 +8,7 @@ interface MenuItemProps {
 const MenuItem = ({ children, href }: MenuItemProps) => {
   return (
     <li key={children}>
-      <Link href={href}>
-        {`/ `}
+      <Link href={href} className="link">
         {children}
       </Link>
     </li>
