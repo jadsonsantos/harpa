@@ -11,10 +11,11 @@ export const Wrapper = styled.nav`
 `
 
 export const MenuList = styled.ul`
-  display: none;
+  display: flex;
+  flex-direction: column;
 
   ${media.tabletUp} {
-    display: flex;
+    flex-direction: row;
     gap: 24px;
   }
 
