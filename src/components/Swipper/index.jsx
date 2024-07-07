@@ -27,7 +27,7 @@ export function Swiper(props) {
       init="false"
       ref={swiperRef}
       style={{
-        '--swiper-navigation-color': '#fff',
+        '--swiper-navigation-color': '#000',
         '--swiper-pagination-color': '#fff',
         '--swiper-pagination-bottom': '20px'
       }}

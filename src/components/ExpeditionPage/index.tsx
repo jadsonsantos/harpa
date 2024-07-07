@@ -3,6 +3,7 @@ import useIsMobile from '@/hooks/isMobile'
 import Cards from '@/patterns/Cards'
 import Details from '@/patterns/Details'
 import Gallery from '@/patterns/Gallery'
+import Hall from '@/patterns/Hall'
 import Initiatives from '@/patterns/Initiatives'
 import Investment from '@/patterns/Investment'
 import Image from 'next/image'
@@ -31,6 +32,7 @@ const ExpeditionPageContent = () => {
       <Details />
       <Investment />
       <Cards />
+      {!isMobile && <Hall />}
     </>
   )
 }
