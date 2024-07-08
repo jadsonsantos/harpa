@@ -11,11 +11,12 @@ const Slider = () => {
   const isDesktop = useIsDeviceType('desktop')
 
   const slideDimension = () => {
-    if (isTablet) {
-      return 250
-    }
     if (isDesktop) {
       return 414
+    }
+
+    if (isTablet) {
+      return 250
     }
 
     return 240

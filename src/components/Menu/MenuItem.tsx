@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import * as S from './styles'
 
 interface MenuItemProps {
   children: string
@@ -7,11 +8,11 @@ interface MenuItemProps {
 
 const MenuItem = ({ children, href }: MenuItemProps) => {
   return (
-    <li key={children}>
+    <S.MenuItem>
       <Link href={href} className="link">
         {children}
       </Link>
-    </li>
+    </S.MenuItem>
   )
 }
 

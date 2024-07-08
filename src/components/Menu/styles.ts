@@ -3,12 +3,6 @@ import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
 export const Wrapper = styled.nav`
-  .link {
-    font-size: 18px;
-    line-height: 130%; /* 23.4px */
-    letter-spacing: -0.18px;
-  }
-
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 82px;
@@ -20,12 +14,6 @@ export const Wrapper = styled.nav`
 
     .link {
       padding: 12px 24px;
-    }
-  }
-
-  ${media.tabletUp} {
-    .link:before {
-      content: '/ ';
     }
   }
 `
@@ -42,5 +30,28 @@ export const MenuList = styled.ul`
 
   ${media.desktopUp} {
     gap: 58px;
+  }
+`
+
+export const MenuItem = styled.li`
+  .link {
+    font-size: 18px;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: -0.18px;
+  }
+
+  ${media.tabletUp} {
+    .link {
+      padding: 30px 0;
+      transition: font-weight 0.3s ease;
+
+      &:before {
+        content: '/ ';
+      }
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
   }
 `
