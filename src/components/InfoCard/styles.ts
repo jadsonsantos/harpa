@@ -1,8 +1,8 @@
 'use client'
-import { colors } from '@/styles/tokens'
+import { media } from '@/styles/mediaQueries'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { PrimaryButton } from '../Button/styles'
-import { media } from '@/styles/mediaQueries'
 
 export const Card = styled.article`
   border-radius: 32px;
@@ -13,19 +13,48 @@ export const Card = styled.article`
   display: flex;
   flex-direction: column;
 
-  h3 {
+  .heading {
     margin-bottom: 24px;
   }
 
-  > p {
-    margin-bottom: 25px;
+  > .text {
+    margin-bottom: ${spacings.small};
+
+    &:last-of-type {
+      margin-bottom: ${spacings.large};
+    }
   }
 
   ${media.desktopUp} {
     padding: 32px;
+
+    > .text:last-of-type {
+      margin-bottom: ${spacings.medium};
+    }
   }
 `
 
 export const Button = styled(PrimaryButton)`
   margin-top: auto;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+
+  .custom-link {
+    width: 100%;
+    color: ${colors.light};
+    border-radius: 60px;
+    background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
+  }
+
+  ${media.desktopUp} {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+
+    .custom-link {
+      width: auto;
+      background: none;
+      color: ${colors.primary};
+    }
+  }
 `

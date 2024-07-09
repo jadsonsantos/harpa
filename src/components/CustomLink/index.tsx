@@ -11,6 +11,7 @@ const CustomLink = ({
 }: CustomLinkProps) => {
   return (
     <a
+      className="custom-link"
       target={target}
       rel={target === '_blank' ? 'noopener noreferrer' : ''}
       {...rest}
