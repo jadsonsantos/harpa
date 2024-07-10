@@ -45,6 +45,8 @@ export const Button = styled(PrimaryButton)`
     color: ${colors.light};
     border-radius: 60px;
     background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   ${media.desktopUp} {

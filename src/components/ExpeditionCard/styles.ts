@@ -81,6 +81,7 @@ export const ExpeditionStatus = styled.div`
   font-weight: 700;
   line-height: 130%; /* 31.2px */
   letter-spacing: -0.24px;
+  color: ${colors.light};
 
   ${media.desktopUp} {
     font-size: 54px;
