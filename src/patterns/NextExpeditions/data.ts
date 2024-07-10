@@ -7,8 +7,7 @@ const expeditions = [
       month: 'Março',
       year: 2024
     },
-    title: 'Expedição 1',
-    status: 'Vagas esgotadas :('
+    title: 'Expedição 1'
   },
   {
     id: 2,
@@ -18,8 +17,8 @@ const expeditions = [
       month: 'Março',
       year: 2024
     },
-    title: 'Expedição 2',
-    status: 'Vaga aberta :)'
+    isClosed: true,
+    title: 'Expedição 2'
   },
   {
     id: 3,
@@ -29,8 +28,7 @@ const expeditions = [
       month: 'Setembro',
       year: 2024
     },
-    title: 'Expedição 3',
-    status: 'Vagas esgotadas :('
+    title: 'Expedição 3'
   },
   {
     id: 4,
@@ -40,8 +38,8 @@ const expeditions = [
       month: 'Novembro',
       year: 2024
     },
-    title: 'Expedição 4',
-    status: 'Vaga aberta :)'
+    isClosed: true,
+    title: 'Expedição 4'
   }
 ]
 
