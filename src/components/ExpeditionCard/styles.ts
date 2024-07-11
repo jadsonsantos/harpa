@@ -14,6 +14,8 @@ export const Wrapper = styled.article`
   padding: ${spacings.small};
   height: 160px;
 
+  transition: background 0.3s ease;
+
   ${media.desktopUp} {
     border-radius: ${borders.medium};
     padding: ${spacings.medium};
@@ -37,7 +39,6 @@ export const Wrapper = styled.article`
   }
 
   &:hover {
-    cursor: pointer;
     color: ${colors.light};
 
     .expedition-month {

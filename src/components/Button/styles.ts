@@ -21,4 +21,9 @@ export const Wrapper = styled.button`
 export const PrimaryButton = styled(Wrapper)`
   background-color: ${colors.light};
   color: ${colors.primary};
+
+  &:hover {
+    background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
+    color: ${colors.light};
+  }
 `
