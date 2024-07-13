@@ -31,9 +31,7 @@ export const LinkContainer = styled(Text)`
   margin-top: 64px;
 `
 
-export const Link = styled(CustomLink)`
-  text-decoration-line: underline;
-`
+export const Link = styled(CustomLink)``
 
 export const Content = styled.div`
   ${media.tabletUp} {
