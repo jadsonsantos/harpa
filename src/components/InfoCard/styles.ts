@@ -50,11 +50,11 @@ export const Button = styled(PrimaryButton)`
   }
 
   ${media.desktopUp} {
+    width: fit-content;
     font-size: 18px;
     letter-spacing: -0.18px;
 
     .custom-link {
-      width: auto;
       background: none;
       color: ${colors.primary};
     }

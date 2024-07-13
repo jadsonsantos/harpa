@@ -35,23 +35,39 @@ export const MenuList = styled.ul`
 
 export const MenuItem = styled.li`
   .link {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     line-height: 130%; /* 23.4px */
     letter-spacing: -0.18px;
+
+    &:after {
+      content: '';
+      border-bottom: 1px solid transparent;
+      width: 100%;
+    }
+
+    &:hover {
+      &:after {
+        border-bottom: 1px solid currentColor;
+      }
+    }
   }
 
   ${media.tabletUp} {
+    padding: 30px 0;
+
     .link {
-      padding: 30px 0;
       transition: font-weight 0.3s ease;
-
-      &:before {
-        content: '/ ';
-      }
-
-      &:hover {
-        font-weight: 700;
-      }
     }
+  }
+`
+
+export const MenuItemBar = styled.span`
+  display: none;
+  margin-right: 5px;
+
+  ${media.tabletUp} {
+    display: block;
   }
 `
