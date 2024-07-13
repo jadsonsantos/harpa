@@ -3,6 +3,7 @@ import useIsMobile from '@/hooks/isMobile'
 import { InitiativeData } from '@/types'
 import Details from '../Details'
 import Heading from '../Heading'
+import { HoverEffectComponent } from '../HoverEffect'
 import Text from '../Text'
 import * as S from './styles'
 
@@ -44,7 +45,9 @@ const TextGrid = ({
       </S.Content>
       {cta && (
         <S.LinkContainer>
-          <S.Link href={cta.href}>{cta.text}</S.Link>
+          <S.Link href={cta.href}>
+            <HoverEffectComponent>{cta.text}</HoverEffectComponent>
+          </S.Link>
         </S.LinkContainer>
       )}
     </S.TextGrid>
