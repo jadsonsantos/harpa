@@ -26,16 +26,6 @@ export const Wrapper = styled.section`
   .hall-swiper {
     margin-top: ${spacings.large};
   }
-
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
-    border-radius: 100%;
-    display: none;
-
-    ${media.desktopUp} {
-      display: block;
-    }
-  }
 `
 
 export const HallNavigation = styled(Container)`

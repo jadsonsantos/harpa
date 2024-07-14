@@ -1,14 +1,29 @@
 'use client'
+import Image from 'next/image'
+import { useCallback, useRef } from 'react'
+import 'swiper/css'
+import { Autoplay, Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 import Arrow from '@/components/Arrow'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
 import Text from '@/components/Text'
 import useIsDeviceType from '@/utils/useIsDeviceType'
-import Image from 'next/image'
 import * as S from './styles'
 
 const Slider = () => {
   const isTablet = useIsDeviceType('tablet')
   const isDesktop = useIsDeviceType('desktop')
+  const sliderRef = useRef(null)
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return
+    sliderRef.current.swiper.slidePrev()
+  }, [])
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return
+    sliderRef.current.swiper.slideNext()
+  }, [])
 
   const slideDimension = () => {
     if (isDesktop) {
@@ -22,6 +37,25 @@ const Slider = () => {
     return 240
   }
 
+  const NavigationWrapper = () => {
+    return (
+      <S.NavigationWrapper>
+        <button
+          className="swiper-button swiper-button-prev"
+          onClick={handlePrev}
+        >
+          <Arrow />
+        </button>
+        <button
+          className="swiper-button swiper-button-next"
+          onClick={handleNext}
+        >
+          <Arrow />
+        </button>
+      </S.NavigationWrapper>
+    )
+  }
+
   return (
     <>
       <S.HallNavigation>
@@ -29,26 +63,17 @@ const Slider = () => {
           Conheça HARPEIROS que já vivenciaram essa experiência na terra do gelo
           e do fogo.
         </Text>
-        {isDesktop && (
-          <S.NavigationWrapper>
-            <button className="swiper-button swiper-button-prev">
-              <Arrow />
-            </button>
-            <button className="swiper-button swiper-button-next">
-              <Arrow />
-            </button>
-          </S.NavigationWrapper>
-        )}
+        {isDesktop && <NavigationWrapper />}
       </S.HallNavigation>
       <Swiper
+        ref={sliderRef}
         slidesPerView={'auto'}
         spaceBetween={24}
         centeredSlides={true}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+        autoplay={{
+          disableOnInteraction: false
         }}
-        autoplay={true}
+        modules={[Autoplay, Navigation]}
         className="hall-swiper"
       >
         {Array.from({ length: 11 }, (_, i) => (

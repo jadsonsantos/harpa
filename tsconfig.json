@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Swipper/index.jsx"
+    "src/components/Swipper/index.jsx",
+    "src/patterns/Hall/Slider.jsx"
   ],
   "exclude": ["node_modules"]
 }
