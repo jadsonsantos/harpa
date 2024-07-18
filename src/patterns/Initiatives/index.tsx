@@ -7,13 +7,14 @@ import * as S from './styles'
 interface InitiativesProps {
   data: InitiativeData[]
   id?: string
+  animation?: string
 }
 
-const Initiatives = ({ data, id }: InitiativesProps) => {
+const Initiatives = ({ data, id, animation = '4' }: InitiativesProps) => {
   return (
     <S.Wrapper id={id}>
       <S.InitiativesContainer>
-        <AnimatedIllustration />
+        <AnimatedIllustration name={animation} />
         <S.InitiativesText>
           {data.map((item: InitiativeData) => {
             return (

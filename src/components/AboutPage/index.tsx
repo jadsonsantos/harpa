@@ -11,8 +11,8 @@ const AboutPage = () => (
     <HeroAbout title="A ideia nasce na vontade do <span>fazer bem feito</span>" />
     <Harpa />
     <Services />
-    <Presentation title={presentationTitle} />
-    <Initiatives data={data} />
+    <Presentation title={presentationTitle} animation="3" />
+    <Initiatives data={data} animation="1" />
     <Founder />
   </>
 )

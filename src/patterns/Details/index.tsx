@@ -6,7 +6,7 @@ import * as S from './styles'
 const Details = () => (
   <S.Wrapper id="detalhes">
     <S.DetailsContainer>
-      <AnimatedIllustration />
+      <AnimatedIllustration name="1" />
       <div>
         {data.map((data) => (
           <S.DetailsTextGrid key={data.title} {...data}></S.DetailsTextGrid>

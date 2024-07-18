@@ -1,15 +1,24 @@
-import Image from 'next/image'
+'use client'
+import { useEffect } from 'react'
+import Vivus from 'vivus'
 import * as S from './styles'
 
-const AnimatedIllustration = () => {
+interface AnimatedIllustrationProps {
+  name: string
+}
+
+const AnimatedIllustration = ({ name }: AnimatedIllustrationProps) => {
+  useEffect(() => {
+    new Vivus('my-svg')
+  }, [])
+
   return (
     <S.Wrapper>
-      <Image
-        src="/images/animations/animation-1.png"
-        width={317}
-        height={350}
-        alt="Hárpá"
-      />
+      <object
+        id="my-svg"
+        type="image/svg+xml"
+        data={`images/animations/animation-${name}_animated.svg`}
+      ></object>
     </S.Wrapper>
   )
 }
