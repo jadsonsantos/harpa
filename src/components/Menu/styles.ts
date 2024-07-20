@@ -52,6 +52,10 @@ export const MenuItem = styled.li`
         border-bottom: 1px solid currentColor;
       }
     }
+
+    &.active {
+      font-weight: 700;
+    }
   }
 
   ${media.tabletUp} {

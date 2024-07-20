@@ -1,16 +1,23 @@
-import Link from 'next/link'
+'use client'
+import Link, { LinkProps } from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 import * as S from './styles'
 
-interface MenuItemProps {
+type MenuItemProps = LinkProps & {
   children: React.ReactNode
-  href: string
 }
 
-const MenuItem = ({ children, href }: MenuItemProps) => {
+const MenuItem = ({ children, href, ...props }: MenuItemProps) => {
+  const pathname = usePathname()
+
+  const isActive = pathname === href.toString() ? true : false
+
+  const combinedClasses = `link ${isActive ? 'active' : ''}`
+
   return (
     <S.MenuItem>
-      <Link href={href} className="link">
+      <Link href={href} className={combinedClasses} {...props}>
         <S.MenuItemBar>/ </S.MenuItemBar>
         {children}
       </Link>
