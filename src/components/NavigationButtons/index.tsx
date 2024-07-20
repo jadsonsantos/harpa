@@ -7,7 +7,7 @@ const NavigationButtons = () => {
   const swiper = useSwiper()
 
   return (
-    <S.NavigationWrapper>
+    <S.NavigationWrapper className="navigation-buttons">
       <button
         className="swiper-button swiper-button-prev"
         onClick={() => swiper.slidePrev()}

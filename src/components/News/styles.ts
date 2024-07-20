@@ -1,7 +1,7 @@
 'use client'
 import { LargeContainer } from '@/patterns/Container/styles'
 import { media } from '@/styles/mediaQueries'
-import { colors } from '@/styles/tokens'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { PrimaryButton } from '../Button/styles'
 
@@ -17,7 +17,7 @@ export const Wrapper = styled.section`
 export const Container = styled(LargeContainer)``
 
 export const Content = styled.div`
-  padding: 164px 20px;
+  padding: ${spacings.xxlarge} 20px;
   border-radius: 32px;
   background-color: ${colors.dark};
 
@@ -28,6 +28,8 @@ export const Content = styled.div`
   }
 
   ${media.tabletUp} {
+    padding: ${spacings.xxlarge} 155px;
+
     .heading {
       max-width: 390px;
     }

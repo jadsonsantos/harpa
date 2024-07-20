@@ -19,6 +19,7 @@ export const Services = styled.section`
     display: flex;
     justify-content: space-between;
     gap: ${spacings.small};
+    height: auto;
     transition:
       opacity,
       visibility 0.3s ease;
@@ -81,19 +82,19 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: ${spacings.medium};
 
-  .heading {
-    margin-bottom: 0;
+  .navigation-buttons {
+    margin-top: auto;
   }
 
   ${media.desktopUp} {
     max-width: 570px;
-    gap: ${spacings.large};
   }
 `
 
 export const ServicesText = styled.div`
+  margin-bottom: ${spacings.medium};
+
   .text:not(:last-of-type) {
     margin-bottom: 20px;
   }

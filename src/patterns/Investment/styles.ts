@@ -8,6 +8,10 @@ export const Wrapper = styled.section`
   background: ${colors.background};
   padding: 128px 0;
 
+  .heading {
+    margin-bottom: ${spacings.medium};
+  }
+
   .text {
     margin-bottom: 20px;
     max-width: 596px;

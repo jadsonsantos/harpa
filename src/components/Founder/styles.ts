@@ -43,7 +43,7 @@ export const FounderTestimony = styled.p`
   line-height: 130%; /* 36.4px */
   letter-spacing: -0.28px;
 
-  ${media.largeDesktopUp} {
+  ${media.desktopUp} {
     font-size: 48px;
     letter-spacing: -0.48px;
   }
