@@ -1,39 +1,17 @@
 'use client'
-import useIsMobile from '@/hooks/isMobile'
-import { useState } from 'react'
-import Container from '../../patterns/Container'
-import Logo from '../Logo'
-import Menu from '../Menu'
-import Text from '../Text'
+import Logo from '@/components/Logo'
+import Menu from '@/components/Menu'
+import Container from '@/patterns/Container'
 import * as S from './styles'
 
 const Header = () => {
-  const isMobile = useIsMobile()
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const handleClick = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-
   return (
-    <S.Wrapper>
+    <S.Header>
       <Container>
-        {isMobile ? (
-          <>
-            <Logo width={10} height={18} imgSrc="harpa-logo-mobile" />
-            <S.MenuWrapper onClick={() => handleClick()}>
-              <Text>/ Menu</Text>
-              {isMenuOpen && <Menu />}
-            </S.MenuWrapper>
-          </>
-        ) : (
-          <>
-            <Logo />
-            <Menu />
-          </>
-        )}
+        <Logo />
+        <Menu />
       </Container>
-    </S.Wrapper>
+    </S.Header>
   )
 }
 

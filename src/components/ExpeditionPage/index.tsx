@@ -1,4 +1,5 @@
 'use client'
+import HeaderMobile from '@/components/HeaderMobile'
 import useIsMobile from '@/hooks/isMobile'
 import Cards from '@/patterns/Cards'
 import Details from '@/patterns/Details'
@@ -15,6 +16,7 @@ const ExpeditionPageContent = () => {
 
   return (
     <>
+      <HeaderMobile />
       <HeroExpedition title="Islândia<br/> Do sonho à <span>realidade</span>" />
       <Initiatives data={data} id="curiosidades" />
       {!isMobile && (

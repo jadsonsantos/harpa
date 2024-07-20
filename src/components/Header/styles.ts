@@ -1,8 +1,10 @@
 'use client'
+import { media } from '@/styles/mediaQueries'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
-export const Wrapper = styled.header`
+export const Header = styled.header`
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +12,6 @@ export const Wrapper = styled.header`
   width: 100%;
   z-index: 2;
   height: 82px;
-  display: flex;
   background-color: ${colors.light};
 
   .container {
@@ -18,10 +19,8 @@ export const Wrapper = styled.header`
     justify-content: space-between;
     align-items: center;
   }
-`
 
-export const MenuWrapper = styled.div`
-  > .text {
-    font-weight: 700;
+  ${media.tabletUp} {
+    display: flex;
   }
 `
