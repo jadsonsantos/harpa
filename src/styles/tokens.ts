@@ -11,12 +11,12 @@ export const colors = {
   dark: '#000000',
   background: '#fafafa',
   text: '#333333'
-}
+} as const
 
 export const fonts = {
   sans: 'Roboto, Arial, sans-serif',
   serif: 'Georgia, "Times New Roman", Times, serif'
-}
+} as const
 
 export const spacings = {
   xsmall: '16px', // Extra Small spacing
@@ -25,7 +25,7 @@ export const spacings = {
   large: '64px', // Large spacing
   xlarge: '128px', // Extra Large spacing
   xxlarge: '164px' // Double Extra Large spacing
-}
+} as const
 
 export const borders = {
   radius: '8px',
@@ -38,4 +38,4 @@ export const borders = {
   large: '64px',
   xlarge: '128px',
   xxlarge: '164px'
-}
+} as const
