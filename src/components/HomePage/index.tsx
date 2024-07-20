@@ -7,7 +7,7 @@ import data from './data'
 
 const HomePage = () => (
   <>
-    <HeaderMobile />
+    <HeaderMobile title="Página inicial" />
     <HeroHome title="<span>Islândia</span><br/> Terra do gelo e do fogo" />
     <Presentation title={data.title} />
     <Iceland />

@@ -16,7 +16,7 @@ const ExpeditionPageContent = () => {
 
   return (
     <>
-      <HeaderMobile />
+      <HeaderMobile title="A Expedição" />
       <HeroExpedition title="Islândia<br/> Do sonho à <span>realidade</span>" />
       <Initiatives data={data} id="curiosidades" />
       {!isMobile && (

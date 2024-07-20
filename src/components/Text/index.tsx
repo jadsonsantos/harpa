@@ -4,11 +4,14 @@ import * as S from './styles'
 
 type TextProps = ComponentProps<'p'> & {
   children: React.ReactNode
+  selector?: string
 }
 
-const Text = ({ children }: TextProps) => {
+const Text = ({ children, selector }: TextProps) => {
+  const combinedClassName = selector ? 'text' : `text ${selector}`
+
   if (typeof children !== 'string') {
-    return <S.Text> {children} </S.Text>
+    return <S.Text className={combinedClassName}> {children} </S.Text>
   }
 
   const htmlString =
@@ -17,7 +20,10 @@ const Text = ({ children }: TextProps) => {
       : ''
 
   return (
-    <S.Text className="text" dangerouslySetInnerHTML={{ __html: htmlString }} />
+    <S.Text
+      className={combinedClassName}
+      dangerouslySetInnerHTML={{ __html: htmlString }}
+    />
   )
 }
 

@@ -6,7 +6,11 @@ import Container from '@/patterns/Container'
 import { useState } from 'react'
 import * as S from './styles'
 
-const HeaderMobile = () => {
+interface HeaderMobileProps {
+  title: string
+}
+
+const HeaderMobile = ({ title }: HeaderMobileProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleClick = () => {
@@ -18,7 +22,7 @@ const HeaderMobile = () => {
       <Container>
         <Logo width={10} height={18} imgSrc="harpa-logo-mobile" />
         <S.MenuWrapper onClick={() => handleClick()}>
-          <Text>/ Menu</Text>
+          <Text>/ Menu • {title}</Text>
           {isMenuOpen && <Menu />}
         </S.MenuWrapper>
       </Container>
