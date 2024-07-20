@@ -8,27 +8,33 @@ export const Services = styled.section`
   background: ${colors.background};
   padding: ${spacings.xlarge} 0;
 
-  swiper-container {
+  .swiper-container {
     border-radius: ${borders.medium};
     border: 1px solid ${colors.primary};
     background: ${colors.light};
+    padding: ${spacings.large} ${spacings.small};
   }
 
-  swiper-slide {
-    padding: ${spacings.large} ${spacings.small};
+  .swiper-slide {
     display: flex;
     justify-content: space-between;
     gap: ${spacings.small};
+    transition:
+      opacity,
+      visibility 0.3s ease;
 
     &:not(.swiper-slide-active) {
       opacity: 0 !important;
+      visibility: hidden;
     }
 
     &.swiper-slide-active {
       opacity: 1 !important;
+      visibility: visible;
     }
   }
 
+  .swiper-button-prev,
   .image {
     display: none;
   }
@@ -43,8 +49,11 @@ export const Services = styled.section`
   ${media.desktopUp} {
     padding: ${spacings.xxlarge} 0;
 
-    swiper-slide {
+    .swiper-container {
       padding: ${spacings.large};
+    }
+
+    .swiper-slide {
       gap: 120px;
     }
 
@@ -69,9 +78,18 @@ export const ServicesSubHeading = styled(Text)`
 
 export const ServicesContainer = styled.div`
   max-width: 408px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: ${spacings.medium};
+
+  .heading {
+    margin-bottom: 0;
+  }
 
   ${media.desktopUp} {
     max-width: 570px;
+    gap: ${spacings.large};
   }
 `
 

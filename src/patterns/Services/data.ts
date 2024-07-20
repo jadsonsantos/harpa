@@ -3,8 +3,8 @@ export const slider = [
     title: 'Expedições à Islândia',
     texts: [
       'A Islândia era inicialmente um destino que fazia parte de um programa de ESG desenvolvido pela HÁRPÁ para executivos e líderes de grandes empresas.',
-      'Em um certo dia, decidimos abrir o programa para o público em geral. Desde então, fomos surpreendidos pela imensa quantidade de pessoas que queriam viajar conosco.',
-      'Cada viagem é única e encanta nossos viajantes de um jeito diferente. Mas uma coisa é certa: é unânime o abraço que a Islândia oferece e todas as pessoas voltam diferentes do que quando iniciaram a viagem.'
+      `Em um certo dia, decidimos abrir o programa para o público em geral. Desde então, fomos surpreendidos pela imensa quantidade de pessoas que queriam viajar conosco.
+      Cada viagem é única e encanta nossos viajantes de um jeito diferente. Mas uma coisa é certa: é unânime o abraço que a Islândia oferece e todas as pessoas voltam diferentes do que quando iniciaram a viagem.`
     ],
     image: 'service-1',
     alt: 'Ilustração da expedição'

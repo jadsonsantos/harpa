@@ -1,9 +1,16 @@
-import Heading from '@/components/Heading'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
-import Text from '@/components/Text'
-import useIsDeviceType from '@/utils/useIsDeviceType'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import { EffectFade, Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import Heading from '@/components/Heading'
+import NavigationButtons from '@/components/NavigationButtons'
+import Text from '@/components/Text'
+import useIsDeviceType from '@/utils/useIsDeviceType'
+
 import { slider } from './data'
 import * as S from './styles'
 
@@ -27,14 +34,14 @@ const Slider = () => {
   return (
     <Swiper
       slidesPerView={1}
-      draggable={false}
-      autoplay={true}
-      // navigation={true}
+      loop={true}
+      modules={[Navigation, EffectFade]}
       effect="fade"
+      className="swiper-container"
     >
       {slider.map(({ title, texts, image, alt }) => {
         return (
-          <SwiperSlide key={title} className="slide">
+          <SwiperSlide key={title} className="swiper-slide">
             <Image
               src={`/images/services/${image}-${imageBreakpoint}.png`}
               alt={alt}
@@ -49,6 +56,7 @@ const Slider = () => {
                   return <Text key={text}>{text}</Text>
                 })}
               </S.ServicesText>
+              <NavigationButtons />
             </S.ServicesContainer>
           </SwiperSlide>
         )
