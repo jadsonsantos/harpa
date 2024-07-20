@@ -24,7 +24,8 @@ export const Wrapper = styled.section`
   }
 
   .hall-swiper {
-    margin-top: ${spacings.large};
+    display: flex;
+    flex-direction: column-reverse;
   }
 `
 
@@ -32,9 +33,5 @@ export const HallNavigation = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
-
-export const NavigationWrapper = styled.div`
-  display: flex;
-  gap: ${spacings.medium};
+  margin-bottom: ${spacings.large};
 `
