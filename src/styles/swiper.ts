@@ -6,7 +6,7 @@ const SwiperStyles = createGlobalStyle`
     cursor: pointer;
   }
 
-  .swiper-button-next .arrow {
+  .swiper-button-prev .arrow {
     transform: rotate(180deg);
   }
 `

@@ -36,6 +36,10 @@ export const Wrapper = styled.article`
     .expedition-date {
       color: rgba(255, 255, 255, 0.3);
     }
+
+    .arrow {
+      display: none;
+    }
   }
 
   &:hover {
@@ -47,7 +51,7 @@ export const Wrapper = styled.article`
     }
 
     .expedition-status {
-      display: block;
+      display: flex;
     }
   }
 `
@@ -78,11 +82,23 @@ export const ExpeditionMonth = styled.div`
 
 export const ExpeditionStatus = styled.div`
   display: none;
+  align-items: center;
+  justify-content: space-between;
   font-size: 24px;
   font-weight: 700;
   line-height: 130%; /* 31.2px */
   letter-spacing: -0.24px;
   color: ${colors.light};
+
+  .arrow:hover {
+    .circle {
+      fill: ${colors.light};
+    }
+
+    .path {
+      fill: ${colors.primary};
+    }
+  }
 
   ${media.desktopUp} {
     font-size: 54px;

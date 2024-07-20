@@ -1,3 +1,4 @@
+import Arrow from '@/components/Arrow'
 import * as S from './styles'
 
 interface ExpeditionCardProps {
@@ -21,6 +22,7 @@ const ExpeditionCard = ({ date, isClosed }: ExpeditionCardProps) => {
       </S.ExpeditionMonth>
       <S.ExpeditionStatus className="expedition-status">
         {statusMessage}
+        <Arrow />
       </S.ExpeditionStatus>
       <S.ExpeditionDate className="expedition-date">
         {date.startDate} → {date.endDate} • {date.month.substring(0, 3)}

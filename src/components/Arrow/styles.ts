@@ -1,7 +1,9 @@
-import { colors } from '@/styles/tokens'
+'use client'
 import styled from 'styled-components'
 
 export const Arrow = styled.svg`
+  cursor: pointer;
+
   .circle,
   .path {
     transition: fill 0.5s ease-in-out;
@@ -9,11 +11,11 @@ export const Arrow = styled.svg`
 
   &:hover {
     .circle {
-      fill: ${colors.primary};
+      fill: url(#a);
     }
 
     .path {
-      fill: ${colors.light};
+      fill: #fff;
     }
   }
 `
