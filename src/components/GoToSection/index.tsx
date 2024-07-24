@@ -1,5 +1,5 @@
+import Link from 'next/link'
 import { HoverEffectComponent } from '../HoverEffect'
-import Text from '../Text'
 import * as S from './styles'
 
 interface GoToSectionProps {
@@ -8,11 +8,11 @@ interface GoToSectionProps {
 }
 
 const GoToSection = ({ children, link }: GoToSectionProps) => (
-  <Text>
-    <S.StyledLink href={link}>
+  <S.GoToSection className="go-to-section">
+    <Link href={link}>
       <HoverEffectComponent>{children}</HoverEffectComponent>
-    </S.StyledLink>
-  </Text>
+    </Link>
+  </S.GoToSection>
 )
 
 export default GoToSection

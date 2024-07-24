@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
 import styled from 'styled-components'
+import { Text } from '../Text/styles'
 
-export const StyledLink = styled(Link)``
+export const GoToSection = styled(Text)``

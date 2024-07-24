@@ -27,6 +27,10 @@ export const Wrapper = styled.section`
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .go-to-section {
+    margin-top: ${spacings.large};
+  }
 `
 
 export const HallNavigation = styled(Container)`
