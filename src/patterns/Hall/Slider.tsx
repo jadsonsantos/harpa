@@ -14,19 +14,33 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
   const isTablet = useIsDeviceType('tablet')
   const isDesktop = useIsDeviceType('desktop')
 
-  const slideDimension = () => {
-    if (isDesktop) return 414
-    if (isTablet) return 250
+  const getSlideDimensions = () => {
+    const dimensions = {
+      desktop: { width: 414, height: 300 },
+      tablet: { width: 250, height: 180 },
+      mobile: { width: 240, height: 160 }
+    }
 
-    return 240
+    if (isDesktop) return dimensions.desktop
+    if (isTablet) return dimensions.tablet
+
+    return dimensions.mobile
   }
 
-  const homeSlideDimension = () => {
-    if (isDesktop) return 635
-    if (isTablet) return 340
+  const getHomeSlideDimensions = () => {
+    const dimensions = {
+      desktop: { width: 414, height: 414 },
+      tablet: { width: 250, height: 250 },
+      mobile: { width: 240, height: 240 }
+    }
 
-    return 240
+    if (isDesktop) return dimensions.desktop
+    if (isTablet) return dimensions.tablet
+
+    return dimensions.mobile
   }
+
+  const imageSrc = isDesktop ? '' : 'mobile-'
 
   return (
     <>
@@ -35,9 +49,9 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
         spaceBetween={24}
         centeredSlides={true}
         loop={true}
-        autoplay={{
-          disableOnInteraction: false
-        }}
+        // autoplay={{
+        //   disableOnInteraction: false
+        // }}
         modules={[Autoplay, Navigation]}
         className="hall-swiper"
       >
@@ -49,38 +63,46 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
           {isTablet && <NavigationButtons />}
         </S.HallNavigation>
         {isHome
-          ? testimonials.map((data, i) => (
-              <SwiperSlide
-                key={data.image}
-                style={{ width: `${homeSlideDimension()}px` }}
-              >
-                <Image
-                  src={`/images/hall/hall-home-${data.image}.png`}
-                  alt={`Slide ${i + 1}`}
-                  width={homeSlideDimension()}
-                  height={homeSlideDimension()}
-                  className="image"
-                />
-                <S.SlideDescription>
-                  <Text>{data.name}</Text>
-                  <S.SlideContent>{data.description}</S.SlideContent>
-                </S.SlideDescription>
-              </SwiperSlide>
-            ))
-          : Array.from({ length: 11 }, (_, i) => (
-              <SwiperSlide
-                key={i + 1}
-                style={{ width: `${slideDimension()}px` }}
-              >
-                <Image
-                  src={`/images/hall/hall-${i + 1}.png`}
-                  alt={`Slide ${i + 1}`}
-                  width={slideDimension()}
-                  height={slideDimension()}
-                  className="image"
-                />
-              </SwiperSlide>
-            ))}
+          ? testimonials.map((data, i) => {
+              const dimensions = getHomeSlideDimensions()
+
+              return (
+                <SwiperSlide
+                  key={data.image}
+                  style={{ width: `${dimensions.width}px` }}
+                >
+                  <Image
+                    src={`/images/hall/hall-home-${imageSrc}${data.image}.png`}
+                    alt={`Slide ${i + 1}`}
+                    width={dimensions.width}
+                    height={dimensions.height}
+                    className="image"
+                  />
+                  <S.SlideDescription>
+                    <Text>{data.name}</Text>
+                    <S.SlideContent>{data.description}</S.SlideContent>
+                  </S.SlideDescription>
+                </SwiperSlide>
+              )
+            })
+          : Array.from({ length: 11 }, (_, i) => {
+              const dimensions = getSlideDimensions()
+
+              return (
+                <SwiperSlide
+                  key={i + 1}
+                  style={{ width: `${dimensions.width}px` }}
+                >
+                  <Image
+                    src={`/images/hall/hall-${i + 1}.png`}
+                    alt={`Slide ${i + 1}`}
+                    width={dimensions.width}
+                    height={dimensions.height}
+                    className="image"
+                  />
+                </SwiperSlide>
+              )
+            })}
       </Swiper>
     </>
   )
