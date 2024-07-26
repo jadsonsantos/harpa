@@ -17,22 +17,18 @@ export const Wrapper = styled.section`
 export const Container = styled(LargeContainer)``
 
 export const Content = styled.div`
-  padding: ${spacings.xxlarge} 20px;
+  padding: ${spacings.xxlarge} ${spacings.medium};
   border-radius: 32px;
   background-color: ${colors.dark};
 
   .heading {
-    max-width: 290px;
+    max-width: 390px;
     color: ${colors.light};
     margin: 0 auto 64px;
   }
 
   ${media.tabletUp} {
-    padding: ${spacings.xxlarge} 155px;
-
-    .heading {
-      max-width: 390px;
-    }
+    padding: ${spacings.xxlarge} 0;
   }
 
   ${media.desktopUp} {

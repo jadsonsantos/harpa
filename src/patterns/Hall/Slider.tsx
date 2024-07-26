@@ -29,7 +29,7 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
 
   const getHomeSlideDimensions = () => {
     const dimensions = {
-      desktop: { width: 675, height: 512 },
+      desktop: { width: 635, height: 512 },
       tablet: { width: 340, height: 275 },
       mobile: { width: 240, height: 255 }
     }
