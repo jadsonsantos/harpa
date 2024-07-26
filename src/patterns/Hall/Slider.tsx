@@ -29,9 +29,9 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
 
   const getHomeSlideDimensions = () => {
     const dimensions = {
-      desktop: { width: 414, height: 414 },
-      tablet: { width: 250, height: 250 },
-      mobile: { width: 240, height: 240 }
+      desktop: { width: 675, height: 512 },
+      tablet: { width: 340, height: 275 },
+      mobile: { width: 240, height: 255 }
     }
 
     if (isDesktop) return dimensions.desktop
@@ -40,7 +40,15 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
     return dimensions.mobile
   }
 
-  const imageSrc = isDesktop ? '' : 'mobile-'
+  let imageSrc = ''
+
+  if (isDesktop) {
+    imageSrc = ''
+  } else if (isTablet) {
+    imageSrc = 'tablet-'
+  } else {
+    imageSrc = 'mobile-'
+  }
 
   return (
     <>

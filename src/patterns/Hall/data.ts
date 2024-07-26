@@ -26,13 +26,13 @@ const testimonials = [
     name: `Viviany Nunes Caldeira, arquiteta e urbanista<br>Conheceu a Islândia em 2023`,
     image: '5',
     description:
-      '“A Islândia é um destino imperdível! Fiquei encantada com as paisagens, a natureza surreal e com a mágica aurora boreal. A arquitetura islandesa foi uma inspiração, lindamente se harmoniza com o cenário espetacular do país. Obrigada a HÁRPÁ pelo roteiro, pelos cuidados e principalmente pela organização impecável!”'
+      '“A Islândia é um destino imperdível! A arquitetura islandesa foi uma inspiração, lindamente se harmoniza com o cenário espetacular do país. Obrigada a HÁRPÁ pelo roteiro, pelos cuidados e principalmente pela organização impecável!”'
   },
   {
     name: `Núbia Mota, diretora de marketing da Adobe<br>Conheceu a Islândia em 2021`,
     image: '6',
     description:
-      '“A Islândia foi uma das melhores viagens da minha vida, não apenas pelas paisagens paradisíacas e toda a beleza cultural do país, mas principalmente porquê tive a oportunidade de dividir essa experiência com meus melhores amigos e um grupo de pessoas incríveis, conectadas pelo super Arthur, que orquestrou tudo com maestria!”'
+      '“A Islândia foi uma das melhores viagens da minha vida, não apenas pelas paisagens paradisíacas e toda a beleza cultural do país, mas principalmente porquê tive a oportunidade de dividir essa experiência com meus melhores amigos e um grupo de pessoas incríveis!”'
   }
 ]
 
