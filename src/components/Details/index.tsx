@@ -8,7 +8,7 @@ interface DetailsProps {
 
 const Details = ({ title, description }: DetailsProps) => (
   <S.Details>
-    <S.Summary>
+    <S.Summary className="summary">
       <Text>{title}</Text>
     </S.Summary>
     <S.Content>

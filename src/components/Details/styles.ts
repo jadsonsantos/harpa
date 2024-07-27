@@ -1,22 +1,14 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
-import { spacings } from '@/styles/tokens'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Details = styled.details`
-  margin: ${spacings.small} 0;
+  margin: 0 -${spacings.small};
+  padding: ${spacings.small};
+  border-bottom: 1px solid ${colors.secondary};
 
-  ${media.tabletUp} {
-    margin-bottom: 0;
-  }
-
-  summary:after {
-    content: url('/images/icons/plus.svg');
-    width: 18px;
-    height: 18px;
-  }
-
-  &[open] summary:after {
+  &[open] .summary:after {
     content: url('/images/icons/minus.svg');
   }
 `
@@ -27,7 +19,16 @@ export const Summary = styled.summary`
   justify-content: space-between;
   cursor: pointer;
 
-  p {
+  &:after {
+    content: url('/images/icons/plus.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  .text {
     font-weight: 700;
   }
 
@@ -38,4 +39,8 @@ export const Summary = styled.summary`
 
 export const Content = styled.div`
   margin-top: 24px;
+
+  .text {
+    max-width: 240px;
+  }
 `

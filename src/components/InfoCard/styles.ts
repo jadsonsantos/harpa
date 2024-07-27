@@ -47,6 +47,10 @@ export const Button = styled(PrimaryButton)`
     background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
     padding-left: 15px;
     padding-right: 15px;
+
+    &:hover {
+      color: ${colors.light};
+    }
   }
 
   ${media.desktopUp} {
