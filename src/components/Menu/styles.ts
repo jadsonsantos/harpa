@@ -38,7 +38,7 @@ export const MenuItem = styled.li`
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
-    line-height: 130%; /* 23.4px */
+    line-height: 130%;
     letter-spacing: -0.18px;
 
     &:after {

@@ -56,7 +56,7 @@ const Slider = () => {
                   return <Text key={text}>{text}</Text>
                 })}
               </S.ServicesText>
-              <NavigationButtons />
+              <NavigationButtons hasPrevButton={false} />
             </S.ServicesContainer>
           </SwiperSlide>
         )

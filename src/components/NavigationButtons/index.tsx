@@ -3,23 +3,41 @@ import * as S from './styles'
 
 import { useSwiper } from 'swiper/react'
 
-const NavigationButtons = () => {
+interface NavigationButtonsProps {
+  hasPrevButton?: boolean
+}
+
+const NavigationButtons = ({
+  hasPrevButton = true
+}: NavigationButtonsProps) => {
   const swiper = useSwiper()
 
-  return (
-    <S.NavigationWrapper className="navigation-buttons">
-      <button
+  const PrevButton = () => {
+    return (
+      <S.Button
         className="swiper-button swiper-button-prev"
         onClick={() => swiper.slidePrev()}
       >
         <Arrow />
-      </button>
-      <button
+      </S.Button>
+    )
+  }
+
+  const NextButton = () => {
+    return (
+      <S.Button
         className="swiper-button swiper-button-next"
         onClick={() => swiper.slideNext()}
       >
         <Arrow />
-      </button>
+      </S.Button>
+    )
+  }
+
+  return (
+    <S.NavigationWrapper className="navigation-buttons">
+      {hasPrevButton && <PrevButton />}
+      <NextButton />
     </S.NavigationWrapper>
   )
 }

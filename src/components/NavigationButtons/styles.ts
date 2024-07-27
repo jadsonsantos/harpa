@@ -6,3 +6,7 @@ export const NavigationWrapper = styled.div`
   display: flex;
   gap: ${spacings.medium};
 `
+
+export const Button = styled.button`
+  cursor: pointer;
+`
