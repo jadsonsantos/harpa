@@ -10,14 +10,12 @@ type MenuItemProps = LinkProps & {
 
 const MenuItem = ({ children, href, ...props }: MenuItemProps) => {
   const pathname = usePathname()
-
   const isActive = pathname === href.toString() ? true : false
-
-  const combinedClasses = `link ${isActive ? 'active' : ''}`
+  const isActiveClass = isActive ? 'active' : ''
 
   return (
-    <S.MenuItem>
-      <Link href={href} className={combinedClasses} {...props}>
+    <S.MenuItem className={isActiveClass}>
+      <Link href={href} className={`link ${isActiveClass}`} {...props}>
         <S.MenuItemBar>/ </S.MenuItemBar>
         {children}
       </Link>

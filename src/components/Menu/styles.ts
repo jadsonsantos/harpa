@@ -34,6 +34,10 @@ export const MenuList = styled.ul`
 `
 
 export const MenuItem = styled.li`
+  &.active {
+    display: none;
+  }
+
   .link {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +64,10 @@ export const MenuItem = styled.li`
 
   ${media.tabletUp} {
     padding: 30px 0;
+
+    &.active {
+      display: initial;
+    }
 
     .link {
       transition: font-weight 0.3s ease;
