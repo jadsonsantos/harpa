@@ -12,7 +12,7 @@ export const HomeHeroWrapper = styled(Hero)`
   ${media.tabletUp} {
     background-image: url('/images/hero-home-tablet.jpg');
 
-    h1 {
+    .hero-title {
       max-width: 706px;
     }
   }
@@ -22,7 +22,7 @@ export const HomeHeroWrapper = styled(Hero)`
   }
 
   ${media.largeDesktopUp} {
-    h1 {
+    .hero-title {
       max-width: 1326px;
     }
   }

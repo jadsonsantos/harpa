@@ -19,7 +19,8 @@ export const Summary = styled.summary`
   justify-content: space-between;
   cursor: pointer;
 
-  &:-webkit-details-marker {
+  &:-webkit-details-marker,
+  &::marker {
     display: none;
   }
 
