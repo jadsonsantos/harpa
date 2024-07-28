@@ -86,9 +86,13 @@ export const ExpeditionStatus = styled.div`
   justify-content: space-between;
   font-size: 24px;
   font-weight: 700;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
   letter-spacing: -0.24px;
   color: ${colors.light};
+
+  .custom-link {
+    display: none;
+  }
 
   .arrow:hover {
     .circle {
@@ -103,12 +107,17 @@ export const ExpeditionStatus = styled.div`
   ${media.desktopUp} {
     font-size: 54px;
     letter-spacing: -0.54px;
+
+    .custom-link {
+      display: flex;
+      align-items: center;
+    }
   }
 `
 
 export const ExpeditionDate = styled.h4`
   font-size: 24px;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
   letter-spacing: -0.24px;
 
   ${media.desktopUp} {

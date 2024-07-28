@@ -28,14 +28,20 @@ export const Content = styled.div`
   }
 
   ${media.tabletUp} {
-    padding: ${spacings.xxlarge} 0;
+    padding-top: ${spacings.xxlarge};
+    padding-bottom: ${spacings.xxlarge};
   }
 
-  ${media.desktopUp} {
+  ${media.smallDesktopUp} {
     .heading {
-      max-width: 1290px;
+      max-width: initial;
     }
   }
 `
 
-export const Button = styled(PrimaryButton)``
+export const Button = styled(PrimaryButton)`
+  ${media.mobileDown} {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+  }
+`

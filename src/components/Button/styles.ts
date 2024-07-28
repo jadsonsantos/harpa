@@ -1,4 +1,4 @@
-import { colors } from '@/styles/tokens'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.button`
@@ -8,13 +8,12 @@ export const Wrapper = styled.button`
   border-radius: 60px;
 
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 23.4px */
+  line-height: 130%;
   letter-spacing: -0.18px;
 
   * {
-    padding: 20px 32px;
+    padding: 20px ${spacings.medium};
   }
 `
 

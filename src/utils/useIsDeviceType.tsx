@@ -6,7 +6,7 @@ const useIsDeviceType = (deviceType = 'mobile') => {
   useEffect(() => {
     const mediaQueryList = window.matchMedia(
       `(min-width: ${
-        deviceType === 'tablet' ? 768 : deviceType === 'desktop' ? 1024 : 0
+        deviceType === 'tablet' ? 768 : deviceType === 'desktop' ? 1440 : 0
       }px)`
     )
 

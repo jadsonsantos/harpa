@@ -19,6 +19,10 @@ export const Summary = styled.summary`
   justify-content: space-between;
   cursor: pointer;
 
+  &:-webkit-details-marker {
+    display: none;
+  }
+
   &:after {
     content: url('/images/icons/plus.svg');
     display: flex;
