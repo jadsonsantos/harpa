@@ -3,6 +3,24 @@ import { media } from '@/styles/mediaQueries'
 import { borders, colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
+const colorGray = 'rgba(255, 255, 255, 0.3)'
+const backgroundSuccess = 'linear-gradient(99deg, #2a8181 8.9%, #858b8e 108.6%)'
+const backgroundError =
+  'linear-gradient(103deg, #c6285e -27.04%, #8e2734 78.84%)'
+
+const activeCardStyle = () => `
+  color: ${colors.light};
+
+  .expedition-month {
+    background-color: ${colors.light};
+    color: ${colors.primary};
+  }
+
+  .expedition-status {
+    display: flex;
+  }
+`
+
 export const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
@@ -16,42 +34,45 @@ export const Wrapper = styled.article`
 
   transition: background 0.3s ease;
 
+  ${media.smallDesktopBelow} {
+    ${activeCardStyle()};
+
+    &.open {
+      background: ${backgroundSuccess};
+    }
+
+    &.closed {
+      background: ${backgroundError};
+    }
+  }
+
   ${media.desktopUp} {
     border-radius: ${borders.medium};
     padding: ${spacings.medium};
     height: 290px;
-  }
 
-  &.open:hover {
-    background: linear-gradient(99deg, #2a8181 8.9%, #858b8e 108.6%);
-  }
-
-  &.closed:hover {
-    background: linear-gradient(103deg, #c6285e -27.04%, #8e2734 78.84%);
-
-    .expedition-month {
-      background-color: rgba(255, 255, 255, 0.3);
+    &.open:hover {
+      background: ${backgroundSuccess};
     }
 
-    .expedition-date {
-      color: rgba(255, 255, 255, 0.3);
+    &.closed:hover {
+      background: ${backgroundError};
+
+      .expedition-month {
+        background-color: ${colorGray};
+      }
+
+      .expedition-date {
+        color: ${colorGray};
+      }
+
+      .arrow {
+        display: none;
+      }
     }
 
-    .arrow {
-      display: none;
-    }
-  }
-
-  &:hover {
-    color: ${colors.light};
-
-    .expedition-month {
-      background-color: ${colors.light};
-      color: ${colors.primary};
-    }
-
-    .expedition-status {
-      display: flex;
+    &:hover {
+      ${activeCardStyle()};
     }
   }
 `
