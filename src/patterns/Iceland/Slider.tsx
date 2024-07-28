@@ -1,9 +1,23 @@
 'use client'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
+import useIsDeviceType from '@/utils/useIsDeviceType'
 import Image from 'next/image'
-import { images } from './data'
+
+import { Swiper, SwiperSlide } from '@/components/Swipper'
 
 const Slider = () => {
+  const isTablet = useIsDeviceType('tablet')
+  const isDesktop = useIsDeviceType('desktop')
+
+  let imageVersion = ''
+
+  if (isDesktop) {
+    imageVersion = ''
+  } else if (isTablet) {
+    imageVersion = '-tablet'
+  } else {
+    imageVersion = '-mobile'
+  }
+
   return (
     <Swiper
       slidesPerView={1}
@@ -12,12 +26,12 @@ const Slider = () => {
       autoplay={true}
       effect="fade"
     >
-      {images.map(({ alt, src }) => {
+      {Array.from({ length: 1 }, (_, i) => {
         return (
-          <SwiperSlide key={alt}>
+          <SwiperSlide key={i}>
             <Image
-              src={`/images/${src}.png`}
-              alt={alt}
+              src={`/images/iceland/slider-iceland-${i + 1}${imageVersion}.png`}
+              alt={`Ilustração da expedição ${i + 1}`}
               width={1290}
               height={240}
             />
