@@ -9,7 +9,7 @@ interface DetailsProps {
 const Details = ({ title, description }: DetailsProps) => (
   <S.Details>
     <S.Summary className="summary">
-      <Text>{title}</Text>
+      <S.SummaryTitle>{title}</S.SummaryTitle>
     </S.Summary>
     <S.Content>
       {description.map((desc) => (

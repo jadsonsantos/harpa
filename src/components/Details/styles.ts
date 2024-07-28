@@ -1,28 +1,28 @@
 'use client'
-import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
+import { Text } from '../Text/styles'
 
 export const Details = styled.details`
   margin: 0 -${spacings.small};
   padding: ${spacings.small};
   border-bottom: 1px solid ${colors.secondary};
 
-  &[open] .summary:after {
+  &[open] .summary .text:after {
     content: url('/images/icons/minus.svg');
   }
 `
 
 export const Summary = styled.summary`
+  cursor: pointer;
+  list-style: none;
+`
+
+export const SummaryTitle = styled(Text)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-
-  &:-webkit-details-marker,
-  &::marker {
-    display: none;
-  }
+  font-weight: 700;
 
   &:after {
     content: url('/images/icons/plus.svg');
@@ -31,14 +31,6 @@ export const Summary = styled.summary`
     justify-content: center;
     width: 24px;
     height: 24px;
-  }
-
-  .text {
-    font-weight: 700;
-  }
-
-  ${media.desktopUp} {
-    gap: ${spacings.small};
   }
 `
 
