@@ -16,6 +16,10 @@ export const Details = styled.details`
 export const Summary = styled.summary`
   cursor: pointer;
   list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 `
 
 export const SummaryTitle = styled(Text)`
