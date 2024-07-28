@@ -1,5 +1,6 @@
 'use client'
-import { colors } from '@/styles/tokens'
+import { media } from '@/styles/mediaQueries'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import Hero from '../Hero'
 
@@ -15,5 +16,9 @@ export const HeroExpeditionWrapper = styled(Hero)`
     display: flex;
     align-items: flex-end;
     max-width: fit-content;
+  }
+
+  ${media.tabletUp} {
+    padding-bottom: ${spacings.xxlarge};
   }
 `
