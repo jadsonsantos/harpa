@@ -26,7 +26,7 @@ const Slider = () => {
       autoplay={true}
       effect="fade"
     >
-      {Array.from({ length: 1 }, (_, i) => {
+      {Array.from({ length: 4 }, (_, i) => {
         return (
           <SwiperSlide key={i}>
             <Image
