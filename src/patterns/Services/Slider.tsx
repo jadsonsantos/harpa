@@ -48,6 +48,7 @@ const Slider = () => {
               width={imageDimensions.width}
               height={imageDimensions.height}
               className="image"
+              quality={100}
             />
             <S.ServicesContainer>
               <Heading>{title}</Heading>
