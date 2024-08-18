@@ -2,18 +2,9 @@ import Arrow from '@/components/Arrow'
 import CustomLink from '@/components/CustomLink'
 import { WHATSSAPP_URL } from '@/constants'
 import * as S from './styles'
+import Expedition from '@/types/Expedition'
 
-interface ExpeditionCardProps {
-  isClosed?: boolean
-  date: {
-    startDate: number
-    endDate: number
-    month: string
-    year: number
-  }
-}
-
-const ExpeditionCard = ({ date, isClosed }: ExpeditionCardProps) => {
+const ExpeditionCard = ({ date, isClosed }: Expedition) => {
   const statusMessage = isClosed ? 'Vagas esgotadas :(' : 'Vagas abertas :)'
   const statusClassName = isClosed ? 'closed' : 'open'
 

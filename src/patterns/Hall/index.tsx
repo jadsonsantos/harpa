@@ -11,7 +11,7 @@ interface HallProps {
 const Hall = ({ isHome = false }: HallProps) => (
   <S.Wrapper id="galeria">
     <Container>
-      <Heading>Hall da fama</Heading>
+      <Heading>HÁRPÉIROS</Heading>
     </Container>
     <Slider isHome={isHome} />
     {isHome && (

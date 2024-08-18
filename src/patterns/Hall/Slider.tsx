@@ -65,7 +65,7 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
       >
         <S.HallNavigation>
           <Text>
-            Conheça HARPEIROS que já vivenciaram essa experiência na terra do
+            Conheça HÁRPÉIROS que já vivenciaram essa experiência na terra do
             gelo e do fogo.
           </Text>
           {isTablet && <NavigationButtons />}
