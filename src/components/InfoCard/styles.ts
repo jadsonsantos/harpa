@@ -1,6 +1,6 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
-import { colors, spacings } from '@/styles/tokens'
+import { colors, effects, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { PrimaryButton } from '../Button/styles'
 
@@ -44,7 +44,7 @@ export const Button = styled(PrimaryButton)`
     width: 100%;
     color: ${colors.light};
     border-radius: 60px;
-    background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
+    background: ${effects.primary};
     padding-left: 15px;
     padding-right: 15px;
 

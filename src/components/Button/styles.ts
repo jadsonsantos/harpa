@@ -1,4 +1,4 @@
-import { colors, spacings } from '@/styles/tokens'
+import { colors, effects, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.button`
@@ -12,6 +12,16 @@ export const Wrapper = styled.button`
   line-height: 130%;
   letter-spacing: -0.18px;
 
+  background-color: ${colors.primary};
+  color: ${colors.light};
+  transition:
+    background-color,
+    color 0.3s ease;
+
+  &:hover {
+    background: ${effects.primary};
+  }
+
   * {
     padding: 20px ${spacings.medium};
   }
@@ -22,7 +32,7 @@ export const PrimaryButton = styled(Wrapper)`
   color: ${colors.primary};
 
   &:hover {
-    background: linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%);
+    background: ${effects.primary};
     color: ${colors.light};
   }
 `
