@@ -18,7 +18,8 @@ const expeditions: Expedition[] = [
       endDate: 20,
       month: 'Novembro',
       year: 2024
-    }
+    },
+    isClosed: true
   },
   {
     id: 3,

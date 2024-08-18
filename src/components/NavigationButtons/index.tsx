@@ -17,6 +17,8 @@ const NavigationButtons = ({
       <S.Button
         className="swiper-button swiper-button-prev"
         onClick={() => swiper.slidePrev()}
+        aria-label="Slide anterior"
+        title="Slide anterior"
       >
         <Arrow />
       </S.Button>
@@ -28,6 +30,8 @@ const NavigationButtons = ({
       <S.Button
         className="swiper-button swiper-button-next"
         onClick={() => swiper.slideNext()}
+        aria-label="Proximo slide"
+        title="Proximo slide"
       >
         <Arrow />
       </S.Button>

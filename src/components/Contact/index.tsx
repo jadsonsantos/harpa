@@ -11,7 +11,7 @@ const Contact = () => (
     <Container>
       <Logo width={245} height={40} />
       <S.Address>
-        <Text>Avenida Paulo VI, Sumaré, São Paulo/SP, Brasil</Text>
+        <Text>São Paulo/Reykjavik</Text>
       </S.Address>
       <Text>
         <CustomLink href={WHATSSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>

@@ -10,6 +10,10 @@ export const Container = styled.div`
   padding: 0 24px;
 
   ${media.tabletUp} {
+    padding: 0 32px;
+  }
+
+  ${media.smallDesktopUp} {
     padding: 0 64px;
   }
 `
