@@ -14,9 +14,9 @@ export const data = [
   },
   {
     title:
-      'As atrações mais desejadas da Islândia, com a vantagem de benefícios exclusivos para HARPEIROS',
+      'As atrações mais desejadas da Islândia, com a vantagem de benefícios exclusivos para HÁRPÉIROS',
     description: [
-      'Entre as inúmeras atrações contempladas em nosso itinerário, os viajantes também terão momentos relaxantes e revitalizantes em alguns dos SPAs de águas geotérmicas mais exclusivos do mundo, como o Blue Lagoon e o Sky Lagoon, com horários especiais e benefícios para HARPEIROS.'
+      'Entre as inúmeras atrações contempladas em nosso itinerário, os viajantes também terão momentos relaxantes e revitalizantes em alguns dos SPAs de águas geotérmicas mais exclusivos do mundo, como o Blue Lagoon e o Sky Lagoon, com horários especiais e benefícios para HÁRPÉIROS.'
     ]
   }
 ]

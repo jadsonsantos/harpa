@@ -8,7 +8,7 @@ const Gallery = () => (
       {data.map((data) => (
         <li key={data.alt}>
           <Image
-            src={data.src}
+            src={`/images/gallery/${data.src}`}
             alt={data.alt}
             width={620}
             height={415}
