@@ -26,10 +26,11 @@ const ExpeditionPageContent = () => {
         <>
           <Image
             src={'/images/hero-expedition-middle.png'}
-            alt="Ilustração da expedição"
-            width={1812}
-            height={1210}
+            alt="Ilustração de uma mulher segurando um pedaço de gelo"
+            width={1728}
+            height={823}
             style={{ width: '100%' }}
+            quality={100}
           />
           <Gallery />
         </>
