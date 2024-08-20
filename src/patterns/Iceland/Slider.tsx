@@ -34,6 +34,7 @@ const Slider = () => {
               alt={`Ilustração da expedição ${i + 1}`}
               width={1290}
               height={240}
+              quality={100}
             />
           </SwiperSlide>
         )
