@@ -15,6 +15,7 @@ const Founder = () => {
             alt="Arthur Godoi, fundador da HÁRPÁ"
             width={isMobile ? 250 : 317}
             height={isMobile ? 320 : 408}
+            quality={100}
           />
         </S.FounderImage>
         <div>
