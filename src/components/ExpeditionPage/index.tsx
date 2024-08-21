@@ -17,10 +17,7 @@ const ExpeditionPageContent = () => {
   return (
     <>
       <HeaderMobile title="A Expedição" />
-      <HeroExpedition
-        title="Islândia<br/> Do sonho à <span>realidade</span>"
-        animationId="2"
-      />
+      <HeroExpedition title="Islândia:<br/> selvagemente <span>delicada</span>" />
       <Initiatives data={data} id="curiosidades" />
       {!isMobile && (
         <>

@@ -85,6 +85,7 @@ const Slider = ({ isHome }: { isHome: boolean }) => {
                     width={dimensions.width}
                     height={dimensions.height}
                     className="image"
+                    quality={100}
                   />
                   <S.SlideDescription>
                     <Text>{data.name}</Text>

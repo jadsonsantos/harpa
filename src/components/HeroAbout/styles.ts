@@ -1,10 +1,16 @@
 'use client'
 import styled from 'styled-components'
 import Hero from '../Hero'
-import { colors } from '@/styles/tokens'
+import { media } from '@/styles/mediaQueries'
 
 export const AboutHeroWrapper = styled(Hero)`
-  background-color: ${colors.dark};
-  color: ${colors.light};
-  border-radius: 0px 0px 32px 32px;
+  background-image: url('/images/hero/hero-about-mobile.jpg');
+
+  ${media.tabletUp} {
+    background-image: url('/images/hero/hero-about-tablet.jpg');
+  }
+
+  ${media.desktopUp} {
+    background-image: url('/images/hero/hero-about.jpg');
+  }
 `
