@@ -8,7 +8,7 @@ type TextProps = ComponentProps<'p'> & {
 }
 
 const Text = ({ children, selector }: TextProps) => {
-  const combinedClassName = selector ? 'text' : `text ${selector}`
+  const combinedClassName = selector ? `text ${selector}` : `text`
 
   if (typeof children !== 'string') {
     return <S.Text className={combinedClassName}> {children} </S.Text>
