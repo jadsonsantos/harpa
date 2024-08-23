@@ -9,29 +9,34 @@ const backgroundError =
   'linear-gradient(103deg, #c6285e -27.04%, #8e2734 78.84%)'
 
 const activeCardStyle = () => `
-  color: ${colors.light};
-
-  .expedition-month {
-    background-color: ${colors.light};
-    color: ${colors.primary};
-  }
-
   .expedition-status {
     display: flex;
   }
+
+  .expedition-date {
+    color: ${colors.light};
+  }
 `
 
-export const Wrapper = styled.article`
+export const BaseCard = styled.article`
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
 
   border-radius: ${borders.xsmall};
-  border: 1px solid ${colors.primary};
   padding: ${spacings.small};
   height: 160px;
 
+  ${media.desktopUp} {
+    border-radius: ${borders.medium};
+    padding: ${spacings.medium};
+    height: 290px;
+  }
+`
+
+export const ExpeditionCard = styled(BaseCard)`
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid ${colors.primary};
   transition: background 0.3s ease;
 
   ${media.smallDesktopBelow} {
@@ -47,10 +52,6 @@ export const Wrapper = styled.article`
   }
 
   ${media.desktopUp} {
-    border-radius: ${borders.medium};
-    padding: ${spacings.medium};
-    height: 290px;
-
     &.open:hover {
       background: ${backgroundSuccess};
     }
@@ -86,7 +87,8 @@ export const ExpeditionMonth = styled.div`
   height: 34px;
   padding: 9px 16px;
   border-radius: 100px;
-  border: 1px solid ${colors.primary};
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 
   font-size: 12px;
   line-height: 130%; /* 15.6px */
