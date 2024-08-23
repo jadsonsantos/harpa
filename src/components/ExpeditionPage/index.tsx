@@ -18,7 +18,7 @@ const ExpeditionPageContent = () => {
     <>
       <HeaderMobile title="A Expedição" />
       <HeroExpedition title="Islândia:<br/> selvagemente <span>delicada</span>" />
-      <Initiatives data={data} id="curiosidades" />
+      <Initiatives selector="has-accordion" data={data} id="curiosidades" />
       {!isMobile && (
         <>
           <Image

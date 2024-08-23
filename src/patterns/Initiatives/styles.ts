@@ -11,6 +11,12 @@ export const Wrapper = styled.section`
   ${media.desktopUp} {
     padding: ${spacings.xxlarge} 0;
   }
+
+  &.has-accordion {
+    .content {
+      display: block;
+    }
+  }
 `
 
 export const InitiativesContainer = styled(Container)`
