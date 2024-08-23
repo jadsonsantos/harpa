@@ -8,6 +8,12 @@ import { Container } from '../Container/styles'
 export const Wrapper = styled.section`
   padding: 128px 0;
 
+  ${media.tabletUp} {
+    .illustration {
+      display: block;
+    }
+  }
+
   ${media.desktopUp} {
     padding: 164px 0;
   }
