@@ -6,15 +6,20 @@ import useIsMobile from '@/hooks/isMobile'
 const Founder = () => {
   const isMobile = useIsMobile()
 
+  const image = {
+    width: isMobile ? 250 : 317,
+    height: isMobile ? 320 : 408
+  }
+
   return (
     <S.Wrapper>
       <S.FounderContainer>
         <S.FounderImage>
           <Image
-            src="/images/founder.jpg"
+            src="/images/founder/founder.jpg"
             alt="Arthur Godoi, fundador da HÁRPÁ"
-            width={isMobile ? 250 : 317}
-            height={isMobile ? 320 : 408}
+            width={image.width}
+            height={image.height}
             quality={100}
           />
         </S.FounderImage>
