@@ -43,7 +43,7 @@ const Slider = () => {
         return (
           <SwiperSlide key={title} className="swiper-slide">
             <Image
-              src={`/images/services/${image}-${imageBreakpoint}.png`}
+              src={`/images/services/${image}-${imageBreakpoint}.jpg`}
               alt={alt}
               width={imageDimensions.width}
               height={imageDimensions.height}

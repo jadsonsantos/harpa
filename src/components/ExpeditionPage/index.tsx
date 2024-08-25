@@ -22,7 +22,7 @@ const ExpeditionPageContent = () => {
       {!isMobile && (
         <>
           <Image
-            src={'/images/hero-expedition-middle.png'}
+            src={'/images/hero-expedition-middle.jpg'}
             alt="Ilustração de uma mulher segurando um pedaço de gelo"
             width={1728}
             height={823}
