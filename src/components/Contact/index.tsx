@@ -11,7 +11,7 @@ const Contact = () => (
     <Container>
       <Logo width={245} height={40} />
       <S.Address>
-        <Text>São Paulo/Reykjavik</Text>
+        <Text>São Paulo/Reykjavík</Text>
       </S.Address>
       <Text>
         <CustomLink href={WHATSSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>

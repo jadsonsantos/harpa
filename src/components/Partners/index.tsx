@@ -17,6 +17,7 @@ const Partners = () => {
             alt="Selo de alta qualidade"
             width={163}
             height={202}
+            quality={100}
           />
         )}
         <S.PartnersContent>

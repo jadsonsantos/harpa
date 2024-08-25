@@ -42,7 +42,7 @@ export const hotelsDetails = {
       star: 4,
       link: 'https://www.centerhotels.com/en/hotel-grandi-reykjavik',
       description:
-        'Hotel de alto nível, com excelente café da manhã e a poucos passos do Porto de Reykjavik.'
+        'Hotel de alto nível, com excelente café da manhã e a poucos passos do Porto de Reykjavík.'
     },
     {
       name: 'Midgardur by Center Hotels',

@@ -32,7 +32,7 @@ export const InvestmentList = styled.ul`
   gap: 24px;
   margin-top: 64px;
 
-  ${media.tabletUp} {
+  ${media.largeTabletUp} {
     flex-direction: row;
   }
 `
