@@ -7,15 +7,16 @@ import NextExpeditions from '@/patterns/NextExpeditions'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { Providers } from './providers'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
-const roboto = Roboto({
+const defaultFont = Roboto({
   weight: ['100', '300', '400', '500', '700'],
   style: ['normal'],
   subsets: ['latin']
 })
 
 export const metadata: Metadata = {
-  title: 'HÁRPÁ',
+  title: 'HÁRPÁ | Viagens e expedições exclusivas para a Islândia',
   description:
     'Itinerário mais completo do mercado, experiência exclusiva e intimista, com muita liberdade e aproveitamento em expedições para a Islândia.'
 }
@@ -27,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={roboto.className}>
+      <body className={defaultFont.className}>
         <StyledComponentsRegistry>
           <Providers>
             <Header />
@@ -39,6 +40,7 @@ export default function RootLayout({
           </Providers>
         </StyledComponentsRegistry>
       </body>
+      <GoogleAnalytics />
     </html>
   )
 }
