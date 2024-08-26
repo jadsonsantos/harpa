@@ -20,6 +20,7 @@ const Logo = ({
         alt="Logo da Harpa"
         width={width}
         height={height}
+        priority
       />
     </Link>
   )

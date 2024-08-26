@@ -17,19 +17,17 @@ const ExpeditionPageContent = () => {
   return (
     <>
       <HeaderMobile title="A Expedição" />
-      <HeroExpedition
-        title="Islândia<br/> Do sonho à <span>realidade</span>"
-        animationId="2"
-      />
-      <Initiatives data={data} id="curiosidades" />
+      <HeroExpedition title="Islândia:<br/> selvagemente <span>delicada</span>" />
+      <Initiatives selector="has-accordion" data={data} id="curiosidades" />
       {!isMobile && (
         <>
           <Image
-            src={'/images/hero-expedition-middle.png'}
-            alt="Ilustração da expedição"
-            width={1812}
-            height={1210}
+            src={'/images/hero-expedition-middle.jpg'}
+            alt="Ilustração de uma mulher segurando um pedaço de gelo"
+            width={1728}
+            height={823}
             style={{ width: '100%' }}
+            quality={100}
           />
           <Gallery />
         </>

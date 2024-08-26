@@ -24,6 +24,7 @@ const HomeSlider = () => {
             width={slideDimension()}
             height={slideDimension()}
             className="image"
+            quality={100}
           />
         </SwiperSlide>
       ))}

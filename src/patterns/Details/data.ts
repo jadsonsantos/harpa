@@ -14,9 +14,9 @@ export const data = [
   },
   {
     title:
-      'As atrações mais desejadas da Islândia, com a vantagem de benefícios exclusivos para HARPEIROS',
+      'As atrações mais desejadas da Islândia, com a vantagem de benefícios exclusivos para HÁRPÉIROS',
     description: [
-      'Entre as inúmeras atrações contempladas em nosso itinerário, os viajantes também terão momentos relaxantes e revitalizantes em alguns dos SPAs de águas geotérmicas mais exclusivos do mundo, como o Blue Lagoon e o Sky Lagoon, com horários especiais e benefícios para HARPEIROS.'
+      'Entre as inúmeras atrações contempladas em nosso itinerário, os viajantes também terão momentos relaxantes e revitalizantes em alguns dos SPAs de águas geotérmicas mais exclusivos do mundo, como o Blue Lagoon e o Sky Lagoon, com horários especiais e benefícios para HÁRPÉIROS.'
     ]
   }
 ]
@@ -42,7 +42,7 @@ export const hotelsDetails = {
       star: 4,
       link: 'https://www.centerhotels.com/en/hotel-grandi-reykjavik',
       description:
-        'Hotel de alto nível, com excelente café da manhã e a poucos passos do Porto de Reykjavik.'
+        'Hotel de alto nível, com excelente café da manhã e a poucos passos do Porto de Reykjavík.'
     },
     {
       name: 'Midgardur by Center Hotels',

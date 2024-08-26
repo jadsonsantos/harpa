@@ -71,7 +71,8 @@ const data: InitiativeData[] = [
         ]
       }
     ],
-    hasAccordion: true
+    hasAccordion: true,
+    hasOnlyAccordion: true
   }
 ]
 

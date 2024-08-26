@@ -1,9 +1,11 @@
-import HeaderMobile from '@/components/HeaderMobile'
-import HeroHome from '@/components/HeroHome'
-import Partners from '@/components/Partners'
+import Collab from '@/patterns/Collab'
 import Hall from '@/patterns/Hall'
+import HeroHome from '@/components/HeroHome'
+import HeaderMobile from '@/components/HeaderMobile'
 import Iceland from '@/patterns/Iceland'
+import Partners from '@/components/Partners'
 import Presentation from '@/patterns/Presentation'
+
 import data from './data'
 
 const HomePage = () => (
@@ -12,6 +14,7 @@ const HomePage = () => (
     <HeroHome title="<span>Islândia</span><br/> Terra do gelo e do fogo" />
     <Presentation title={data.title} />
     <Iceland />
+    <Collab />
     <Partners />
     <Hall isHome={true} />
   </>

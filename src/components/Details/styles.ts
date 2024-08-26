@@ -2,14 +2,22 @@
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Text } from '../Text/styles'
+import { media } from '@/styles/mediaQueries'
 
 export const Details = styled.details`
   margin: 0 -${spacings.small};
   padding: ${spacings.small};
   border-bottom: 1px solid ${colors.secondary};
 
-  &[open] .summary .text:after {
-    content: url('/images/icons/minus.svg');
+  &.active {
+    .summary-title:after {
+      content: url('/images/icons/minus.svg');
+    }
+  }
+
+  ${media.tabletUp} {
+    margin: revert;
+    padding-left: 0;
   }
 `
 
@@ -43,5 +51,23 @@ export const Content = styled.div`
 
   .text {
     max-width: 240px;
+
+    &:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
+  }
+
+  ${media.tabletUp} {
+    .text {
+      max-width: 582px;
+      font-size: 16px;
+      letter-spacing: -0.16px;
+    }
+  }
+
+  ${media.desktopUp} {
+    .text {
+      max-width: 716px;
+    }
   }
 `

@@ -39,3 +39,7 @@ export const borders = {
   xlarge: '128px',
   xxlarge: '164px'
 } as const
+
+export const effects = {
+  primary: 'linear-gradient(100deg, #2a8181 8.45%, #858b8e 110.48%)'
+} as const

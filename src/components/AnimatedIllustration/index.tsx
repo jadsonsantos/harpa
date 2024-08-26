@@ -13,7 +13,7 @@ const AnimatedIllustration = ({ name }: AnimatedIllustrationProps) => {
   }, [])
 
   return (
-    <S.Wrapper>
+    <S.Wrapper className="illustration">
       <object
         id="my-svg"
         type="image/svg+xml"

@@ -10,7 +10,7 @@ const Investment = () => (
       <Heading>Valores de todas estas vantagens</Heading>
       <Text>
         O valor disposto abaixo contempla todas as vantagens exclusivas para
-        HARPEIROS.
+        HÁRPÉIROS.
       </Text>
       <S.InvestmentList>
         {data.map((data) => (

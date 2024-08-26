@@ -10,7 +10,7 @@ import { data, presentationTitle } from './data'
 const AboutPage = () => (
   <>
     <HeaderMobile title="Quem somos" />
-    <HeroAbout title="A ideia nasce na vontade do <span>fazer bem feito</span>" />
+    <HeroAbout title="Islândia: <br> do sonho à <span>realidade</span>" />
     <Harpa />
     <Services />
     <Presentation title={presentationTitle} animation="3" />

@@ -4,26 +4,29 @@ import styled from 'styled-components'
 import Hero from '../Hero'
 
 export const HomeHeroWrapper = styled(Hero)`
-  background-image: url('/images/hero-home-mobile.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-image: url('/images/hero/hero-home-mobile.jpg');
+
+  .hero-title {
+    font-size: 64px;
+    letter-spacing: -0.64px;
+  }
 
   ${media.tabletUp} {
-    background-image: url('/images/hero-home-tablet.jpg');
+    background-image: url('/images/hero/hero-home-tablet.jpg');
 
     .hero-title {
-      max-width: 706px;
+      font-size: 124px;
+      letter-spacing: -1.24px;
     }
   }
 
   ${media.desktopUp} {
-    background-image: url('/images/hero-home.jpg');
-  }
+    background-image: url('/images/hero/hero-home.jpg');
+    padding-top: 343px;
 
-  ${media.largeDesktopUp} {
     .hero-title {
-      max-width: 1326px;
+      font-size: 198px;
+      letter-spacing: -1.98px;
     }
   }
 `

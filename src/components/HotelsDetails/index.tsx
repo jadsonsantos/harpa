@@ -2,6 +2,8 @@ import Hotel from '@/types/Hotel'
 import Heading from '../Heading'
 import Text from '../Text'
 import * as S from './styles'
+import Button from '../Button'
+import CustomLink from '../CustomLink'
 
 interface HotelsDetailsProps {
   title: string
@@ -12,7 +14,12 @@ interface HotelsDetailsProps {
 const HotelsDetails = ({ title, description, hotels }: HotelsDetailsProps) => (
   <S.Wrapper>
     <Heading>{title}</Heading>
-    <S.HotelsDetailsContent>
+    <Button>
+      <CustomLink href="https://drive.google.com/file/d/1S5cNwJ-d7SrFRlulMsJTGgXVZ9kOCFvY/view">
+        Confira →
+      </CustomLink>
+    </Button>
+    <S.HotelsDetailsContent style={{ display: 'none' }}>
       <S.Presentation>
         {description.map((desc) => (
           <Text key={desc}>{desc}</Text>

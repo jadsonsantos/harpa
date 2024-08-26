@@ -24,7 +24,7 @@ export const IcelandText = styled.article`
   gap: ${spacings.medium};
   margin: ${spacings.large} 0;
 
-  ${media.tabletUp} {
+  ${media.largeTabletUp} {
     flex-direction: row;
     gap: ${spacings.small};
   }

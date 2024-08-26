@@ -8,11 +8,17 @@ interface InitiativesProps {
   data: InitiativeData[]
   id?: string
   animation?: string
+  selector?: string
 }
 
-const Initiatives = ({ data, id, animation = '4' }: InitiativesProps) => {
+const Initiatives = ({
+  data,
+  id,
+  animation = '4',
+  selector = ''
+}: InitiativesProps) => {
   return (
-    <S.Wrapper id={id}>
+    <S.Wrapper id={id} className={selector}>
       <S.InitiativesContainer>
         <AnimatedIllustration name={animation} />
         <S.InitiativesText>

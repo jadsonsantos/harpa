@@ -19,4 +19,5 @@ export interface InitiativeData {
   description?: string[]
   cta?: CTA
   hasAccordion?: boolean // Opcional, pois nem todos os itens têm accordion
+  hasOnlyAccordion?: boolean
 }

@@ -12,22 +12,24 @@ const TextGrid = ({
   description,
   content,
   cta,
-  hasAccordion
+  hasAccordion,
+  hasOnlyAccordion
 }: InitiativeData) => {
   const isMobile = useIsMobile()
 
   return (
     <S.TextGrid>
       <Heading>{title}</Heading>
-      <S.Content>
+      <S.Content className="content">
         {content &&
-          content.map(({ title, description }) => {
-            if (isMobile && hasAccordion) {
+          content.map(({ title, description }, index) => {
+            if ((isMobile && hasAccordion) || hasOnlyAccordion) {
               return (
                 <Details
                   key={title}
                   title={title || ''}
                   description={description}
+                  isOpenByDefault={index === 0}
                 />
               )
             }
