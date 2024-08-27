@@ -7,7 +7,7 @@ const data: InitiativeData[] = [
       {
         title: 'População familiar',
         description: [
-          `Apenas 360 mil habitantes vivem em uma ilha com mais de 100 mil km2. Para se ter uma ideia, trata-se de uma população menor do que a cidade de Florianópolis, em uma ilha 200 vezes maior que a ilha de Santa Catarina.`,
+          `Apenas 360 mil habitantes vivem em uma ilha com mais de 100 mil km². Para se ter uma ideia, trata-se de uma população menor do que a cidade de Florianópolis, em uma ilha 200 vezes maior que a ilha de Santa Catarina.`,
           `A capital Reykjavík é a maior cidade da ilha e possui uma população semelhante à de uma cidade do interior, fazendo com que praticamente todo mundo se conheça e, em algum grau, seja parente. Isso ocorreu porque os casamentos se limitaram aos habitantes da própria ilha.`
         ]
       },
