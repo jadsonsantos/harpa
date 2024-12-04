@@ -28,7 +28,8 @@ const expeditions: Expedition[] = [
       endDate: 10,
       month: 'Março',
       year: 2025
-    }
+    },
+    isClosed: true
   },
   {
     id: 4,
