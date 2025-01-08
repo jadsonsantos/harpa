@@ -21,6 +21,7 @@ const Collab = () => (
             <Image
               src={`/images/collab/collab-${item.src}`}
               alt={item.alt}
+              title={item.alt}
               width={item.width}
               height={item.height}
               quality={100}
