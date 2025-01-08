@@ -2,11 +2,15 @@
 import { ComponentProps } from 'react'
 import * as S from './styles'
 
-type HeadingProps = ComponentProps<'h3'>
+type HeadingProps = ComponentProps<'h3'> & {
+  selector?: string
+}
 
-const Heading = ({ children }: HeadingProps) => {
+const Heading = ({ children, selector }: HeadingProps) => {
+  const customClass = `heading ${selector}`
+
   if (typeof children !== 'string') {
-    return <S.Heading> {children} </S.Heading>
+    return <S.Heading className={customClass}> {children} </S.Heading>
   }
 
   const htmlString =
@@ -16,7 +20,7 @@ const Heading = ({ children }: HeadingProps) => {
 
   return (
     <S.Heading
-      className="heading"
+      className={customClass}
       dangerouslySetInnerHTML={{ __html: htmlString }}
     />
   )
