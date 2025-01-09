@@ -3,7 +3,7 @@ import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  padding: 128px 0;
+  padding: 0 0 128px;
   background-color: ${colors.background};
 
   .japan-title {
@@ -28,7 +28,7 @@ export const Wrapper = styled.section`
   }
 
   ${media.tabletUp} {
-    padding: 164px 0;
+    padding: 128px 0;
 
     .japan-text {
       max-width: 340px;
@@ -36,6 +36,8 @@ export const Wrapper = styled.section`
   }
 
   ${media.desktopUp} {
+    padding: 164px 0;
+
     .japan-text {
       max-width: 414px;
     }
