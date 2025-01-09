@@ -1,4 +1,5 @@
 interface Expedition {
+  country?: string
   id: number
   isClosed?: boolean
   date: {

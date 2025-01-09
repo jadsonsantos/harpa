@@ -4,8 +4,11 @@ import { WHATSSAPP_URL } from '@/constants'
 import * as S from './styles'
 import Expedition from '@/types/Expedition'
 
-const ExpeditionCard = ({ date, isClosed }: Expedition) => {
-  const statusMessage = isClosed ? 'Vagas esgotadas :(' : 'Vagas abertas :)'
+const ExpeditionCard = ({ date, isClosed, country }: Expedition) => {
+  const statusMessage = isClosed
+    ? 'Vagas esgotadas :('
+    : `Vagas abertas ${country} :)`
+
   const statusClassName = isClosed ? 'closed' : 'open'
 
   return (
@@ -19,8 +22,11 @@ const ExpeditionCard = ({ date, isClosed }: Expedition) => {
           <Arrow />
         </CustomLink>
       </S.ExpeditionStatus>
+      <S.ExpeditionCountry className="expedition-country">
+        {country}
+      </S.ExpeditionCountry>
       <S.ExpeditionDate className="expedition-date">
-        {date.startDate} → {date.endDate} • {date.month.substring(0, 3)}
+        {date.startDate} → {date.endDate} • {date.month}
       </S.ExpeditionDate>
     </S.ExpeditionCard>
   )

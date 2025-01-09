@@ -74,7 +74,25 @@ export const ExpeditionCard = styled(BaseCard)`
 
     &:hover {
       ${activeCardStyle()};
+
+      .expedition-country {
+        display: none;
+      }
     }
+  }
+`
+
+export const ExpeditionCountry = styled.h3`
+  display: none;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.16px;
+  color: ${colors.dark};
+
+  ${media.desktopUp} {
+    display: block;
+    font-size: 48px;
+    line-height: 62.4px;
   }
 `
 
@@ -128,7 +146,7 @@ export const ExpeditionStatus = styled.div`
   }
 
   ${media.desktopUp} {
-    font-size: 54px;
+    font-size: 46px;
     letter-spacing: -0.54px;
 
     .custom-link {

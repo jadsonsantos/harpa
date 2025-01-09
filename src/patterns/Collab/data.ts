@@ -1,25 +1,25 @@
 const images = [
   {
     src: '1.png',
-    alt: 'Collab 1',
+    alt: 'Blue Lagoon',
     width: 210,
     height: 94
   },
   {
     src: '2.png',
-    alt: 'Collab 2',
+    alt: 'Mundo Terra',
     width: 233,
     height: 65
   },
   {
     src: '3.png',
-    alt: 'Collab 3',
+    alt: 'Kailash',
     width: 126,
     height: 100
   },
   {
     src: '4.png',
-    alt: 'Collab 4',
+    alt: 'Petite Jolie',
     width: 146,
     height: 66
   }
