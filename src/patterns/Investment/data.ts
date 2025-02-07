@@ -23,10 +23,9 @@ const data = [
   {
     title: 'Investimento',
     description: [
-      '<strong>R$ 17.000,00 (dezessete mil reais)*.</strong>',
+      '<strong>R$ 18.500,00 (dezoito mil e quinhentos reais).</strong>',
       'À vista, com desconto, ou parcelado em até 5 parcelas, sujeito à taxas aderentes ao parcelamento.',
-      'Para o parcelamento, é necessário que a última parcela seja compensada até 40 dias antes do embarque.',
-      '<i>*Valor válido para fechamento de contratos no ano de 2024. A partir de 2025, o valor passará a ser de R$ 18.500,00 (dezoito mil e quinhentos reais).</i>'
+      'Para o parcelamento, é necessário que a última parcela seja compensada até 40 dias antes do embarque.'
     ],
     icon: '🤞'
   }
