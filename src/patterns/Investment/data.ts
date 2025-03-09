@@ -23,7 +23,7 @@ const data = [
   {
     title: 'Investimento',
     description: [
-      '<strong>R$ 18.500,00 (dezoito mil e quinhentos reais).</strong>',
+      '<strong>R$ 19.500,00 (dezenove mil e quinhentos reais).</strong>',
       'À vista, com desconto, ou parcelado em até 5 parcelas, sujeito à taxas aderentes ao parcelamento.',
       'Para o parcelamento, é necessário que a última parcela seja compensada até 40 dias antes do embarque.'
     ],
