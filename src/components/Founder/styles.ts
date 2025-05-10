@@ -4,6 +4,10 @@ import { Container } from '../../patterns/Container/styles'
 
 export const Wrapper = styled.section`
   padding: 128px 0;
+
+  ${media.desktopUp} {
+    padding: 164px 0;
+  }
 `
 
 export const FounderContainer = styled(Container)`

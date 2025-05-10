@@ -6,12 +6,7 @@ import styled from 'styled-components'
 import { PrimaryButton } from '../Button/styles'
 
 export const Wrapper = styled.section`
-  padding-top: 128px;
   text-align: center;
-
-  ${media.desktopUp} {
-    padding-top: 164px;
-  }
 `
 
 export const Container = styled(LargeContainer)``
