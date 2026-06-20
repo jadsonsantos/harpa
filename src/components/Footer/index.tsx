@@ -1,5 +1,6 @@
 'use client'
-import Container from '../../patterns/Container'
+import Container from '@/patterns/Container'
+import Link from 'next/link'
 import * as S from './styles'
 
 const Footer = () => {
@@ -8,7 +9,10 @@ const Footer = () => {
   return (
     <S.Wrapper>
       <Container>
-        <p>Copyright ©️ {currentYear} HÁRPÁ • Todos os direitos reservados.</p>
+        <p>
+          Copyright © {currentYear} HÁRPÁ • Todos os direitos reservados •{' '}
+          <Link href="/politica-de-privacidade">Política de Privacidade</Link>
+        </p>
       </Container>
     </S.Wrapper>
   )
