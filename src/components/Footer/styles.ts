@@ -1,23 +1,27 @@
-import styled from 'styled-components'
-import { colors } from '@/styles/tokens'
 import { media } from '@/styles/mediaQueries'
+import { colors } from '@/styles/tokens'
+import styled from 'styled-components'
 
 export const Wrapper = styled.footer`
-  padding: 30px 0 30px;
-  background-color: ${colors.background};
-  color: ${colors.secondary};
+  border-top: 1px solid ${colors.border};
+  padding: 20px 0;
+  color: ${colors.primary};
   text-align: center;
-  font-size: 12px;
-  line-height: 130%; /* 15.6px */
-  letter-spacing: -0.12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   ${media.tabletUp} {
-    font-size: 16px;
-    letter-spacing: -0.16px;
+    padding: 20px 0 32px;
   }
 
   ${media.desktopUp} {
-    font-size: 18px;
-    letter-spacing: -0.18px;
+    padding: 20px 0 14px;
   }
 `

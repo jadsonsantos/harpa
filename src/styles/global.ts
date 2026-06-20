@@ -1,6 +1,7 @@
 'use client'
 
 import { createGlobalStyle } from 'styled-components'
+import { fonts } from './tokens'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -18,8 +19,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 82px;
+    font-family: ${fonts.sans};
   }
 
   h3, h4 {

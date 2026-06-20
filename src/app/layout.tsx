@@ -1,12 +1,8 @@
 import StyledComponentsRegistry from '@/lib/registry'
-import { Roboto } from 'next/font/google'
+import { inter, playfairDisplay } from '@/styles/fonts'
 import { Providers } from './providers'
 
-const defaultFont = Roboto({
-  weight: ['100', '300', '400', '500', '700'],
-  style: ['normal'],
-  subsets: ['latin']
-})
+const fonts = `${inter.variable} ${playfairDisplay.variable}`
 
 export default function RootLayout({
   children,
@@ -15,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={defaultFont.className}>
+      <body className={fonts}>
         <StyledComponentsRegistry>
           <Providers>
             {children}

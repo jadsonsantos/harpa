@@ -1,7 +1,7 @@
 'use client'
 
 export const colors = {
-  primary: '#000000',
+  primary: '#1F1F1F',
   secondary: '#818181',
   success: '#28a745',
   info: '#17a2b8',
@@ -10,12 +10,13 @@ export const colors = {
   light: '#ffffff',
   dark: '#000000',
   background: '#fafafa',
-  text: '#333333'
+  text: '#333333',
+  border: '#DFDFDF'
 } as const
 
 export const fonts = {
-  sans: 'Roboto, Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif'
+  sans: 'var(--font-inter), Arial, Helvetica, sans-serif',
+  serif: 'var(--font-playfair), Georgia, serif'
 } as const
 
 export const spacings = {
