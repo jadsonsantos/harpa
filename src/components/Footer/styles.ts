@@ -3,26 +3,25 @@ import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.footer`
+  border-top: 1px solid ${colors.border};
+  padding: 20px 0;
   color: ${colors.primary};
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
 
-  p {
-    padding: 20px 0;
-    border-top: 1px solid ${colors.border};
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ${media.tabletUp} {
-    p {
-      padding: 20px 0 32px;
-    }
+    padding: 20px 0 32px;
   }
 
   ${media.desktopUp} {
-    p {
-      padding: 20px 0 14px;
-    }
+    padding: 20px 0 14px;
   }
 `
