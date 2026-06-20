@@ -19,7 +19,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 82px;
   }
 
   h3, h4 {
