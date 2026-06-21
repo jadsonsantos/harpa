@@ -5,17 +5,15 @@ import { Providers } from './providers'
 const fonts = `${inter.variable} ${playfairDisplay.variable}`
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body className={fonts}>
+    <html className={fonts}>
+      <body>
         <StyledComponentsRegistry>
-          <Providers>
-            {children}
-          </Providers>
+          <Providers>{children}</Providers>
         </StyledComponentsRegistry>
       </body>
     </html>
