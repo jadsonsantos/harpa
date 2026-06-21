@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import News from '@/components/News'
 import { routing } from '@/i18n/routing'
+import StyledComponentsRegistry from '@/lib/registry'
+import { inter, playfairDisplay } from '@/styles/fonts'
 import { NextIntlClientProvider } from 'next-intl'
 import {
   getMessages,
@@ -10,12 +12,17 @@ import {
   setRequestLocale
 } from 'next-intl/server'
 import { notFound } from 'next/navigation'
+import { Providers } from '../providers'
 
 export async function generateMetadata({
   params: { locale }
 }: {
   params: { locale: string }
 }) {
+  if (!(routing.locales as readonly string[]).includes(locale)) {
+    notFound()
+  }
+
   const t = await getTranslations({ locale, namespace: 'Metadata' })
 
   return {
@@ -45,13 +52,23 @@ export default async function LocaleLayout({
 
   const messages = await getMessages()
 
+  const fonts = `${inter.variable} ${playfairDisplay.variable}`
+
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <Header />
-      {children}
-      <News />
-      <Contact />
-      <Footer />
-    </NextIntlClientProvider>
+    <html lang={locale} className={fonts}>
+      <body>
+        <StyledComponentsRegistry>
+          <Providers>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              <Header />
+              {children}
+              <News />
+              <Contact />
+              <Footer />
+            </NextIntlClientProvider>
+          </Providers>
+        </StyledComponentsRegistry>
+      </body>
+    </html>
   )
 }
