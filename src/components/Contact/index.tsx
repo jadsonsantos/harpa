@@ -1,5 +1,5 @@
 'use client'
-import { INSTAGRAM_URL, INSTAGRAM_USERNAME, WHATSSAPP_URL } from '@/constants'
+import { INSTAGRAM_URL, INSTAGRAM_USERNAME, WHATSAPP_URL } from '@/constants'
 import useIsMobile from '@/hooks/isMobile'
 import { useTranslations } from 'next-intl'
 import Container from '../../patterns/Container'
@@ -31,16 +31,16 @@ const Contact = () => {
   const t = useTranslations('Contact')
 
   const isMobileView = useIsMobile()
-  const logoWidht = isMobileView ? 147 : 245
+  const logoWidth = isMobileView ? 147 : 245
   const logoHeight = isMobileView ? 24 : 40
 
   return (
     <S.Wrapper>
       <Container>
-        <Logo width={logoWidht} height={logoHeight} />
+        <Logo width={logoWidth} height={logoHeight} />
         <S.Address>{t('address')}</S.Address>
         <S.Phone>
-          <CustomLink href={WHATSSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>
+          <CustomLink href={WHATSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>
         </S.Phone>
         <S.InstagramLink href={INSTAGRAM_URL}>
           <InstagramIcon />

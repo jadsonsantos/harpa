@@ -1,8 +1,8 @@
 import Arrow from '@/components/Arrow'
 import CustomLink from '@/components/CustomLink'
-import { WHATSSAPP_URL } from '@/constants'
-import * as S from './styles'
+import { WHATSAPP_URL } from '@/constants'
 import Expedition from '@/types/Expedition'
+import * as S from './styles'
 
 const ExpeditionCard = ({ date, isClosed, country }: Expedition) => {
   const statusMessage = isClosed
@@ -18,7 +18,7 @@ const ExpeditionCard = ({ date, isClosed, country }: Expedition) => {
       </S.ExpeditionMonth>
       <S.ExpeditionStatus className="expedition-status">
         {statusMessage}
-        <CustomLink href={WHATSSAPP_URL}>
+        <CustomLink href={WHATSAPP_URL}>
           <Arrow />
         </CustomLink>
       </S.ExpeditionStatus>
