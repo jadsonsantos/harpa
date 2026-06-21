@@ -1,4 +1,4 @@
-import { WHATSSAPP_URL } from '@/constants'
+import { WHATSAPP_URL } from '@/constants'
 import { InitiativeData } from '@/types'
 
 export const data: InitiativeData[] = [
@@ -44,7 +44,7 @@ export const data: InitiativeData[] = [
     ],
     cta: {
       text: 'ENTRE EM CONTATO E SAIBA MAIS >',
-      href: WHATSSAPP_URL
+      href: WHATSAPP_URL
     },
     hasAccordion: true
   },
@@ -60,7 +60,7 @@ export const data: InitiativeData[] = [
     ],
     cta: {
       text: 'ENTRE EM CONTATO E SAIBA MAIS >',
-      href: WHATSSAPP_URL
+      href: WHATSAPP_URL
     }
   },
   {
@@ -75,7 +75,7 @@ export const data: InitiativeData[] = [
     ],
     cta: {
       text: 'ENTRE EM CONTATO >',
-      href: WHATSSAPP_URL
+      href: WHATSAPP_URL
     }
   }
 ]

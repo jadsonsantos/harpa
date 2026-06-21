@@ -1,12 +1,12 @@
 'use client'
+import GoToSection from '@/components/GoToSection'
 import Heading from '@/components/Heading'
+import Text from '@/components/Text'
+import { WHATSAPP_URL } from '@/constants'
+import useIsDeviceType from '@/utils/useIsDeviceType'
+import Image from 'next/image'
 import Container from '../Container'
 import * as S from './styles'
-import Text from '@/components/Text'
-import Image from 'next/image'
-import { WHATSSAPP_URL } from '@/constants'
-import GoToSection from '@/components/GoToSection'
-import useIsDeviceType from '@/utils/useIsDeviceType'
 
 const Japan = () => {
   const isTablet = useIsDeviceType('tablet')
@@ -45,7 +45,7 @@ const Japan = () => {
           quality={100}
           className="japan-image"
         />
-        <GoToSection link={WHATSSAPP_URL} isExternal selector="japan-cta">
+        <GoToSection link={WHATSAPP_URL} isExternal selector="japan-cta">
           ENTRE EM CONTATO E SAIBA MAIS {'>'}
         </GoToSection>
       </Container>
