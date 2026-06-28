@@ -3,9 +3,15 @@ import { media } from '@/styles/mediaQueries'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
+export const Nav = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 40px;
+`
+
 export const Header = styled.header`
   display: none;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

@@ -20,6 +20,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: ${fonts.sans};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h3, h4 {

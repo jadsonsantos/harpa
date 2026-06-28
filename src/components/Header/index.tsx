@@ -1,6 +1,7 @@
 'use client'
-import Logo from '@/components/Logo'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 import Menu from '@/components/Menu'
+import Logo from '@/components/ui/Logo'
 import Container from '@/patterns/Container'
 import * as S from './styles'
 
@@ -9,7 +10,10 @@ const Header = () => {
     <S.Header>
       <Container>
         <Logo />
-        <Menu />
+        <S.Nav>
+          <Menu />
+          <LanguageSwitcher />
+        </S.Nav>
       </Container>
     </S.Header>
   )
