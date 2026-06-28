@@ -5,17 +5,15 @@ interface LogoProps {
   width?: number
   height?: number
   imgSrc?: string
-  locale?: string
 }
 
 const Logo = ({
   width = 245,
   height = 40,
-  imgSrc = 'harpa-logo',
-  locale
+  imgSrc = 'harpa-logo'
 }: LogoProps) => {
   return (
-    <S.LogoLink href={`/${locale ?? 'pt'}`}>
+    <S.LogoLink href={`/`}>
       <S.LogoImage
         src={`/images/${imgSrc}.svg`}
         alt="Logo da Harpa"

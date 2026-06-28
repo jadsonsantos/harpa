@@ -6,14 +6,13 @@ import { BackLabel, BackLink } from './styles'
 
 interface BackButtonProps {
   href: string
-  locale: string
 }
 
-export function BackButton({ href, locale }: BackButtonProps) {
+export function BackButton({ href }: BackButtonProps) {
   const t = useTranslations('common')
 
   return (
-    <BackLink href={`/${locale}${href}`}>
+    <BackLink href={`/${href}`}>
       <ArrowLeftIcon />
       <BackLabel>{t('back')}</BackLabel>
     </BackLink>

@@ -8,17 +8,15 @@ import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'
 import * as S from './styles'
 
-interface ContactClientProps {
-  locale: string
-}
+interface ContactClientProps {}
 
-export function ContactClient({ locale }: ContactClientProps) {
+export function ContactClient({}: ContactClientProps) {
   const t = useTranslations('Contact')
 
   return (
     <S.Wrapper>
       <Container>
-        <Logo locale={locale} />
+        <Logo />
         <S.Address>{t('address')}</S.Address>
         <S.Phone>
           <CustomLink href={WHATSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>
