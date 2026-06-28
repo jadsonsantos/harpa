@@ -1,12 +1,17 @@
 'use client'
 
+import CustomLink from '@/components/CustomLink'
+import { Text } from '@/components/Text/styles'
+import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
-import CustomLink from '../CustomLink'
-import { Text } from '../Text/styles'
 
 export const Wrapper = styled.section`
   padding: 100px 0;
   text-align: center;
+
+  ${media.tabletUp} {
+    padding-top: 60px;
+  }
 `
 
 export const Address = styled(Text).attrs({ as: 'address' })`

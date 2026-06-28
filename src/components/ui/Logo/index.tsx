@@ -1,28 +1,29 @@
 'use client'
-import Image from 'next/image'
-import Link from 'next/link'
+import * as S from './styles'
 
 interface LogoProps {
   width?: number
   height?: number
   imgSrc?: string
+  locale?: string
 }
 
 const Logo = ({
-  width = 147,
-  height = 24,
-  imgSrc = 'harpa-logo'
+  width = 245,
+  height = 40,
+  imgSrc = 'harpa-logo',
+  locale
 }: LogoProps) => {
   return (
-    <Link href="/" title="Ir para a home do site">
-      <Image
+    <S.LogoLink href={`/${locale ?? 'pt'}`}>
+      <S.LogoImage
         src={`/images/${imgSrc}.svg`}
         alt="Logo da Harpa"
         width={width}
         height={height}
         priority
       />
-    </Link>
+    </S.LogoLink>
   )
 }
 

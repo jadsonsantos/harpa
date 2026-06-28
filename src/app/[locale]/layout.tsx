@@ -1,9 +1,9 @@
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import News from '@/components/News'
 import { routing } from '@/i18n/routing'
 import StyledComponentsRegistry from '@/lib/registry'
+import Contact from '@/patterns/Contact'
 import { inter, playfairDisplay } from '@/styles/fonts'
 import { NextIntlClientProvider } from 'next-intl'
 import {
