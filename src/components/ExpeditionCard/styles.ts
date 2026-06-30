@@ -24,7 +24,7 @@ export const BaseCard = styled.article`
 
   border-radius: ${borders.xsmall};
   padding: ${spacings.small};
-  height: 160px;
+  height: 250px;
 
   ${media.desktopUp} {
     border-radius: ${borders.medium};

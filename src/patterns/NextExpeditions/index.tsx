@@ -1,24 +1,49 @@
-import ExpeditionCard from '@/components/ExpeditionCard'
-import Heading from '@/components/Heading'
-import PrivateCard from '@/components/PrivateCard'
-
+import ExpeditionHighlightCard from '@/components/ExpeditionHighlightCard'
+import { Tag } from '@/components/ui/Tag'
+import { WHATSAPP_URL } from '@/constants'
 import Container from '@/patterns/Container'
-
-import expeditions from './data'
+import { useTranslations } from 'next-intl'
 import * as S from './styles'
 
-const NextExpeditions = () => (
-  <S.Wrapper>
-    <Container>
-      <Heading>Próximas expedições</Heading>
-      <S.NextExpeditionsContainer>
-        {expeditions.map((expedition) => (
-          <ExpeditionCard key={expedition.id} {...expedition} />
-        ))}
-        <PrivateCard />
-      </S.NextExpeditionsContainer>
-    </Container>
-  </S.Wrapper>
-)
+const NextExpeditions = () => {
+  const t = useTranslations('NextExpeditions')
+
+  return (
+    <S.Wrapper>
+      <Container>
+        <S.TagWrapper>
+          <Tag>{t('tag')}</Tag>
+        </S.TagWrapper>
+        <S.ExpeditionHeading>
+          {t.rich('heading', {
+            span: (chunks) => <span>{chunks}</span>,
+            i: (chunks) => <i>{chunks}</i>
+          })}
+        </S.ExpeditionHeading>
+        <S.Coordinates>
+          {t('coordinatesDMS')} <br /> / 64.1475, -21.935
+        </S.Coordinates>
+        <S.NextExpeditionsContainer>
+          <ExpeditionHighlightCard
+            variant="light"
+            title={t('groupsTitle')}
+            buttonLabel={t('buttonLabel')}
+            href="/expedicoes"
+            tags={[t('groupsTag1'), t('groupsTag2')]}
+          />
+
+          <ExpeditionHighlightCard
+            variant="dark"
+            title="Private"
+            subtitle={t('privateSubtitle')}
+            buttonLabel={t('buttonLabel')}
+            href={WHATSAPP_URL}
+            tags={[t('privateTag1')]}
+          />
+        </S.NextExpeditionsContainer>
+      </Container>
+    </S.Wrapper>
+  )
+}
 
 export default NextExpeditions

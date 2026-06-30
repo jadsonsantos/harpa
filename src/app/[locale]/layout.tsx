@@ -1,6 +1,5 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import News from '@/components/News'
 import { routing } from '@/i18n/routing'
 import StyledComponentsRegistry from '@/lib/registry'
 import Contact from '@/patterns/Contact'
@@ -61,8 +60,7 @@ export default async function LocaleLayout({
           <Providers>
             <NextIntlClientProvider locale={locale} messages={messages}>
               <Header />
-              {children}
-              <News />
+              <main>{children}</main>
               <Contact />
               <Footer />
             </NextIntlClientProvider>
