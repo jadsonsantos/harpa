@@ -4,13 +4,18 @@ import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
 export const Text = styled.p`
-  line-height: 130%;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 23.4px;
   font-style: normal;
-  letter-spacing: -0.16px;
+  font-weight: 400;
+`
+
+export const TextSmall = styled(Text)`
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 
   ${media.desktopUp} {
-    font-size: 18px;
-    letter-spacing: -0.18px;
+    font-size: 15px;
   }
 `

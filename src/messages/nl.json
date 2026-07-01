@@ -1,4 +1,7 @@
 {
+  "common": {
+    "back": "Terug"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Kortom... Overal."
   },
@@ -6,8 +9,78 @@
     "title": "HÁRPÁ | Exclusieve reizen en expedities naar IJsland",
     "description": "Het meest complete reisschema op de markt, een exclusieve en intieme ervaring, met veel vrijheid en volop genieten tijdens expedities naar IJsland."
   },
+  "NextExpeditions": {
+    "tag": "EXPEDITIES",
+    "heading": "<span>Reizen</span> die ooit <i>dromen</i> waren",
+    "coordinatesDMS": "64°08′51′′N 21°56′06′′W",
+    "groupsTitle": "Groepen",
+    "buttonLabel": "Meer informatie",
+    "groupsTag1": "Groepen",
+    "groupsTag2": "Beperkte plaatsen",
+    "privateSubtitle": "/ Jij droomt. Wij creëren.",
+    "privateTag1": "Op maat"
+  },
   "Footer": {
     "copyright": "Copyright © {year} HÁRPÁ • Alle rechten voorbehouden",
     "privacyPolicy": "Privacybeleid"
+  },
+  "NotFound": {
+    "titleLine1": "De <em>pagina</em> die u zoekt",
+    "titleLine2": "is <span>niet gevonden.</span>",
+    "subtitle": "Mogelijk heeft u het adres verkeerd getypt of is de pagina verwijderd.",
+    "button": "Startpagina"
+  },
+  "PrivacyPolicy": {
+    "back": "Terug",
+    "title": "Privacybeleid",
+    "titlePrefix": "",
+    "titleHighlight": "Privacybeleid",
+    "section1Title": "1. Toewijding aan uw privacy",
+    "section1Text": "HÁRPÁ hecht waarde aan uw privacy en zet zich in voor de bescherming van de persoonlijke gegevens die via dit formulier worden gedeeld. Wij gebruiken uw informatie uitsluitend om uw behoeften te begrijpen, onze service te personaliseren en ervaringen aan te bieden die aansluiten bij uw interesses.",
+    "section2Title": "2. Welke gegevens wij verzamelen",
+    "section2Intro": "Door dit formulier in te vullen, kunnen wij de volgende gegevens verzamelen:",
+    "section2Item1": "Volledige naam;",
+    "section2Item2": "Contactinformatie (e-mail en/of telefoonnummer);",
+    "section2Item3": "Aantal reizigers;",
+    "section2Item4": "Gewenste reisdata;",
+    "section2Item5": "Bestemmingen van interesse;",
+    "section2Item6": "Voorkeuren en informatie gedeeld over de gewenste reis;",
+    "section2Item7": "Overige informatie die u vrijwillig verstrekt.",
+    "section3Title": "3. Hoe wij uw gegevens gebruiken",
+    "section3Intro": "De verzamelde gegevens kunnen worden gebruikt voor:",
+    "section3Item1": "Contact opnemen over uw verzoek;",
+    "section3Item2": "Het opstellen van gepersonaliseerde voorstellen en ervaringen;",
+    "section3Item3": "Het bieden van adviserend contact;",
+    "section3Item4": "Het verbeteren van onze diensten en processen;",
+    "section3Item5": "Het naleven van wettelijke en reglementaire verplichtingen.",
+    "section3Outro": "Wij zullen uw informatie niet gebruiken voor doeleinden die onverenigbaar zijn met de doeleinden die in dit Beleid worden beschreven.",
+    "section4Title": "4. Delen van informatie",
+    "section4Text1": "Uw gegevens kunnen alleen worden gedeeld wanneer dat noodzakelijk is om de gevraagde dienst mogelijk te maken, inclusief strategische partners, dienstverleners of bevoegde autoriteiten, altijd in overeenstemming met de toepasselijke wetgeving inzake gegevensbescherming.",
+    "section4Text2": "Wij verkopen of verhandelen uw persoonlijke gegevens niet aan derden.",
+    "section5Title": "5. Opslag en beveiliging",
+    "section5Text1": "Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen onbevoegde toegang, verlies, wijziging, openbaarmaking of onrechtmatige vernietiging.",
+    "section5Text2": "Gegevens worden bewaard zolang als nodig is om de in dit Beleid beschreven doeleinden te vervullen of zoals wettelijk vereist.",
+    "section6Title": "6. Uw rechten",
+    "section6Intro": "U kunt op elk moment verzoeken om:",
+    "section6Item1": "Bevestiging van het bestaan van gegevensverwerking;",
+    "section6Item2": "Toegang tot opgeslagen gegevens;",
+    "section6Item3": "Correctie van onvolledige of verouderde informatie;",
+    "section6Item4": "Verwijdering van gegevens waar van toepassing;",
+    "section6Item5": "Intrekking van gegeven toestemming;",
+    "section6Item6": "Informatie over het delen van gegevens.",
+    "section7Title": "7. Contact",
+    "section7Text": "Voor vragen, verzoeken of het uitoefenen van uw rechten met betrekking tot privacy en gegevensbescherming kunt u contact met ons opnemen via de officiële kanalen van HÁRPÁ."
+  },
+  "HomePage": {
+    "heroTag": "EXPEDITIES",
+    "heroTitle": "Reizen die ooit <em>dromen</em> waren",
+    "heroCoordinates": "64°08'51''N 21°56'06''W / 64.1475, -21.935",
+    "groupsTag": "GROEPEN",
+    "limitedSpotsTag": "BEPERKTE PLAATSEN",
+    "groupsTitle": "Groepen",
+    "customTag": "OP MAAT",
+    "customSubtitle": "/ U droomt. Wij creëren.",
+    "privateTitle": "Private",
+    "learnMore": "Meer weten"
   }
 }

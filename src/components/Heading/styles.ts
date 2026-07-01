@@ -7,14 +7,22 @@ import styled from 'styled-components'
 export const Heading = styled.h3`
   margin-bottom: ${spacings.medium};
   font-family: ${fonts.sans};
-  font-size: 28px;
-  font-weight: normal;
-  line-height: 130%;
-  letter-spacing: -0.28px;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  span {
+    font-weight: 400;
+  }
+
+  i {
+    font-family: ${fonts.serif};
+  }
 
   ${media.desktopUp} {
     margin-bottom: ${spacings.large};
-    font-size: 48px;
-    letter-spacing: -0.48px;
+    font-size: 64px;
+    text-align: center;
   }
 `

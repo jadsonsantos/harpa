@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
+    font-family: ${fonts.sans};
     border: none;
     background: none;
   }

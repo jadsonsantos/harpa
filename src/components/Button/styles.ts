@@ -6,11 +6,11 @@ export const Wrapper = styled.button`
   align-items: center;
 
   border-radius: 60px;
+  height: 60px;
 
   font-size: 18px;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: -0.18px;
+  font-weight: 500;
+  line-height: 1.3;
 
   background-color: ${colors.primary};
   color: ${colors.light};
@@ -30,6 +30,16 @@ export const Wrapper = styled.button`
 export const PrimaryButton = styled(Wrapper)`
   background-color: ${colors.light};
   color: ${colors.primary};
+
+  &:hover {
+    background: ${effects.primary};
+    color: ${colors.light};
+  }
+`
+
+export const SecondaryButton = styled(Wrapper)`
+  background-color: ${colors.primary};
+  color: ${colors.light};
 
   &:hover {
     background: ${effects.primary};
