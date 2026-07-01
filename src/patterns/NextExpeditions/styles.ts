@@ -2,12 +2,20 @@
 import { Heading } from '@/components/Heading/styles'
 import { TextSmall } from '@/components/Text/styles'
 import { media } from '@/styles/mediaQueries'
-import { flex } from '@/styles/mixins'
+import { flex, hideOnMobile } from '@/styles/mixins'
 import { spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  padding: ${spacings.medium} 0;
+  margin-top: 40px;
+  padding-bottom: ${spacings.medium};
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 `
 
 export const ExpeditionHeading = styled(Heading)`
@@ -42,5 +50,19 @@ export const Coordinates = styled(TextSmall)`
 
   ${media.desktopUp} {
     margin: 0 0 48px;
+  }
+`
+
+export const MapBackground = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+
+  img {
+    ${hideOnMobile}
   }
 `
