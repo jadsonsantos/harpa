@@ -4,6 +4,7 @@ import { Tag } from '@/components/ui/Tag'
 import { WHATSAPP_URL } from '@/constants'
 import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import * as S from './styles'
 
 const NextExpeditions = () => {
@@ -11,6 +12,16 @@ const NextExpeditions = () => {
 
   return (
     <S.Wrapper>
+      <S.MapBackground>
+        <Image
+          src="/images/world-map.svg"
+          alt="Imagem de um mapa mundi estilizado, com linhas e pontos representando rotas de expedições"
+          aria-hidden="true"
+          width={790}
+          height={927}
+          priority
+        />
+      </S.MapBackground>
       <Container>
         <S.TagWrapper>
           <Tag>{t('tag')}</Tag>
@@ -32,7 +43,6 @@ const NextExpeditions = () => {
             href="/expedicoes"
             tags={[t('groupsTag1'), t('groupsTag2')]}
           />
-
           <ExpeditionHighlightCard
             variant="dark"
             title="Private"
