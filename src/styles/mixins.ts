@@ -13,7 +13,17 @@ export const hideOnDesktop = css`
   }
 `
 
-export const flexCenter = css`
+export const flex = css`
   display: flex;
   align-items: center;
+`
+
+export const flexCenter = css`
+  ${flex}
+  justify-content: center;
+`
+
+export const flexBetween = css`
+  ${flex}
+  justify-content: space-between;
 `
