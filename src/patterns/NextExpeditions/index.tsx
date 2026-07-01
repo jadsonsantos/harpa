@@ -15,9 +15,9 @@ const NextExpeditions = () => {
       <S.MapBackground>
         <Image
           src="/images/world-map.svg"
-          alt="Imagem de um mapa mundi estilizado, com linhas e pontos representando rotas de expedições"
+          alt=""
           aria-hidden="true"
-          width={790}
+          width={791}
           height={927}
           priority
         />
