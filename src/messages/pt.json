@@ -1,4 +1,7 @@
 {
+  "common": {
+    "back": "Voltar"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Enfim... Todos os lugares."
   },
@@ -6,8 +9,78 @@
     "title": "HÁRPÁ | Viagens e expedições exclusivas para a Islândia",
     "description": "Itinerário mais completo do mercado, experiência exclusiva e intimista, com muita liberdade e aproveitamento em expedições para a Islândia."
   },
+  "NextExpeditions": {
+    "tag": "EXPEDIÇÕES",
+    "heading": "<span>Viagens</span> que um dia foram <i>sonhos</i>",
+    "coordinatesDMS": "64°08′51′′N 21°56′06′′O",
+    "groupsTitle": "Grupos",
+    "buttonLabel": "Saiba mais",
+    "groupsTag1": "Grupos",
+    "groupsTag2": "Vagas limitadas",
+    "privateSubtitle": "/ Você sonha. A gente cria.",
+    "privateTag1": "Customizado"
+  },
   "Footer": {
     "copyright": "Copyright © {year} HÁRPÁ • Todos os direitos reservados",
     "privacyPolicy": "Política de Privacidade"
+  },
+  "NotFound": {
+    "titleLine1": "A <em>página</em> que você está",
+    "titleLine2": "procurando <span>não foi encontrada.</span>",
+    "subtitle": "Você pode ter digitado incorretamente o endereço ou a página pode ter sido removida.",
+    "button": "Página inicial"
+  },
+  "PrivacyPolicy": {
+    "back": "Voltar",
+    "title": "Política de privacidade",
+    "titlePrefix": "Política de ",
+    "titleHighlight": "privacidade",
+    "section1Title": "1. Compromisso com sua privacidade",
+    "section1Text": "A HÁRPÁ valoriza a sua privacidade e se compromete a proteger os dados pessoais compartilhados por meio deste formulário. Utilizamos suas informações exclusivamente para compreender suas necessidades, personalizar o atendimento e oferecer experiências alinhadas aos seus interesses.",
+    "section2Title": "2. Quais dados coletamos",
+    "section2Intro": "Ao preencher este formulário, podemos coletar:",
+    "section2Item1": "Nome completo;",
+    "section2Item2": "Informações de contato (e-mail e/ou telefone);",
+    "section2Item3": "Número de viajantes;",
+    "section2Item4": "Datas desejadas para a viagem;",
+    "section2Item5": "Destinos de interesse;",
+    "section2Item6": "Preferências e informações compartilhadas sobre a viagem desejada;",
+    "section2Item7": "Outras informações fornecidas voluntariamente por você.",
+    "section3Title": "3. Como utilizamos seus dados",
+    "section3Intro": "Os dados coletados poderão ser utilizados para:",
+    "section3Item1": "Entrar em contato sobre sua solicitação;",
+    "section3Item2": "Elaborar propostas e experiências personalizadas;",
+    "section3Item3": "Prestar atendimento consultivo;",
+    "section3Item4": "Melhorar nossos serviços e processos;",
+    "section3Item5": "Cumprir obrigações legais e regulatórias.",
+    "section3Outro": "Não utilizaremos suas informações para finalidades incompatíveis com aquelas descritas nesta Política.",
+    "section4Title": "4. Compartilhamento de informações",
+    "section4Text1": "Seus dados poderão ser compartilhados apenas quando necessário para viabilizar o atendimento solicitado, incluindo parceiros estratégicos, fornecedores de serviços ou autoridades competentes, sempre observando os princípios da Lei Geral de Proteção de Dados (LGPD).",
+    "section4Text2": "Não comercializamos ou vendemos seus dados pessoais a terceiros.",
+    "section5Title": "5. Armazenamento e segurança",
+    "section5Text1": "Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acessos não autorizados, perda, alteração, divulgação ou destruição indevida.",
+    "section5Text2": "Os dados serão armazenados pelo período necessário para cumprir as finalidades descritas nesta Política ou conforme exigido por lei.",
+    "section6Title": "6. Seus direitos",
+    "section6Intro": "Nos termos da LGPD (Lei nº 13.709/2018), você poderá solicitar a qualquer momento:",
+    "section6Item1": "Confirmação da existência de tratamento dos seus dados;",
+    "section6Item2": "Acesso aos dados armazenados;",
+    "section6Item3": "Correção de informações incompletas ou desatualizadas;",
+    "section6Item4": "Exclusão de dados quando aplicável;",
+    "section6Item5": "Revogação do consentimento fornecido;",
+    "section6Item6": "Informações sobre compartilhamento de dados.",
+    "section7Title": "7. Contato",
+    "section7Text": "Em caso de dúvidas, solicitações ou exercício dos seus direitos relacionados à privacidade e proteção de dados, entre em contato conosco pelos canais oficiais disponibilizados pela HÁRPÁ."
+  },
+  "HomePage": {
+    "heroTag": "EXPEDIÇÕES",
+    "heroTitle": "Viagens que um dia foram <em>sonhos</em>",
+    "heroCoordinates": "64°08'51''N 21°56'06''O / 64.1475, -21.935",
+    "groupsTag": "GRUPOS",
+    "limitedSpotsTag": "VAGAS LIMITADAS",
+    "groupsTitle": "Grupos",
+    "customTag": "CUSTOMIZADO",
+    "customSubtitle": "/ Você sonha. A gente cria.",
+    "privateTitle": "Private",
+    "learnMore": "Saiba mais"
   }
 }

@@ -1,6 +1,6 @@
 'use client'
+import Link from 'next/link'
 import { PrimaryButton, SecondaryButton } from '../Button/styles'
-import CustomLink from '../CustomLink'
 import { Tag } from '../ui/Tag'
 import * as S from './styles'
 
@@ -40,8 +40,8 @@ const ExpeditionHighlightCard = ({
       </S.CardTop>
       <S.CardWrapper>
         <S.CardTitle>{title}</S.CardTitle>
-        <Button>
-          <CustomLink href={href}>{buttonLabel}</CustomLink>
+        <Button as={Link} href={href}>
+          {buttonLabel}
         </Button>
       </S.CardWrapper>
     </Card>

@@ -1,3 +1,4 @@
+'use client'
 import ExpeditionHighlightCard from '@/components/ExpeditionHighlightCard'
 import { Tag } from '@/components/ui/Tag'
 import { WHATSAPP_URL } from '@/constants'

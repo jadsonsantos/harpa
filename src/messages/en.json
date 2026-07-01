@@ -1,4 +1,7 @@
 {
+  "common": {
+    "back": "Back"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhagen, Stockholm, Amsterdam | After all... Everywhere."
   },
@@ -6,8 +9,78 @@
     "title": "HÁRPÁ | Exclusive Travel and Expeditions to Iceland",
     "description": "The most complete itinerary on the market, an exclusive and intimate experience, with plenty of freedom and full enjoyment on expeditions to Iceland."
   },
+  "NextExpeditions": {
+    "tag": "EXPEDITIONS",
+    "heading": "<span>Trips</span> that were once <i>dreams</i>",
+    "coordinatesDMS": "64°08′51′′N 21°56′06′′W",
+    "groupsTitle": "Groups",
+    "buttonLabel": "Learn more",
+    "groupsTag1": "Groups",
+    "groupsTag2": "Limited spots",
+    "privateSubtitle": "/ You dream. We create.",
+    "privateTag1": "Custom"
+  },
   "Footer": {
     "copyright": "Copyright © {year} HÁRPÁ • All rights reserved",
     "privacyPolicy": "Privacy Policy"
+  },
+  "NotFound": {
+    "titleLine1": "The <em>page</em> you are",
+    "titleLine2": "looking for <span>was not found.</span>",
+    "subtitle": "You may have typed the address incorrectly or the page may have been removed.",
+    "button": "Home page"
+  },
+  "PrivacyPolicy": {
+    "back": "Back",
+    "title": "Privacy Policy",
+    "titlePrefix": "Privacy ",
+    "titleHighlight": "Policy",
+    "section1Title": "1. Commitment to your privacy",
+    "section1Text": "HÁRPÁ values your privacy and is committed to protecting the personal data shared through this form. We use your information exclusively to understand your needs, personalize our service, and offer experiences aligned with your interests.",
+    "section2Title": "2. What data we collect",
+    "section2Intro": "By filling out this form, we may collect:",
+    "section2Item1": "Full name;",
+    "section2Item2": "Contact information (email and/or phone);",
+    "section2Item3": "Number of travelers;",
+    "section2Item4": "Desired travel dates;",
+    "section2Item5": "Destinations of interest;",
+    "section2Item6": "Preferences and information shared about the desired trip;",
+    "section2Item7": "Other information provided voluntarily by you.",
+    "section3Title": "3. How we use your data",
+    "section3Intro": "The collected data may be used to:",
+    "section3Item1": "Get in touch regarding your request;",
+    "section3Item2": "Prepare personalized proposals and experiences;",
+    "section3Item3": "Provide consultative service;",
+    "section3Item4": "Improve our services and processes;",
+    "section3Item5": "Comply with legal and regulatory obligations.",
+    "section3Outro": "We will not use your information for purposes incompatible with those described in this Policy.",
+    "section4Title": "4. Information sharing",
+    "section4Text1": "Your data may be shared only when necessary to enable the requested service, including strategic partners, service providers, or competent authorities, always in compliance with applicable data protection laws.",
+    "section4Text2": "We do not sell or trade your personal data to third parties.",
+    "section5Title": "5. Storage and security",
+    "section5Text1": "We adopt appropriate technical and organizational measures to protect your data against unauthorized access, loss, alteration, disclosure, or improper destruction.",
+    "section5Text2": "Data will be stored for as long as necessary to fulfill the purposes described in this Policy or as required by law.",
+    "section6Title": "6. Your rights",
+    "section6Intro": "You may, at any time, request:",
+    "section6Item1": "Confirmation of the existence of data processing;",
+    "section6Item2": "Access to stored data;",
+    "section6Item3": "Correction of incomplete or outdated information;",
+    "section6Item4": "Deletion of data where applicable;",
+    "section6Item5": "Revocation of consent provided;",
+    "section6Item6": "Information about data sharing.",
+    "section7Title": "7. Contact",
+    "section7Text": "For questions, requests, or to exercise your rights related to privacy and data protection, please contact us through the official channels provided by HÁRPÁ."
+  },
+  "HomePage": {
+    "heroTag": "EXPEDITIONS",
+    "heroTitle": "Trips that once were <em>dreams</em>",
+    "heroCoordinates": "64°08'51''N 21°56'06''W / 64.1475, -21.935",
+    "groupsTag": "GROUPS",
+    "limitedSpotsTag": "LIMITED SPOTS",
+    "groupsTitle": "Groups",
+    "customTag": "CUSTOMIZED",
+    "customSubtitle": "/ You dream. We create.",
+    "privateTitle": "Private",
+    "learnMore": "Learn more"
   }
 }
