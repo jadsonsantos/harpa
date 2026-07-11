@@ -17,14 +17,17 @@ export default function GroupsPage() {
 
   const content = [
     {
+      id: 'whatAre',
       title: t('faq.items.whatAre.title'),
       description: [t('faq.items.whatAre.description')]
     },
     {
+      id: 'ownGroup',
       title: t('faq.items.ownGroup.title'),
       description: [t('faq.items.ownGroup.description')]
     },
     {
+      id: 'whyChoose',
       title: t('faq.items.whyChoose.title'),
       description: [t('faq.items.whyChoose.description')]
     }
