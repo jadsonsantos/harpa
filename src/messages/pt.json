@@ -136,7 +136,31 @@
       }
     }
   },
+  "PrivateForm": {
+    "fullNameLabel": "Nome completo",
+    "fullNamePlaceholder": "Nome completo*",
+    "travelersLabel": "Quantas pessoas irão viajar?*",
+    "decreaseTravelers": "Diminuir número de pessoas",
+    "increaseTravelers": "Aumentar número de pessoas",
+    "datesLabel": "Quando gostaria de viajar?*",
+    "departurePlaceholder": "Data partida",
+    "returnPlaceholder": "Data de retorno",
+    "dreamLabel": "Qual destino você sonha explorar?*",
+    "dreamPlaceholder": "Descreva a sua viagem dos sonhos*",
+    "charCount": "{count}/{max}",
+    "privacyLabel": "Li e concordo com a ",
+    "privacyLinkText": "Política de Privacidade",
+    "submitButton": "Falar com consultor Private",
+    "whatsappMessage": "Olá! Meu nome é {name}. Somos {travelers} pessoa(s) e gostaríamos de viajar entre {departure} e {returnDate}. Destino dos sonhos: {dream}"
+  },
   "PrivatePage": {
+    "heading": {
+      "titlePrefix": "Private:",
+      "titleMiddle": "Do seu",
+      "titleHighlight": "jeito",
+      "titleSuffix": "Total exclusividade.",
+      "description": "Uma jornada desenhada exclusivamente para você. Escolha quando viajar, para onde ir e com quem compartilhar uma experiência única."
+    },
     "faq": {
       "titlePrefix": "Perguntas frequentes sobre os",
       "titleHighlight": "Private",

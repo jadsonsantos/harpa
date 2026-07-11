@@ -136,7 +136,31 @@
       }
     }
   },
+  "PrivateForm": {
+    "fullNameLabel": "Volledige naam",
+    "fullNamePlaceholder": "Volledige naam*",
+    "travelersLabel": "Met hoeveel personen reist u?*",
+    "decreaseTravelers": "Aantal reizigers verminderen",
+    "increaseTravelers": "Aantal reizigers verhogen",
+    "datesLabel": "Wanneer wilt u reizen?*",
+    "departurePlaceholder": "Vertrekdatum",
+    "returnPlaceholder": "Retourdatum",
+    "dreamLabel": "Welke bestemming droomt u van te verkennen?*",
+    "dreamPlaceholder": "Beschrijf uw droomreis*",
+    "charCount": "{count}/{max}",
+    "privacyLabel": "Ik heb het ",
+    "privacyLinkText": "Privacybeleid",
+    "submitButton": "Spreek met een Private consultant",
+    "whatsappMessage": "Hallo! Mijn naam is {name}. We zijn met {travelers} perso(o)n(en) en willen graag reizen tussen {departure} en {returnDate}. Droombestemming: {dream}"
+  },
   "PrivatePage": {
+    "heading": {
+      "titlePrefix": "Private:",
+      "titleMiddle": "Op jouw",
+      "titleHighlight": "manier",
+      "titleSuffix": "Totale exclusiviteit.",
+      "description": "Een reis die exclusief voor u is ontworpen. Kies wanneer u reist, waarheen u gaat en met wie u een unieke ervaring wilt delen."
+    },
     "faq": {
       "titlePrefix": "Veelgestelde vragen over",
       "titleHighlight": "Private",

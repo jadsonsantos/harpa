@@ -1,4 +1,5 @@
 'use client'
+import PageHeading from '@/components/PageHeading'
 import { BackButton } from '@/components/ui/BackButton'
 import GroupCard from '@/components/ui/GroupCard'
 import MapBackground from '@/components/ui/MapBackground'
@@ -70,19 +71,12 @@ export default function GroupsPage() {
       <Container>
         <BackButton href="/" />
       </Container>
-      <S.HeadingSection>
-        <Container>
-          <S.HeadingWrapper>
-            <S.HeadingTitle>
-              <span>{t('heading.titlePrefix')}</span> {t('heading.titleMiddle')}{' '}
-              <i>{t('heading.titleHighlight')}</i>.
-            </S.HeadingTitle>
-            <S.HeadingDescription>
-              {t('heading.description')}
-            </S.HeadingDescription>
-          </S.HeadingWrapper>
-        </Container>
-      </S.HeadingSection>
+      <PageHeading
+        titlePrefix={t('heading.titlePrefix')}
+        titleMiddle={t('heading.titleMiddle')}
+        titleHighlight={t('heading.titleHighlight')}
+        description={t('heading.description')}
+      />
       <S.CardsGrid>
         <Container>
           {cards.map((card) => (
