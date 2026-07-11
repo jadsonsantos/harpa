@@ -1,8 +1,10 @@
+'use client'
 import Details from '@/components/Details'
 import Container from '../Container'
 import * as S from './styles'
 
 type FaqItem = {
+  id: string
   title: string
   description: string[]
 }
@@ -20,9 +22,9 @@ const Faq = ({ titlePrefix, titleHighlight, items }: Props) => (
         <S.FaqTitle>
           {titlePrefix} <strong>{titleHighlight}</strong>
         </S.FaqTitle>
-        {items.map((item, index) => (
+        {items.map((item) => (
           <Details
-            key={index}
+            key={item.id}
             title={item.title}
             description={item.description}
           />

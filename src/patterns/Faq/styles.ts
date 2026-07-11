@@ -1,4 +1,3 @@
-'use client'
 import { Heading } from '@/components/Heading/styles'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
