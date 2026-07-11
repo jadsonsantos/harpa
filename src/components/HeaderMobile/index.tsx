@@ -12,7 +12,7 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
   return (
     <S.HeaderMobile>
       <Container>
-        <Logo width={110} height={18} />
+        <Logo />
         <LanguageSwitcher />
       </Container>
     </S.HeaderMobile>

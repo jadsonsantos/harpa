@@ -1,8 +1,8 @@
 'use client'
+import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Text } from '../Text/styles'
-import { media } from '@/styles/mediaQueries'
 
 export const Details = styled.details`
   margin: 0 -${spacings.small};
@@ -50,8 +50,6 @@ export const Content = styled.div`
   margin-top: 24px;
 
   .text {
-    max-width: 240px;
-
     &:not(:last-of-type) {
       margin: 0 0 20px;
     }
@@ -59,7 +57,6 @@ export const Content = styled.div`
 
   ${media.tabletUp} {
     .text {
-      max-width: 582px;
       font-size: 16px;
       letter-spacing: -0.16px;
     }
@@ -67,7 +64,6 @@ export const Content = styled.div`
 
   ${media.desktopUp} {
     .text {
-      max-width: 716px;
     }
   }
 `

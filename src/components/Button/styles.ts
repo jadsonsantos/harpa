@@ -1,3 +1,4 @@
+'use client'
 import { colors, effects, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -7,13 +8,13 @@ export const Wrapper = styled.button`
 
   border-radius: 60px;
   height: 60px;
+  cursor: pointer;
 
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
 
-  background-color: ${colors.primary};
-  color: ${colors.light};
+  padding: 20px ${spacings.small};
   transition:
     background-color,
     color 0.3s ease;
@@ -23,7 +24,7 @@ export const Wrapper = styled.button`
   }
 
   * {
-    padding: 20px ${spacings.medium};
+    padding: inherit;
   }
 `
 
@@ -45,4 +46,8 @@ export const SecondaryButton = styled(Wrapper)`
     background: ${effects.primary};
     color: ${colors.light};
   }
+`
+
+export const TertiaryButton = styled(Wrapper)`
+  color: ${colors.light};
 `

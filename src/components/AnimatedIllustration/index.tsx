@@ -17,7 +17,7 @@ const AnimatedIllustration = ({ name }: AnimatedIllustrationProps) => {
       <object
         id="my-svg"
         type="image/svg+xml"
-        data={`images/animations/animation-${name}_animated.svg`}
+        data={`/images/animations/animation-${name}_animated.svg`}
       ></object>
     </S.Wrapper>
   )
