@@ -3,7 +3,7 @@
     "back": "Back"
   },
   "Contact": {
-    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhagen, Stockholm, Amsterdam | After all... Everywhere."
+    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhagen, Stockholm, Amsterdam | Thailand | After all... Everywhere."
   },
   "Metadata": {
     "title": "HÁRPÁ | Exclusive Travel and Expeditions to Iceland",
@@ -82,5 +82,58 @@
     "customSubtitle": "/ You dream. We create.",
     "privateTitle": "Private",
     "learnMore": "Learn more"
+  },
+  "GroupCard": {
+    "tagGroups": "Groups",
+    "tagLimited": "Limited spots",
+    "interested": "I'm interested",
+    "learnMore": "Learn more"
+  },
+  "GroupsPage": {
+    "metadata": {
+      "title": "Groups | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Groups:",
+      "titleMiddle": "Shared journeys. Unique",
+      "titleHighlight": "experiences",
+      "description": "Group journeys for those who seek authentic experiences, without giving up comfort and convenience."
+    },
+    "faq": {
+      "titlePrefix": "Frequently asked questions about",
+      "titleHighlight": "Groups",
+      "items": {
+        "whatAre": {
+          "title": "What are Group Expeditions?",
+          "description": "Group Expeditions are journeys with up to 10 participants, carefully organized by the HÁRPÁ team to provide an immersive, exclusive and authentic experience."
+        },
+        "ownGroup": {
+          "title": "Can I put together my own group for a Group Expedition?",
+          "description": "Yes! You can put together your own group of up to 10 participants and choose the expedition date. The HÁRPÁ team will organize the journey according to the group's preferences, ensuring a personalized and unique experience."
+        },
+        "whyChoose": {
+          "title": "Why choose Group Expeditions?",
+          "description": "Group Expeditions offer the opportunity to experience unique and memorable moments, sharing special times with other participants and relying on the HÁRPÁ team's expertise to ensure an unforgettable journey."
+        }
+      }
+    },
+    "cards": {
+      "iceland": {
+        "title": "Iceland",
+        "subtitle": "Land of Ice and Fire."
+      },
+      "japan": {
+        "title": "Japan",
+        "subtitle": "Land of the Rising Sun."
+      },
+      "nordart": {
+        "title": "NordArt",
+        "subtitle": "The Land of Nordic Art, Architecture and Design."
+      },
+      "thailand": {
+        "title": "Thailand",
+        "subtitle": "The Land of Temples, Flavors and Traditions."
+      }
+    }
   }
 }

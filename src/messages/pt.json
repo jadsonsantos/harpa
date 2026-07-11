@@ -3,7 +3,7 @@
     "back": "Voltar"
   },
   "Contact": {
-    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Enfim... Todos os lugares."
+    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Tailândia | Enfim... Todos os lugares."
   },
   "Metadata": {
     "title": "HÁRPÁ | Viagens e expedições exclusivas para a Islândia",
@@ -82,5 +82,58 @@
     "customSubtitle": "/ Você sonha. A gente cria.",
     "privateTitle": "Private",
     "learnMore": "Saiba mais"
+  },
+  "GroupCard": {
+    "tagGroups": "Grupos",
+    "tagLimited": "Vagas limitadas",
+    "interested": "Tenho interesse",
+    "learnMore": "Saiba mais"
+  },
+  "GroupsPage": {
+    "metadata": {
+      "title": "Grupos | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Grupos:",
+      "titleMiddle": "Jornadas compartilhadas. Experiências",
+      "titleHighlight": "únicas",
+      "description": "Jornadas em grupo para quem busca viver experiências autênticas, sem abrir mão do conforto e da praticidade."
+    },
+    "faq": {
+      "titlePrefix": "Perguntas frequentes sobre os",
+      "titleHighlight": "Grupos",
+      "items": {
+        "whatAre": {
+          "title": "O que são as Expedições em Grupo?",
+          "description": "As Expedições em Grupo são jornadas em grupo de até 10 participantes, cuidadosamente organizados pela equipe HÁRPÁ para proporcionar uma experiência imersiva, exclusiva e autêntica."
+        },
+        "ownGroup": {
+          "title": "Posso montar meu grupo para a Expedição em Grupo?",
+          "description": "Sim! Você pode montar seu próprio grupo de até 10 participantes e escolher a data da expedição. A equipe HÁRPÁ irá organizar a jornada de acordo com as preferências do grupo, garantindo uma experiência personalizada e única."
+        },
+        "whyChoose": {
+          "title": "Por que escolher as Expedições em Grupo?",
+          "description": "As Expedições em Grupo oferecem a oportunidade de vivenciar experiências únicas e memoráveis, compartilhando momentos especiais com outros participantes e contando com a expertise da equipe HÁRPÁ para garantir uma jornada inesquecível."
+        }
+      }
+    },
+    "cards": {
+      "iceland": {
+        "title": "Islândia",
+        "subtitle": "Terra do Gelo e do Fogo."
+      },
+      "thailand": {
+        "title": "Tailândia",
+        "subtitle": "A Terra dos Templos, Sabores e Tradições."
+      },
+      "japan": {
+        "title": "Japão",
+        "subtitle": "Terra do Sol Nascente."
+      },
+      "nordart": {
+        "title": "NordArt",
+        "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos."
+      }
+    }
   }
 }
