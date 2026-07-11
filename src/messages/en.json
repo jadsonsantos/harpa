@@ -136,7 +136,34 @@
       }
     }
   },
+  "PrivateForm": {
+    "fullNameLabel": "Full name",
+    "fullNamePlaceholder": "Full name*",
+    "travelersLabel": "How many people are traveling?*",
+    "decreaseTravelers": "Decrease number of travelers",
+    "increaseTravelers": "Increase number of travelers",
+    "datesLabel": "When would you like to travel?*",
+    "departurePlaceholder": "Departure date",
+    "returnPlaceholder": "Return date",
+    "dreamLabel": "Which destination do you dream of exploring?*",
+    "dreamPlaceholder": "Describe your dream trip*",
+    "charCount": "{count}/{max}",
+    "privacyLabel": "I have read and agree to the ",
+    "privacyLinkText": "Privacy Policy",
+    "submitButton": "Talk to a Private consultant",
+    "whatsappMessage": "Hello! My name is {name}. We are {travelers} people and would like to travel between {departure} and {returnDate}. Dream destination: {dream}"
+  },
   "PrivatePage": {
+    "metadata": {
+      "title": "Private | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Private:",
+      "titleMiddle": "Your",
+      "titleHighlight": "way",
+      "titleSuffix": "Total exclusivity.",
+      "description": "A journey designed exclusively for you. Choose when to travel, where to go, and who to share a unique experience with."
+    },
     "faq": {
       "titlePrefix": "Frequently asked questions about",
       "titleHighlight": "Private",
