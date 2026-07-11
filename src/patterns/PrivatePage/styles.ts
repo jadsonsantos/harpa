@@ -1,4 +1,5 @@
 'use client'
+import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
@@ -9,6 +10,12 @@ export const Wrapper = styled.section`
 export const MainWrapper = styled.div`
   .container {
     display: flex;
-    gap: 152px;
+    flex-direction: column;
+    gap: 40px;
+
+    ${media.desktopUp} {
+      flex-direction: row;
+      gap: 152px;
+    }
   }
 `

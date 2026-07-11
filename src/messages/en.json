@@ -154,6 +154,9 @@
     "whatsappMessage": "Hello! My name is {name}. We are {travelers} people and would like to travel between {departure} and {returnDate}. Dream destination: {dream}"
   },
   "PrivatePage": {
+    "metadata": {
+      "title": "Private | HÁRPÁ"
+    },
     "heading": {
       "titlePrefix": "Private:",
       "titleMiddle": "Your",

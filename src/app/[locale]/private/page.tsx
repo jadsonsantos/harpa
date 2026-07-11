@@ -6,7 +6,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string }
 }) {
-  const t = await getTranslations({ locale, namespace: 'GroupsPage.metadata' })
+  const t = await getTranslations({ locale, namespace: 'PrivatePage.metadata' })
 
   return {
     title: t('title')

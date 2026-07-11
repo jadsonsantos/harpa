@@ -63,12 +63,11 @@ const PrivateForm = () => {
             type="button"
             aria-label={t('decreaseTravelers')}
             onClick={decreaseTravelers}
+            disabled={travelers <= MIN_TRAVELERS}
           >
             &minus;
           </S.CounterButton>
-          <S.CounterValue>
-            {String(travelers).padStart(2, '0')}
-          </S.CounterValue>
+          <S.CounterValue>{String(travelers).padStart(2, '0')}</S.CounterValue>
           <S.CounterButton
             type="button"
             aria-label={t('increaseTravelers')}
@@ -94,6 +93,7 @@ const PrivateForm = () => {
             required
             aria-label={t('returnPlaceholder')}
             value={returnDate}
+            min={departureDate}
             onChange={(event) => setReturnDate(event.target.value)}
           />
         </S.DatesRow>
@@ -124,7 +124,7 @@ const PrivateForm = () => {
           onChange={(event) => setAgreed(event.target.checked)}
         />
         <S.PrivacyLabel>
-          {t('privacyLabel')}
+          {t('privacyLabel').trimEnd()}{' '}
           <Link href="/politica-de-privacidade">{t('privacyLinkText')}</Link>.
         </S.PrivacyLabel>
       </S.PrivacyField>

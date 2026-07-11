@@ -50,6 +50,7 @@ export default function PrivatePage() {
             titleHighlight={t('titleHighlight')}
             titleSuffix={t('titleSuffix')}
             description={t('description')}
+            withContainer={false}
           />
           <PrivateForm />
         </Container>

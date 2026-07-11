@@ -8,6 +8,7 @@ type Props = {
   titleHighlight: string
   titleSuffix?: string
   description: string
+  withContainer?: boolean
 }
 
 const PageHeading = ({
@@ -15,19 +16,24 @@ const PageHeading = ({
   titleMiddle,
   titleHighlight,
   titleSuffix,
-  description
-}: Props) => (
-  <S.Section>
-    <Container>
-      <S.Wrapper>
-        <S.Title>
-          <span>{titlePrefix}</span> {titleMiddle} <i>{titleHighlight}</i>.
-          {titleSuffix ? ` ${titleSuffix}` : ''}
-        </S.Title>
-        <S.Description>{description}</S.Description>
-      </S.Wrapper>
-    </Container>
-  </S.Section>
-)
+  description,
+  withContainer = true
+}: Props) => {
+  const content = (
+    <S.Wrapper>
+      <S.Title>
+        <span>{titlePrefix}</span> {titleMiddle} <i>{titleHighlight}</i>.
+        {titleSuffix ? ` ${titleSuffix}` : ''}
+      </S.Title>
+      <S.Description>{description}</S.Description>
+    </S.Wrapper>
+  )
+
+  return (
+    <S.Section>
+      {withContainer ? <Container>{content}</Container> : content}
+    </S.Section>
+  )
+}
 
 export default PageHeading
