@@ -135,5 +135,25 @@
         "subtitle": "Het Land van Tempels, Smaken en Tradities."
       }
     }
+  },
+  "PrivatePage": {
+    "faq": {
+      "titlePrefix": "Veelgestelde vragen over",
+      "titleHighlight": "Private",
+      "items": {
+        "whatIs": {
+          "title": "Wat is de Private-ervaring?",
+          "description": "Private is een volledig gepersonaliseerde ervaring. U kiest de bestemming, de data, wie u vergezelt en het tempo van de reis. Op basis van uw interesses ontwikkelt het HÁRPÁ-team een exclusieve reis, speciaal op maat gemaakt voor u. Indien gewenst kunt u de volledige route van de Groepsexpeditie gebruiken en aanpassen aan uw voorkeuren."
+        },
+        "guide": {
+          "title": "Gaat er een gids mee tijdens de Private-reis?",
+          "description": "Niet per se. In tegenstelling tot de Groepsexpedities omvat de Private-optie geen persoonlijke begeleiding tijdens de reis. Toch blijft het HÁRPÁ-team 24 uur per dag beschikbaar via WhatsApp voor ondersteuning, advies en eventuele aanpassingen tijdens de reis."
+        },
+        "whyChoose": {
+          "title": "Waarom kiezen voor de Private-ervaring?",
+          "description": "De Private-ervaring is ideaal voor wie volledige vrijheid zoekt om in eigen tempo te reizen. Met flexibele data, bestemmingen naar keuze en een route die exclusief is ontworpen rond uw interesses, wordt elke reis zorgvuldig gepland om te weerspiegelen wat een reis voor u werkelijk bijzonder maakt."
+        }
+      }
+    }
   }
 }

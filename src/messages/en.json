@@ -135,5 +135,25 @@
         "subtitle": "The Land of Temples, Flavors and Traditions."
       }
     }
+  },
+  "PrivatePage": {
+    "faq": {
+      "titlePrefix": "Frequently asked questions about",
+      "titleHighlight": "Private",
+      "items": {
+        "whatIs": {
+          "title": "What is the Private Experience?",
+          "description": "Private is a fully personalized experience. You choose the destination, dates, who joins you, and the pace of the trip. Based on your interests, the HÁRPÁ team crafts an exclusive journey, tailored just for you. If you'd like, you can use the entire Group Expedition itinerary and adapt it to your preferences."
+        },
+        "guide": {
+          "title": "Does a guide accompany the Private trip?",
+          "description": "Not necessarily. Unlike the Group Expeditions, the Private option does not include in-person guidance during the trip. Even so, the HÁRPÁ team remains available 24/7 via WhatsApp for support, guidance and any adjustments along the way."
+        },
+        "whyChoose": {
+          "title": "Why choose the Private Experience?",
+          "description": "The Private experience is ideal for those seeking total freedom to travel at their own pace. With flexible dates, destinations of your choice and an itinerary designed exclusively around your interests, every journey is carefully planned to reflect what makes a trip truly special to you."
+        }
+      }
+    }
   }
 }

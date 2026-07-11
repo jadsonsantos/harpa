@@ -10,12 +10,12 @@ export const colors = {
   light: '#ffffff',
   dark: '#000000',
   background: '#fafafa',
-  text: '#333333',
+  text: '#DFDFDF',
   border: '#DFDFDF'
 } as const
 
 export const fonts = {
-  sans: 'var(--font-inter), Arial, Helvetica, sans-serif',
+  sans: '"Helvetica Neue", var(--font-inter), Arial, Helvetica, sans-serif',
   serif: 'var(--font-playfair), Georgia, serif'
 } as const
 

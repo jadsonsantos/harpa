@@ -1,10 +1,10 @@
 'use client'
-import Details from '@/components/Details'
 import { BackButton } from '@/components/ui/BackButton'
 import GroupCard from '@/components/ui/GroupCard'
 import MapBackground from '@/components/ui/MapBackground'
 import { useTranslations } from 'next-intl'
 import Container from '../Container'
+import Faq from '../Faq'
 import * as S from './styles'
 
 const imageIceland = '/images/groups/islandia.png'
@@ -87,22 +87,11 @@ export default function GroupsPage() {
           ))}
         </Container>
       </S.CardsGrid>
-      <S.Faq>
-        <Container>
-          <S.FaqWrapper>
-            <S.FaqTitle>
-              {t('faq.titlePrefix')} <strong>{t('faq.titleHighlight')}</strong>
-            </S.FaqTitle>
-            {content.map((group, index) => (
-              <Details
-                key={index}
-                title={group.title}
-                description={group.description}
-              />
-            ))}
-          </S.FaqWrapper>
-        </Container>
-      </S.Faq>
+      <Faq
+        titlePrefix={t('faq.titlePrefix')}
+        titleHighlight={t('faq.titleHighlight')}
+        items={content}
+      />
     </S.Wrapper>
   )
 }

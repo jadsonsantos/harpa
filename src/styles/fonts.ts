@@ -9,7 +9,7 @@ export const playfairDisplay = Playfair_Display({
 
 export const inter = Inter({
   subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '700', '900'],
+  weight: ['200', '300', '400', '500', '700', '900'],
   variable: '--font-inter',
   display: 'swap'
 })
