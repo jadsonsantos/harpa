@@ -43,20 +43,3 @@ export const CardsGrid = styled.section`
     padding: 60px 0 112px;
   }
 `
-
-export const Faq = styled.section`
-  padding: 32px 0;
-
-  ${media.desktopUp} {
-    padding: 100px 0;
-  }
-`
-
-export const FaqWrapper = styled.div`
-  max-width: 800px;
-  margin: auto;
-`
-
-export const FaqTitle = styled(Heading)`
-  margin-bottom: 80px;
-`
