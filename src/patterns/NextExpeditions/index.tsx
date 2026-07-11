@@ -1,10 +1,9 @@
 'use client'
 import ExpeditionHighlightCard from '@/components/ExpeditionHighlightCard'
+import MapBackground from '@/components/ui/MapBackground'
 import { Tag } from '@/components/ui/Tag'
-import { WHATSAPP_URL } from '@/constants'
 import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
 import * as S from './styles'
 
 const NextExpeditions = () => {
@@ -12,16 +11,7 @@ const NextExpeditions = () => {
 
   return (
     <S.Wrapper>
-      <S.MapBackground>
-        <Image
-          src="/images/world-map.svg"
-          alt=""
-          aria-hidden="true"
-          width={791}
-          height={927}
-          priority
-        />
-      </S.MapBackground>
+      <MapBackground src="/images/world-map.svg" width={791} height={927} />
       <Container>
         <S.TagWrapper>
           <Tag>{t('tag')}</Tag>
@@ -40,7 +30,7 @@ const NextExpeditions = () => {
             variant="light"
             title={t('groupsTitle')}
             buttonLabel={t('buttonLabel')}
-            href="/expedicoes"
+            href="/grupos"
             tags={[t('groupsTag1'), t('groupsTag2')]}
           />
           <ExpeditionHighlightCard
@@ -48,7 +38,7 @@ const NextExpeditions = () => {
             title="Private"
             subtitle={t('privateSubtitle')}
             buttonLabel={t('buttonLabel')}
-            href={WHATSAPP_URL}
+            href="/private"
             tags={[t('privateTag1')]}
           />
         </S.NextExpeditionsContainer>

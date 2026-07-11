@@ -13,7 +13,7 @@ export const Heading = styled.h3`
   letter-spacing: -0.02em;
 
   span {
-    font-weight: 400;
+    font-weight: 300;
   }
 
   i {

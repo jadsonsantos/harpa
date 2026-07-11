@@ -16,7 +16,7 @@ export function ContactClient({}: ContactClientProps) {
   return (
     <S.Wrapper>
       <Container>
-        <Logo />
+        <Logo variant="footer" />
         <S.Address>{t('address')}</S.Address>
         <S.Phone>
           <CustomLink href={WHATSAPP_URL}>+55 (11) 9 9584-2594</CustomLink>

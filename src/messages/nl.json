@@ -3,7 +3,7 @@
     "back": "Terug"
   },
   "Contact": {
-    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Kortom... Overal."
+    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Thailand | Kortom... Overal."
   },
   "Metadata": {
     "title": "HÁRPÁ | Exclusieve reizen en expedities naar IJsland",
@@ -82,5 +82,58 @@
     "customSubtitle": "/ U droomt. Wij creëren.",
     "privateTitle": "Private",
     "learnMore": "Meer weten"
+  },
+  "GroupCard": {
+    "tagGroups": "Groepen",
+    "tagLimited": "Beperkte plaatsen",
+    "interested": "Ik heb interesse",
+    "learnMore": "Meer weten"
+  },
+  "GroupsPage": {
+    "metadata": {
+      "title": "Groepen | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Groepen:",
+      "titleMiddle": "Gedeelde reizen. Unieke",
+      "titleHighlight": "ervaringen",
+      "description": "Groepsreizen voor wie authentieke ervaringen wil beleven, zonder in te leveren op comfort en gemak."
+    },
+    "faq": {
+      "titlePrefix": "Veelgestelde vragen over",
+      "titleHighlight": "Groepen",
+      "items": {
+        "whatAre": {
+          "title": "Wat zijn Groepsexpedities?",
+          "description": "Groepsexpedities zijn reizen met maximaal 10 deelnemers, zorgvuldig georganiseerd door het HÁRPÁ-team om een meeslepende, exclusieve en authentieke ervaring te bieden."
+        },
+        "ownGroup": {
+          "title": "Kan ik mijn eigen groep samenstellen voor een Groepsexpeditie?",
+          "description": "Ja! Je kunt je eigen groep van maximaal 10 deelnemers samenstellen en de datum van de expeditie kiezen. Het HÁRPÁ-team organiseert de reis volgens de voorkeuren van de groep, voor een persoonlijke en unieke ervaring."
+        },
+        "whyChoose": {
+          "title": "Waarom kiezen voor Groepsexpedities?",
+          "description": "Groepsexpedities bieden de kans om unieke en gedenkwaardige momenten te beleven, bijzondere momenten te delen met andere deelnemers en te profiteren van de expertise van het HÁRPÁ-team voor een onvergetelijke reis."
+        }
+      }
+    },
+    "cards": {
+      "iceland": {
+        "title": "IJsland",
+        "subtitle": "Land van IJs en Vuur."
+      },
+      "japan": {
+        "title": "Japan",
+        "subtitle": "Land van de Rijzende Zon."
+      },
+      "nordart": {
+        "title": "NordArt",
+        "subtitle": "Het Land van Noordse Kunst, Architectuur en Design."
+      },
+      "thailand": {
+        "title": "Thailand",
+        "subtitle": "Het Land van Tempels, Smaken en Tradities."
+      }
+    }
   }
 }

@@ -1,24 +1,21 @@
 'use client'
+import type { LogoVariant } from './styles'
 import * as S from './styles'
 
 interface LogoProps {
-  width?: number
-  height?: number
+  variant?: LogoVariant
   imgSrc?: string
 }
 
-const Logo = ({
-  width = 245,
-  height = 40,
-  imgSrc = 'harpa-logo'
-}: LogoProps) => {
+const Logo = ({ variant = 'header', imgSrc = 'harpa-logo' }: LogoProps) => {
   return (
-    <S.LogoLink href={`/`}>
+    <S.LogoLink href="/">
       <S.LogoImage
         src={`/images/${imgSrc}.svg`}
         alt="Logo da Harpa"
-        width={width}
-        height={height}
+        width={245}
+        height={40}
+        $variant={variant}
         priority
       />
     </S.LogoLink>

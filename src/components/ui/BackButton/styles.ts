@@ -9,7 +9,6 @@ export const BackLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 28px;
-  margin-bottom: 40px;
   padding: 12px 0;
 `
 
