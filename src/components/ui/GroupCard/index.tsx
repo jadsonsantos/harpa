@@ -1,3 +1,4 @@
+'use client'
 import Button from '@/components/Button'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -23,7 +24,7 @@ export default function GroupCard({
         src={imageSrc}
         alt={title + ' - ' + subtitle}
         fill
-        style={{ objectFit: 'cover', zIndex: -1, borderRadius: '32px' }}
+        style={{ objectFit: 'cover', zIndex: -1 }}
         sizes="(max-width: 768px) 100vw, 33vw"
       />
       <S.CardTags>

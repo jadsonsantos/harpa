@@ -9,18 +9,22 @@ type ButtonProps = ButtonHTMLProps & {
   variant?: ButtonVariant
 }
 
-const variantMap: Record<
-  ButtonVariant,
-  React.ComponentType<ButtonHTMLProps>
-> = {
+const variantMap: Record<ButtonVariant, typeof S.PrimaryButton> = {
   primary: S.PrimaryButton,
   secondary: S.SecondaryButton,
   tertiary: S.TertiaryButton
 }
 
-const Button = ({ children, variant = 'primary', ...rest }: ButtonProps) => {
-  const Component = variantMap[variant]
-  return <Component {...rest}>{children}</Component>
-}
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, variant = 'primary', ...rest }, ref) => {
+    const Component = variantMap[variant]
+    return (
+      <Component ref={ref} {...rest}>
+        {children}
+      </Component>
+    )
+  }
+)
+Button.displayName = 'Button'
 
 export default Button

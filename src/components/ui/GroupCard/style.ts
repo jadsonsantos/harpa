@@ -8,6 +8,7 @@ export const Card = styled.article`
   max-width: 414px;
   height: 500px;
   border-radius: 32px;
+  overflow: hidden;
   padding: 24px;
   color: #fff;
   display: flex;
@@ -24,7 +25,7 @@ export const CardInfos = styled.div``
 
 export const CardTitle = styled.h3`
   margin-bottom: 4px;
-  font-size: 52px;
+  font-size: clamp(36px, 12vw, 52px);
   font-weight: 300;
   line-height: 1.3;
   letter-spacing: -0.52px;

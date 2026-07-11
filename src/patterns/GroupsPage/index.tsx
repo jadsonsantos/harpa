@@ -1,3 +1,4 @@
+'use client'
 import Details from '@/components/Details'
 import { BackButton } from '@/components/ui/BackButton'
 import GroupCard from '@/components/ui/GroupCard'
@@ -31,21 +32,25 @@ export default function GroupsPage() {
 
   const cards = [
     {
+      id: 'iceland',
       title: t('cards.iceland.title'),
       subtitle: t('cards.iceland.subtitle'),
       imageSrc: imageIceland
     },
     {
+      id: 'thailand',
       title: t('cards.thailand.title'),
       subtitle: t('cards.thailand.subtitle'),
       imageSrc: imageThailand
     },
     {
+      id: 'japan',
       title: t('cards.japan.title'),
       subtitle: t('cards.japan.subtitle'),
       imageSrc: imageJapan
     },
     {
+      id: 'nordart',
       title: t('cards.nordart.title'),
       subtitle: t('cards.nordart.subtitle'),
       imageSrc: imageNordArt
@@ -78,7 +83,7 @@ export default function GroupsPage() {
       <S.CardsGrid>
         <Container>
           {cards.map((card) => (
-            <GroupCard key={card.title} {...card} />
+            <GroupCard key={card.id} {...card} />
           ))}
         </Container>
       </S.CardsGrid>

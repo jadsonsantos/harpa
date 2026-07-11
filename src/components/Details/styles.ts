@@ -61,9 +61,4 @@ export const Content = styled.div`
       letter-spacing: -0.16px;
     }
   }
-
-  ${media.desktopUp} {
-    .text {
-    }
-  }
 `

@@ -12,8 +12,7 @@ export const Heading = styled.h3`
   line-height: 1;
   letter-spacing: -0.02em;
 
-  span,
-  strong {
+  span {
     font-weight: 300;
   }
 

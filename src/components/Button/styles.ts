@@ -16,7 +16,7 @@ export const Wrapper = styled.button`
 
   padding: 20px ${spacings.small};
   transition:
-    background-color,
+    background-color 0.3s ease,
     color 0.3s ease;
 
   &:hover {

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+'use client'
 import * as S from './styles'
 
 type Props = {
@@ -8,9 +8,7 @@ type Props = {
 }
 
 const MapBackground = ({ src, width, height }: Props) => (
-  <S.Wrapper>
-    <Image src={src} alt="" aria-hidden="true" width={width} height={height} priority />
-  </S.Wrapper>
+  <S.Wrapper $src={src} $width={width} $height={height} aria-hidden="true" />
 )
 
 export default MapBackground
