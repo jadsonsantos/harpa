@@ -4,6 +4,7 @@ import Container from '@/patterns/Container'
 import { inter, playfairDisplay } from '@/styles/fonts'
 import * as S from '@/styles/not-found.styles'
 import { getLocale, getTranslations } from 'next-intl/server'
+import Link from 'next/link'
 import { Providers } from './providers'
 
 export default async function NotFound() {
@@ -33,7 +34,9 @@ export default async function NotFound() {
 
                   <S.Subtitle>{t('subtitle')}</S.Subtitle>
 
-                  <S.ButtonLink href="/">{t('button')}</S.ButtonLink>
+                  <S.ButtonLink href="/" as={Link}>
+                    {t('button')}
+                  </S.ButtonLink>
                 </S.Content>
               </S.Wrapper>
             </Container>

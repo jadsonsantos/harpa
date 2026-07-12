@@ -4,7 +4,7 @@ import { media } from '@/styles/mediaQueries'
 import { colors, fonts } from '@/styles/tokens'
 import styled from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   padding: 40px 0 80px;
 
   ${media.tabletUp} {
@@ -53,10 +53,6 @@ export const Section = styled.section`
   &:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
-  }
-
-  ${media.tabletUp} {
-    /* margin-bottom: 48px; */
   }
 `
 

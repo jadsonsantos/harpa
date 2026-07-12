@@ -1,5 +1,4 @@
 'use client'
-import { playfairDisplay } from '@/styles/fonts'
 import { colors, fonts, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -25,10 +24,10 @@ export const Title = styled.h1`
   font-size: 64px;
   font-weight: 100;
   line-height: 104%;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
 
   em {
-    font-family: ${playfairDisplay.style.fontFamily};
+    font-family: ${fonts.serif};
     font-style: italic;
     font-weight: 400;
   }
