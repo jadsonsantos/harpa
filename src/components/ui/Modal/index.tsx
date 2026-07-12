@@ -28,7 +28,7 @@ export default function Modal({
   }, [])
 
   useEffect(() => {
-    if (!isOpen) return
+    if (!isOpen || !mounted) return
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose()
@@ -43,7 +43,7 @@ export default function Modal({
       document.body.style.overflow = overflow
       document.removeEventListener('keydown', handleKeyDown)
     }
-  }, [isOpen, onClose])
+  }, [isOpen, onClose, mounted])
 
   if (!mounted || !isOpen) return null
 
@@ -53,12 +53,7 @@ export default function Modal({
 
   return createPortal(
     <S.Overlay onClick={handleOverlayClick}>
-      <S.Content
-        ref={contentRef}
-        role="dialog"
-        aria-modal="true"
-        tabIndex={-1}
-      >
+      <S.Content ref={contentRef} role="dialog" aria-modal="true" tabIndex={-1}>
         <S.CloseButton type="button" onClick={onClose} aria-label={t('close')}>
           <CloseIcon />
         </S.CloseButton>

@@ -1,7 +1,7 @@
 'use client'
 import Button from '@/components/Button'
-import Text from '@/components/Text'
 import { Swiper, SwiperSlide } from '@/components/Swipper'
+import Text from '@/components/Text'
 import IncludedList from '@/components/ui/IncludedList'
 import Modal from '@/components/ui/Modal'
 import { WHATSAPP_NUMBER } from '@/constants'
@@ -41,7 +41,9 @@ export default function GroupCard({
 
   const handleInterestClick = () => {
     const message = t('whatsappMessage', { destino: title })
-    const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`
+    const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
+      message
+    )}`
     window.open(url, '_blank', 'noopener,noreferrer')
   }
 
@@ -110,15 +112,16 @@ export default function GroupCard({
           <S.DatesSection>
             <Text selector="dates-label">{t('availableDates')}</Text>
             <S.DateList>
-              {dates.map((date, index) => (
-                <S.DateCard key={`${date.tag}-${index}`}>
-                  <S.DateTag>{date.tag}</S.DateTag>
-                  <S.DateBody>
-                    <S.DateRange>{date.range}</S.DateRange>
-                    <S.DateYear>{date.year}</S.DateYear>
-                  </S.DateBody>
-                </S.DateCard>
-              ))}
+              {Array.isArray(dates) &&
+                dates.map((date, index) => (
+                  <S.DateCard key={`${date.tag}-${index}`}>
+                    <S.DateTag>{date.tag}</S.DateTag>
+                    <S.DateBody>
+                      <S.DateRange>{date.range}</S.DateRange>
+                      <S.DateYear>{date.year}</S.DateYear>
+                    </S.DateBody>
+                  </S.DateCard>
+                ))}
             </S.DateList>
           </S.DatesSection>
           <IncludedList />

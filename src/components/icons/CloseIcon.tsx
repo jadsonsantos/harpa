@@ -9,12 +9,12 @@ export const CloseIcon = () => {
     >
       <path
         d="M0.423828 13.4243L13.4238 0.424316"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="1.2"
       />
       <path
         d="M13.4238 13.4243L0.423828 0.424316"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="1.2"
       />
     </svg>

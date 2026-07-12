@@ -59,8 +59,7 @@ export const Content = styled.div`
   flex-direction: column;
 
   width: 100%;
-  max-height: 80vh;
-  max-height: 640px;
+  max-height: min(80vh, 640px);
   overflow: hidden;
 
   background-color: ${colors.light};

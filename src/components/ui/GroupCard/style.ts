@@ -162,7 +162,7 @@ export const DateTag = styled.span`
   color: ${colors.light};
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 `
 

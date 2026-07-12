@@ -58,5 +58,5 @@ export const StatusIcon = styled.span<{ $included: boolean }>`
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  color: ${({ $included }) => ($included ? colors.dark : colors.dark)};
+  color: ${({ $included }) => ($included ? colors.dark : colors.primary)};
 `
