@@ -2,15 +2,21 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import Logo from '@/components/ui/Logo'
 import Container from '@/patterns/Container'
+import { usePathname } from 'next/navigation'
 import * as S from './styles'
 
+const DARK_MODE_ROUTES = ['/private']
+
 const Header = () => {
+  const pathname = usePathname()
+  const isDark = DARK_MODE_ROUTES.some((route) => pathname?.endsWith(route))
+
   return (
-    <S.Header>
+    <S.Header $dark={isDark}>
       <Container>
-        <Logo />
+        <Logo dark={isDark} />
         <S.Nav>
-          <LanguageSwitcher />
+          <LanguageSwitcher dark={isDark} />
         </S.Nav>
       </Container>
     </S.Header>

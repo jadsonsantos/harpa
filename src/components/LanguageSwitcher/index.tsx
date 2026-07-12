@@ -10,7 +10,11 @@ const locales = [
   { code: 'nl', label: 'NL-NL', flag: '🇳🇱' }
 ]
 
-const LanguageSwitcher = () => {
+interface LanguageSwitcherProps {
+  dark?: boolean
+}
+
+const LanguageSwitcher = ({ dark = false }: LanguageSwitcherProps) => {
   const locale = useLocale()
   const pathname = usePathname()
   const router = useRouter()
@@ -42,10 +46,14 @@ const LanguageSwitcher = () => {
 
   return (
     <S.Wrapper ref={ref}>
-      <S.Trigger onClick={() => setOpen(!open)} aria-expanded={open}>
+      <S.Trigger
+        $dark={dark}
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
         <span>{current.label}</span>
         <S.Flag>{current.flag}</S.Flag>
-        <S.Chevron $open={open} />
+        <S.Chevron $open={open} $dark={dark} />
       </S.Trigger>
       {open && (
         <S.Dropdown>

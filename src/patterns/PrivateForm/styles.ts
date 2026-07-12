@@ -1,26 +1,35 @@
 'use client'
 import { PrimaryButton, TertiaryButton } from '@/components/Button/styles'
 import { media } from '@/styles/mediaQueries'
-import { borders, colors, effects, fonts, spacings } from '@/styles/tokens'
+import { borders, colors, fonts, spacings } from '@/styles/tokens'
 import styled, { css } from 'styled-components'
 
-const fieldBase = css`
+const fieldBase = css<{ $error?: boolean }>`
   width: 100%;
   background: transparent;
-  border: 1px solid ${colors.border};
+  border: 2px solid #333333;
   border-radius: ${borders.xsmall};
   padding: ${spacings.xsmall};
   font-family: ${fonts.sans};
   font-size: 16px;
   color: ${colors.light};
+  transition: all ease;
 
   &::placeholder {
     color: ${colors.border};
   }
 
+  &:hover:not(:disabled) {
+    border-color: ${colors.light};
+  }
+
   &:focus {
     outline: none;
     border-color: ${colors.light};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `
 
@@ -31,21 +40,19 @@ export const Wrapper = styled.form`
 
   max-width: 500px;
   margin: 0 auto;
-  padding: ${spacings.small};
+  width: 100%;
 
-  background-color: ${colors.primary};
-  border-radius: ${borders.small};
   color: ${colors.light};
-
-  ${media.desktopUp} {
-    padding: ${spacings.medium};
-  }
 `
 
 export const Field = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacings.xsmall};
+
+  &[hidden] {
+    display: none;
+  }
 `
 
 export const FieldLabel = styled.span`
@@ -54,7 +61,7 @@ export const FieldLabel = styled.span`
   font-weight: 500;
 `
 
-export const Input = styled.input`
+export const Input = styled.input<{ $error?: boolean }>`
   ${fieldBase}
 `
 
@@ -68,7 +75,7 @@ export const DatesRow = styled.div`
   }
 `
 
-export const DateInput = styled.input`
+export const DateInput = styled.input<{ $error?: boolean }>`
   ${fieldBase}
   color-scheme: dark;
 `
@@ -77,7 +84,7 @@ export const TextareaWrapper = styled.div`
   position: relative;
 `
 
-export const Textarea = styled.textarea`
+export const Textarea = styled.textarea<{ $error?: boolean }>`
   ${fieldBase}
   min-height: 140px;
   resize: none;
@@ -91,6 +98,12 @@ export const CharCount = styled.span`
   bottom: ${spacings.xsmall};
   font-size: 13px;
   color: ${colors.border};
+`
+
+export const ErrorMessage = styled.span`
+  font-family: ${fonts.sans};
+  font-size: 14px;
+  color: ${colors.danger};
 `
 
 export const Counter = styled.div`
@@ -108,8 +121,9 @@ export const CounterButton = styled(TertiaryButton)`
   font-size: 20px;
   line-height: 1;
 
-  &:hover {
-    background: ${effects.primary};
+  &:hover:not(:disabled) {
+    background: ${colors.dark};
+    border-color: ${colors.dark};
   }
 `
 
@@ -128,13 +142,48 @@ export const PrivacyField = styled.label`
   font-size: 14px;
 `
 
-export const Checkbox = styled.input`
+export const CheckboxInput = styled.input`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`
+
+export const CheckboxBox = styled.span<{
+  $checked: boolean
+  $error?: boolean
+}>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   margin-top: 2px;
   flex-shrink: 0;
-  accent-color: ${colors.light};
-  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid
+    ${({ $checked, $error }) =>
+      $error ? colors.danger : $checked ? colors.light : colors.border};
+  background-color: ${({ $checked }) =>
+    $checked ? colors.light : 'transparent'};
+  color: ${colors.primary};
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+  svg {
+    width: 10px;
+    height: auto;
+  }
+
+  ${PrivacyField}:hover & {
+    border-color: ${({ $error }) => ($error ? colors.danger : colors.light)};
+  }
 `
 
 export const PrivacyLabel = styled.span`
@@ -144,7 +193,11 @@ export const PrivacyLabel = styled.span`
   a {
     color: ${colors.light};
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 
@@ -152,4 +205,9 @@ export const SubmitButton = styled(PrimaryButton)`
   width: 100%;
   justify-content: center;
   margin-top: ${spacings.xsmall};
+
+  &:hover {
+    background: ${colors.background};
+    color: ${colors.primary};
+  }
 `

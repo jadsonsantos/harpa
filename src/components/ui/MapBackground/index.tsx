@@ -8,7 +8,13 @@ type Props = {
 }
 
 const MapBackground = ({ src, width, height }: Props) => (
-  <S.Wrapper $src={src} $width={width} $height={height} aria-hidden="true" />
+  <S.Wrapper
+    $src={src}
+    $width={width}
+    $height={height}
+    aria-hidden="true"
+    className="map-background"
+  />
 )
 
 export default MapBackground

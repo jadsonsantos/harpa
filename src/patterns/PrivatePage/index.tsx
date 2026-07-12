@@ -3,6 +3,7 @@ import PageHeading from '@/components/PageHeading'
 import { BackButton } from '@/components/ui/BackButton'
 import MapBackground from '@/components/ui/MapBackground'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import Container from '../Container'
 import Faq from '../Faq'
 import PrivateForm from '../PrivateForm'
@@ -34,27 +35,38 @@ export default function PrivatePage() {
     <>
       <S.Wrapper>
         <MapBackground
-          src="/images/world-map-groups.svg"
+          src="/images/world-map-private.svg"
           width={1061}
           height={1191}
         />
-      </S.Wrapper>
-      <Container>
-        <BackButton href="/" />
-      </Container>
-      <S.MainWrapper>
         <Container>
-          <PageHeading
-            titlePrefix={t('titlePrefix')}
-            titleMiddle={t('titleMiddle')}
-            titleHighlight={t('titleHighlight')}
-            titleSuffix={t('titleSuffix')}
-            description={t('description')}
-            withContainer={false}
-          />
-          <PrivateForm />
+          <BackButton href="/" />
         </Container>
-      </S.MainWrapper>
+        <S.MainWrapper>
+          <Container>
+            <S.TextColumn>
+              <PageHeading
+                titlePrefix={t('titlePrefix')}
+                titleMiddle={t('titleMiddle')}
+                titleHighlight={t('titleHighlight')}
+                titleSuffix={t('titleSuffix')}
+                description={t('description')}
+                withContainer={false}
+              />
+              <S.HeroImage>
+                <Image
+                  src="/images/private.png"
+                  alt={t('imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 1200px) 100vw, 600px"
+                />
+              </S.HeroImage>
+            </S.TextColumn>
+            <PrivateForm />
+          </Container>
+        </S.MainWrapper>
+      </S.Wrapper>
       <Faq
         titlePrefix={tFaq('titlePrefix')}
         titleHighlight={tFaq('titleHighlight')}

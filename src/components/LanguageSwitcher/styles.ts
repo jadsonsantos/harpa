@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   position: relative;
 `
 
-export const Trigger = styled.button`
+export const Trigger = styled.button<{ $dark?: boolean }>`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -16,7 +16,7 @@ export const Trigger = styled.button`
   font-size: 15px;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: ${colors.dark};
+  color: ${({ $dark }) => ($dark ? colors.light : colors.dark)};
   font-family: inherit;
   padding: 0;
 `
@@ -26,12 +26,14 @@ export const Flag = styled.span`
   line-height: 1;
 `
 
-export const Chevron = styled.span<{ $open: boolean }>`
+export const Chevron = styled.span<{ $open: boolean; $dark?: boolean }>`
   display: inline-block;
   width: 7px;
   height: 7px;
-  border-right: 2px solid ${colors.primary};
-  border-bottom: 2px solid ${colors.primary};
+  border-right: 2px solid
+    ${({ $dark }) => ($dark ? colors.light : colors.primary)};
+  border-bottom: 2px solid
+    ${({ $dark }) => ($dark ? colors.light : colors.primary)};
   transform: ${({ $open }) =>
     $open ? 'rotate(-135deg) translateY(3px)' : 'rotate(45deg)'};
   transition: transform 0.2s ease;

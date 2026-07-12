@@ -5,9 +5,14 @@ import * as S from './styles'
 interface LogoProps {
   variant?: LogoVariant
   imgSrc?: string
+  dark?: boolean
 }
 
-const Logo = ({ variant = 'header', imgSrc = 'harpa-logo' }: LogoProps) => {
+const Logo = ({
+  variant = 'header',
+  imgSrc = 'harpa-logo',
+  dark = false
+}: LogoProps) => {
   return (
     <S.LogoLink href="/">
       <S.LogoImage
@@ -16,6 +21,7 @@ const Logo = ({ variant = 'header', imgSrc = 'harpa-logo' }: LogoProps) => {
         width={245}
         height={40}
         $variant={variant}
+        $dark={dark}
         priority
       />
     </S.LogoLink>

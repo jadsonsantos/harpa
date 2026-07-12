@@ -174,6 +174,10 @@
   "PrivateForm": {
     "fullNameLabel": "Volledige naam",
     "fullNamePlaceholder": "Volledige naam*",
+    "phoneLabel": "Telefoon",
+    "phonePlaceholder": "Telefoon (WhatsApp)*",
+    "destinationLabel": "Gewenste bestemming",
+    "destinationPlaceholder": "Gewenste bestemming*",
     "travelersLabel": "Met hoeveel personen reist u?*",
     "decreaseTravelers": "Aantal reizigers verminderen",
     "increaseTravelers": "Aantal reizigers verhogen",
@@ -183,10 +187,12 @@
     "dreamLabel": "Welke bestemming droomt u van te verkennen?*",
     "dreamPlaceholder": "Beschrijf uw droomreis*",
     "charCount": "{count}/{max}",
+    "requiredError": "Verplicht veld.",
+    "minTravelersError": "Minimaal 1 reiziger.",
     "privacyLabel": "Ik heb het ",
     "privacyLinkText": "Privacybeleid",
     "submitButton": "Spreek met een Private consultant",
-    "whatsappMessage": "Hallo! Mijn naam is {name}. We zijn met {travelers} perso(o)n(en) en willen graag reizen tussen {departure} en {returnDate}. Droombestemming: {dream}"
+    "whatsappMessage": "Hallo! Ik wil graag een Private-ervaring plannen met HÁRPÁ.\n\nNaam: {name}\nAantal reizigers: {travelers}\nGewenste periode: {departure} tot {returnDate}\nOver de gewenste ervaring:\n{dream}\n\nIk zie uit naar contact met een consultant om de planning van mijn reis voort te zetten."
   },
   "PrivatePage": {
     "metadata": {
@@ -197,7 +203,8 @@
       "titleMiddle": "Op jouw",
       "titleHighlight": "manier",
       "titleSuffix": "Totale exclusiviteit.",
-      "description": "Een reis die exclusief voor u is ontworpen. Kies wanneer u reist, waarheen u gaat en met wie u een unieke ervaring wilt delen."
+      "description": "Een reis die exclusief voor u is ontworpen. Kies wanneer u reist, waarheen u gaat en met wie u een unieke ervaring wilt delen.",
+      "imageAlt": "Noorderlicht boven een fjord in IJsland"
     },
     "faq": {
       "titlePrefix": "Veelgestelde vragen over",

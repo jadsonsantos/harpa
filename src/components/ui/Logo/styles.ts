@@ -32,7 +32,15 @@ export const LogoLink = styled(Link)`
   align-items: center;
 `
 
-export const LogoImage = styled(Image)<{ $variant: LogoVariant }>`
+export const LogoImage = styled(Image)<{
+  $variant: LogoVariant
+  $dark?: boolean
+}>`
   object-fit: contain;
   ${({ $variant }) => variantStyles[$variant]}
+  ${({ $dark }) =>
+    $dark &&
+    css`
+      filter: brightness(0) invert(1);
+    `}
 `
