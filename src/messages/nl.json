@@ -1,6 +1,7 @@
 {
   "common": {
-    "back": "Terug"
+    "back": "Terug",
+    "close": "Sluiten"
   },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Thailand | Kortom... Overal."
@@ -87,7 +88,19 @@
     "tagGroups": "Groepen",
     "tagLimited": "Beperkte plaatsen",
     "interested": "Ik heb interesse",
-    "learnMore": "Meer weten"
+    "learnMore": "Meer weten",
+    "availableDates": "Beschikbare data:",
+    "investment": "Investering",
+    "whatsappMessage": "Hallo! Ik heb interesse om deel te nemen aan de HÁRPÁ Groepsexpeditie.\nBestemming: *{destino}*\n\nIk wacht op contact van een consultant om de planning van mijn reis voort te zetten."
+  },
+  "IncludedList": {
+    "title": "Inbegrepen in de ervaring:",
+    "route": "Volledige reisroute met accommodatie, tickets en ervaringen inbegrepen",
+    "guide": "24-uurs tweetalige gids",
+    "hotel": "Bekroonde 4- tot 5-sterrenhotels",
+    "transport": "Exclusief groepsvervoer",
+    "advisory": "Reisadvies",
+    "flight": "Vliegticket"
   },
   "GroupsPage": {
     "metadata": {
@@ -120,19 +133,41 @@
     "cards": {
       "iceland": {
         "title": "IJsland",
-        "subtitle": "Land van IJs en Vuur."
+        "subtitle": "Land van IJs en Vuur.",
+        "description": "Een reis langs de meest buitengewone landschappen, van natuurlijke iconen tot geheime, ongerepte plekken.",
+        "dates": [
+          { "tag": "OKT", "range": "1-10", "year": "2026" },
+          { "tag": "MRT", "range": "1-10", "year": "2027" }
+        ],
+        "investment": "R$ 24.000"
       },
       "japan": {
         "title": "Japan",
-        "subtitle": "Land van de Rijzende Zon."
+        "subtitle": "Land van de Rijzende Zon.",
+        "description": "Een onderdompeling in de cultuur, gastronomie en landschappen van Japan, onder exclusieve curatie van HÁRPÁ.",
+        "dates": [
+          { "tag": "OKT-NOV", "range": "20-12", "year": "2026" },
+          { "tag": "MEI", "range": "01-12", "year": "2027" }
+        ],
+        "investment": "Nog te bepalen"
       },
       "nordart": {
         "title": "NordArt",
-        "subtitle": "Het Land van Noordse Kunst, Architectuur en Design."
+        "subtitle": "Het Land van Noordse Kunst, Architectuur en Design.",
+        "description": "Een onderdompeling in de Noordse esthetiek en levensstijl, langs bestemmingen waar kunst, design en cultuur samenkomen.",
+        "dates": [
+          { "tag": "BINNENKORT", "range": "--", "year": "----" }
+        ],
+        "investment": "Nog te bepalen"
       },
       "thailand": {
         "title": "Thailand",
-        "subtitle": "Het Land van Tempels, Smaken en Tradities."
+        "subtitle": "Het Land van Tempels, Smaken en Tradities.",
+        "description": "Een onderdompeling in de rijke Thaise cultuur, met bestemmingen waar spiritualiteit, gastronomie, natuur en gastvrijheid onvergetelijke ervaringen creëren.",
+        "dates": [
+          { "tag": "BINNENKORT", "range": "--", "year": "----" }
+        ],
+        "investment": "Nog te bepalen"
       }
     }
   },

@@ -1,6 +1,7 @@
 {
   "common": {
-    "back": "Back"
+    "back": "Back",
+    "close": "Close"
   },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhagen, Stockholm, Amsterdam | Thailand | After all... Everywhere."
@@ -87,7 +88,19 @@
     "tagGroups": "Groups",
     "tagLimited": "Limited spots",
     "interested": "I'm interested",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "availableDates": "Available dates:",
+    "investment": "Investment",
+    "whatsappMessage": "Hello! I'm interested in joining HÁRPÁ's Group Expedition.\nDestination: *{destino}*\n\nI'll wait for a consultant to get in touch to continue planning my trip."
+  },
+  "IncludedList": {
+    "title": "Included in the experience:",
+    "route": "Full itinerary with accommodation, tickets and experiences included",
+    "guide": "24-hour bilingual guide",
+    "hotel": "Award-winning 4 to 5-star hotels",
+    "transport": "Exclusive group transportation",
+    "advisory": "Travel advisory",
+    "flight": "Airfare"
   },
   "GroupsPage": {
     "metadata": {
@@ -120,19 +133,41 @@
     "cards": {
       "iceland": {
         "title": "Iceland",
-        "subtitle": "Land of Ice and Fire."
+        "subtitle": "Land of Ice and Fire.",
+        "description": "A journey through the most extraordinary landscapes, exploring everything from natural landmarks to secret, untouched places.",
+        "dates": [
+          { "tag": "OCT", "range": "1-10", "year": "2026" },
+          { "tag": "MAR", "range": "1-10", "year": "2027" }
+        ],
+        "investment": "R$ 24.000"
       },
       "japan": {
         "title": "Japan",
-        "subtitle": "Land of the Rising Sun."
+        "subtitle": "Land of the Rising Sun.",
+        "description": "An immersion into the culture, gastronomy and landscapes of Japan, led by HÁRPÁ's exclusive curation.",
+        "dates": [
+          { "tag": "OCT-NOV", "range": "20-12", "year": "2026" },
+          { "tag": "MAY", "range": "01-12", "year": "2027" }
+        ],
+        "investment": "TBD"
       },
       "nordart": {
         "title": "NordArt",
-        "subtitle": "The Land of Nordic Art, Architecture and Design."
+        "subtitle": "The Land of Nordic Art, Architecture and Design.",
+        "description": "An immersion into Nordic aesthetics and way of life, journeying through destinations where art, design and culture meet.",
+        "dates": [
+          { "tag": "COMING SOON", "range": "--", "year": "----" }
+        ],
+        "investment": "TBD"
       },
       "thailand": {
         "title": "Thailand",
-        "subtitle": "The Land of Temples, Flavors and Traditions."
+        "subtitle": "The Land of Temples, Flavors and Traditions.",
+        "description": "An immersion into rich Thai culture, exploring destinations where spirituality, gastronomy, nature and hospitality create unforgettable experiences.",
+        "dates": [
+          { "tag": "COMING SOON", "range": "--", "year": "----" }
+        ],
+        "investment": "TBD"
       }
     }
   },

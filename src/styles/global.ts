@@ -3,11 +3,29 @@
 import { createGlobalStyle } from 'styled-components'
 import { fonts } from './tokens'
 
+const scrollbarThumb = '#D9D9D9'
+
 const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: ${scrollbarThumb} transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${scrollbarThumb};
+    border-radius: 40px;
   }
 
   html {

@@ -1,6 +1,7 @@
 {
   "common": {
-    "back": "Voltar"
+    "back": "Voltar",
+    "close": "Fechar"
   },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Tailândia | Enfim... Todos os lugares."
@@ -87,7 +88,19 @@
     "tagGroups": "Grupos",
     "tagLimited": "Vagas limitadas",
     "interested": "Tenho interesse",
-    "learnMore": "Saiba mais"
+    "learnMore": "Saiba mais",
+    "availableDates": "Datas disponíveis:",
+    "investment": "Investimento",
+    "whatsappMessage": "Olá! Tenho interesse em participar da Expedição em Grupo da HÁRPÁ.\nDestino: *{destino}*\n\nAguardo o contato de um consultor para dar continuidade ao planejamento da minha viagem."
+  },
+  "IncludedList": {
+    "title": "Incluso na experiência:",
+    "route": "Roteiro completo com hospedagens, ingressos e experiências inclusas",
+    "guide": "Guia bilíngue 24 horas",
+    "hotel": "Hotéis premiados de 4 a 5 estrelas",
+    "transport": "Transporte exclusivo do grupo",
+    "advisory": "Assessoria de viagem",
+    "flight": "Passagem aérea"
   },
   "GroupsPage": {
     "metadata": {
@@ -120,19 +133,37 @@
     "cards": {
       "iceland": {
         "title": "Islândia",
-        "subtitle": "Terra do Gelo e do Fogo."
+        "subtitle": "Terra do Gelo e do Fogo.",
+        "description": "Uma jornada pelos cenários mais extraordinários, explorando desde ícones naturais, até lugares secretos e intocados.",
+        "dates": [
+          { "tag": "OUT", "range": "1-10", "year": "2026" },
+          { "tag": "MAR", "range": "1-10", "year": "2027" }
+        ],
+        "investment": "R$ 24.000"
       },
       "thailand": {
         "title": "Tailândia",
-        "subtitle": "A Terra dos Templos, Sabores e Tradições."
+        "subtitle": "A Terra dos Templos, Sabores e Tradições.",
+        "description": "Uma imersão na rica cultura tailandesa, explorando destinos onde espiritualidade, gastronomia, natureza e hospitalidade criam experiências inesquecíveis.",
+        "dates": [{ "tag": "EM BREVE", "range": "--", "year": "----" }],
+        "investment": "A definir"
       },
       "japan": {
         "title": "Japão",
-        "subtitle": "Terra do Sol Nascente."
+        "subtitle": "Terra do Sol Nascente.",
+        "description": "Uma imersão na cultura, gastronomia e paisagens do Japão, conduzida pela curadoria exclusiva da HÁRPÁ.",
+        "dates": [
+          { "tag": "OUT-NOV", "range": "20-12", "year": "2026" },
+          { "tag": "MAIO", "range": "01-12", "year": "2027" }
+        ],
+        "investment": "A definir"
       },
       "nordart": {
         "title": "NordArt",
-        "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos."
+        "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos.",
+        "description": "Uma imersão na estética e no modo de viver nórdico, percorrendo destinos onde arte, design e cultura se encontram.",
+        "dates": [{ "tag": "EM BREVE", "range": "--", "year": "----" }],
+        "investment": "A definir"
       }
     }
   },

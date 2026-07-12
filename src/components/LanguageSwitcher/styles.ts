@@ -15,7 +15,7 @@ export const Trigger = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   color: ${colors.dark};
   font-family: inherit;
   padding: 0;
