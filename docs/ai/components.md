@@ -11,12 +11,13 @@ Nunca criar duplicatas. Nunca usar elementos HTML brutos quando existe um compon
 
 Usar para qualquer ação interativa. Nunca usar `<button>` diretamente.
 
-```tsx
+```ts
 import Button from '@/components/Button'
-;<Button onClick={handleClick}>Reservar expedição</Button>
+
+<Button onClick={handleClick}>Reservar expedição</Button>
 ```
 
-> O `Button` envolve o conteúdo em `<S.Wrapper>`. Se precisar de estilo invertido (fundo claro), use o `PrimaryButton` exportado de `./styles` diretamente via Styled Components no arquivo `styles.ts` do componente pai.
+O `Button` envolve o conteúdo em `<S.Wrapper>`. Se precisar de estilo invertido (fundo claro), use o `PrimaryButton` exportado de `@/components/Button/styles` diretamente via Styled Components no arquivo `styles.ts` do componente pai.
 
 ---
 
@@ -27,9 +28,10 @@ import Button from '@/components/Button'
 Usar para links externos (abre em nova aba por padrão). Nunca usar `<a>` diretamente.
 Para navegação interna entre rotas, usar o `<Link>` do `next-intl`.
 
-```tsx
+```ts
 import CustomLink from '@/components/CustomLink'
-;<CustomLink href="https://wa.me/...">Fale conosco</CustomLink>
+
+<CustomLink href="https://wa.me/...">Fale conosco</CustomLink>
 ```
 
 Props:
@@ -46,9 +48,9 @@ Props:
 Usar para títulos e subtítulos. Nunca usar `<h1>`, `<h2>`, `<h3>` diretamente.
 Renderiza como `<h3>` com estilos responsivos já aplicados.
 
-```tsx
+```ts
 import Heading from '@/components/Heading'
-;<Heading>Expedições para a Islândia</Heading>
+<Heading>Expedições para a Islândia</Heading>
 ```
 
 Props:
@@ -66,9 +68,9 @@ Aceita HTML como string via `dangerouslySetInnerHTML` (útil para textos com `<s
 Usar para parágrafos e textos de corpo. Nunca usar `<p>` diretamente.
 Renderiza como `<p>` com estilos de tipografia responsivos.
 
-```tsx
+```ts
 import Text from '@/components/Text'
-;<Text>Conheça as expedições exclusivas para a Islândia.</Text>
+<Text>Conheça as expedições exclusivas para a Islândia.</Text>
 ```
 
 Props:
@@ -85,9 +87,9 @@ Aceita HTML como string via `dangerouslySetInnerHTML`.
 
 Usar para exibir um bloco informativo com título, lista de descrições e link.
 
-```tsx
+```ts
 import InfoCard from '@/components/InfoCard'
-;<InfoCard
+<InfoCard
   title="Expedição Aurora"
   description={['10 dias', 'Máximo 8 pessoas']}
   link={{ href: 'https://wa.me/...', text: 'Saiba mais' }}
@@ -104,9 +106,9 @@ Usar para o bloco de título + descrição no topo de uma página interna (ex: G
 
 O título renderiza como: `{titlePrefix} {titleMiddle} <i>{titleHighlight}</i>. {titleSuffix}`. `titleSuffix` é opcional, usado quando o título tem uma frase adicional depois do trecho em itálico (ex: Private).
 
-```tsx
+```ts
 import PageHeading from '@/components/PageHeading'
-;<PageHeading
+<PageHeading
   titlePrefix="Grupos:"
   titleMiddle="Jornadas compartilhadas. Experiências"
   titleHighlight="únicas"

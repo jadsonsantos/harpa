@@ -79,7 +79,7 @@ Nunca colocar estilos no `index.tsx`. Nunca criar arquivos `.css`, `.scss` ou `.
 Ao precisar de uma variação de um componente styled existente, estenda-o com `styled(Base)`:
 
 ```ts
-export const Wrapper = styled.button`
+export const Wrapper = styled(Button)`
   background: ${colors.primary};
 `
 
