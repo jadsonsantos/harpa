@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(xargs -I{} echo {})",
+      "Bash(lsof -i :3000 -sTCP:LISTEN)"
+    ]
+  }
+}
