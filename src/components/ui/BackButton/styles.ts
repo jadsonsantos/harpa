@@ -6,7 +6,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 export const BackLink = styled(Link)`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 28px;
   padding: 12px 0;

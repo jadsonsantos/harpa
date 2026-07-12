@@ -10,14 +10,14 @@ export const Nav = styled.div`
   gap: 40px;
 `
 
-export const Header = styled.header`
+export const Header = styled.header<{ $dark?: boolean }>`
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 2;
-  background-color: ${colors.light};
+  background-color: ${({ $dark }) => ($dark ? colors.primary : colors.light)};
   height: 60px;
   ${flex}
 

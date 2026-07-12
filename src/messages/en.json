@@ -174,6 +174,10 @@
   "PrivateForm": {
     "fullNameLabel": "Full name",
     "fullNamePlaceholder": "Full name*",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Phone (WhatsApp)*",
+    "destinationLabel": "Destination of interest",
+    "destinationPlaceholder": "Destination of interest*",
     "travelersLabel": "How many people are traveling?*",
     "decreaseTravelers": "Decrease number of travelers",
     "increaseTravelers": "Increase number of travelers",
@@ -183,10 +187,12 @@
     "dreamLabel": "Which destination do you dream of exploring?*",
     "dreamPlaceholder": "Describe your dream trip*",
     "charCount": "{count}/{max}",
+    "requiredError": "Required field.",
+    "minTravelersError": "Minimum of 1 traveler.",
     "privacyLabel": "I have read and agree to the ",
     "privacyLinkText": "Privacy Policy",
     "submitButton": "Talk to a Private consultant",
-    "whatsappMessage": "Hello! My name is {name}. We are {travelers} people and would like to travel between {departure} and {returnDate}. Dream destination: {dream}"
+    "whatsappMessage": "Hello! I would like to plan a Private experience with HÁRPÁ.\n\nName: {name}\nNumber of travelers: {travelers}\nDesired period: {departure} to {returnDate}\nAbout the desired experience:\n{dream}\n\nI look forward to being contacted by a consultant to continue planning my trip."
   },
   "PrivatePage": {
     "metadata": {
@@ -197,7 +203,8 @@
       "titleMiddle": "Your",
       "titleHighlight": "way",
       "titleSuffix": "Total exclusivity.",
-      "description": "A journey designed exclusively for you. Choose when to travel, where to go, and who to share a unique experience with."
+      "description": "A journey designed exclusively for you. Choose when to travel, where to go, and who to share a unique experience with.",
+      "imageAlt": "Northern lights over a fjord in Iceland"
     },
     "faq": {
       "titlePrefix": "Frequently asked questions about",

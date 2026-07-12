@@ -1,5 +1,5 @@
 'use client'
-import { colors, effects, spacings } from '@/styles/tokens'
+import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.button`
@@ -19,10 +19,6 @@ export const Wrapper = styled.button`
     background-color 0.3s ease,
     color 0.3s ease;
 
-  &:hover {
-    background: ${effects.primary};
-  }
-
   * {
     padding: inherit;
   }
@@ -33,8 +29,7 @@ export const PrimaryButton = styled(Wrapper)`
   color: ${colors.primary};
 
   &:hover {
-    background: ${effects.primary};
-    color: ${colors.light};
+    background-color: #f0f0f0;
   }
 `
 
@@ -43,7 +38,7 @@ export const SecondaryButton = styled(Wrapper)`
   color: ${colors.light};
 
   &:hover {
-    background: ${effects.primary};
+    background: ${colors.dark};
     color: ${colors.light};
   }
 `

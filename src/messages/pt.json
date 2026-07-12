@@ -170,6 +170,10 @@
   "PrivateForm": {
     "fullNameLabel": "Nome completo",
     "fullNamePlaceholder": "Nome completo*",
+    "phoneLabel": "Telefone",
+    "phonePlaceholder": "Telefone (WhatsApp)*",
+    "destinationLabel": "Destino de interesse",
+    "destinationPlaceholder": "Destino de interesse*",
     "travelersLabel": "Quantas pessoas irão viajar?*",
     "decreaseTravelers": "Diminuir número de pessoas",
     "increaseTravelers": "Aumentar número de pessoas",
@@ -179,10 +183,12 @@
     "dreamLabel": "Qual destino você sonha explorar?*",
     "dreamPlaceholder": "Descreva a sua viagem dos sonhos*",
     "charCount": "{count}/{max}",
+    "requiredError": "Campo obrigatório.",
+    "minTravelersError": "Quantidade mínima de 1 viajante.",
     "privacyLabel": "Li e concordo com a ",
     "privacyLinkText": "Política de Privacidade",
     "submitButton": "Falar com consultor Private",
-    "whatsappMessage": "Olá! Meu nome é {name}. Somos {travelers} pessoa(s) e gostaríamos de viajar entre {departure} e {returnDate}. Destino dos sonhos: {dream}"
+    "whatsappMessage": "Olá! Gostaria de planejar uma experiência Private com a HÁRPÁ.\n\nNome: {name}\nQuantidade de viajantes: {travelers}\nPeríodo desejado: {departure} até {returnDate}\nSobre a experiência desejada:\n{dream}\n\nAguardo o contato de um consultor para dar continuidade ao planejamento da minha viagem."
   },
   "PrivatePage": {
     "metadata": {
@@ -193,7 +199,8 @@
       "titleMiddle": "Do seu",
       "titleHighlight": "jeito",
       "titleSuffix": "Total exclusividade.",
-      "description": "Uma jornada desenhada exclusivamente para você. Escolha quando viajar, para onde ir e com quem compartilhar uma experiência única."
+      "description": "Uma jornada desenhada exclusivamente para você. Escolha quando viajar, para onde ir e com quem compartilhar uma experiência única.",
+      "imageAlt": "Aurora boreal sobre um fiorde na Islândia"
     },
     "faq": {
       "titlePrefix": "Perguntas frequentes sobre os",

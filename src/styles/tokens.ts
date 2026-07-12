@@ -6,7 +6,7 @@ export const colors = {
   success: '#28a745',
   info: '#17a2b8',
   warning: '#ffc107',
-  danger: '#dc3545',
+  danger: '#FFAAAA',
   light: '#ffffff',
   dark: '#000000',
   background: '#fafafa',
@@ -20,6 +20,7 @@ export const fonts = {
 } as const
 
 export const spacings = {
+  xxsmall: '8px',
   xsmall: '16px', // Extra Small spacing
   small: '24px', // Small spacing, typically used for gaps between elements
   medium: '32px', // Medium spacing

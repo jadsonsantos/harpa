@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> should render the text passed as children 1`] = `
+.c0 {
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+<p
+  class="c0 text"
+>
+  Text
+</p>
+`;
