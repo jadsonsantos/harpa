@@ -9,7 +9,9 @@ const DARK_MODE_ROUTES = ['/private']
 
 const Header = () => {
   const pathname = usePathname()
-  const isDark = DARK_MODE_ROUTES.some((route) => pathname?.endsWith(route))
+  const isDark = DARK_MODE_ROUTES.some(
+    (route) => pathname?.replace(/\/$/, '').endsWith(route)
+  )
 
   return (
     <S.Header $dark={isDark}>

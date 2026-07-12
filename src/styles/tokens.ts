@@ -20,6 +20,7 @@ export const fonts = {
 } as const
 
 export const spacings = {
+  xxsmall: '8px',
   xsmall: '16px', // Extra Small spacing
   small: '24px', // Small spacing, typically used for gaps between elements
   medium: '32px', // Medium spacing

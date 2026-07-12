@@ -1,6 +1,7 @@
 'use client'
 import { PrimaryButton, TertiaryButton } from '@/components/Button/styles'
 import { media } from '@/styles/mediaQueries'
+import { flex } from '@/styles/mixins'
 import { borders, colors, fonts, spacings } from '@/styles/tokens'
 import styled, { css } from 'styled-components'
 
@@ -13,7 +14,7 @@ const fieldBase = css<{ $error?: boolean }>`
   font-family: ${fonts.sans};
   font-size: 16px;
   color: ${colors.light};
-  transition: all ease;
+  transition: all ease-in-out;
 
   &::placeholder {
     color: ${colors.border};
@@ -78,6 +79,7 @@ export const DatesRow = styled.div`
 export const DateInput = styled.input<{ $error?: boolean }>`
   ${fieldBase}
   color-scheme: dark;
+  cursor: pointer;
 `
 
 export const TextareaWrapper = styled.div`
@@ -86,7 +88,7 @@ export const TextareaWrapper = styled.div`
 
 export const Textarea = styled.textarea<{ $error?: boolean }>`
   ${fieldBase}
-  min-height: 140px;
+  min-height: 200px;
   resize: none;
   padding-bottom: ${spacings.large};
   font-family: ${fonts.sans};
@@ -117,13 +119,13 @@ export const CounterButton = styled(TertiaryButton)`
   height: 44px;
   padding: 0;
   justify-content: center;
-  border: 1px solid ${colors.border};
   font-size: 20px;
   line-height: 1;
+  background: ${colors.dark};
+  border: 1px solid transparent;
 
   &:hover:not(:disabled) {
-    background: ${colors.dark};
-    border-color: ${colors.dark};
+    border-color: #4b4b4b;
   }
 `
 
@@ -135,9 +137,8 @@ export const CounterValue = styled.span`
 `
 
 export const PrivacyField = styled.label`
-  display: flex;
-  align-items: flex-start;
-  gap: ${spacings.xsmall};
+  ${flex}
+  gap: ${spacings.xxsmall};
   cursor: pointer;
   font-size: 14px;
 `
@@ -167,8 +168,7 @@ export const CheckboxBox = styled.span<{
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid
-    ${({ $checked, $error }) =>
-      $error ? colors.danger : $checked ? colors.light : colors.border};
+    ${({ $checked }) => ($checked ? colors.light : colors.border)};
   background-color: ${({ $checked }) =>
     $checked ? colors.light : 'transparent'};
   color: ${colors.primary};
@@ -182,7 +182,12 @@ export const CheckboxBox = styled.span<{
   }
 
   ${PrivacyField}:hover & {
-    border-color: ${({ $error }) => ($error ? colors.danger : colors.light)};
+    border-color: ${colors.light};
+  }
+
+  ${CheckboxInput}:focus-visible + & {
+    outline: 2px solid ${colors.light};
+    outline-offset: 2px;
   }
 `
 

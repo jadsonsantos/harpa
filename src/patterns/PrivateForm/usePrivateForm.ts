@@ -1,7 +1,7 @@
 'use client'
 import { WHATSAPP_NUMBER } from '@/constants'
 import { useTranslations } from 'next-intl'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 
 export const MAX_DREAM_LENGTH = 400
 export const MIN_TRAVELERS = 1
@@ -61,7 +61,11 @@ export const usePrivateForm = () => {
   const [departureFocused, setDepartureFocused] = useState(false)
   const [returnFocused, setReturnFocused] = useState(false)
 
-  const minDeparture = formatDateInput(new Date())
+  const [minDeparture, setMinDeparture] = useState('')
+
+  useEffect(() => {
+    setMinDeparture(formatDateInput(new Date()))
+  }, [])
 
   const setField = <K extends keyof FormValues>(
     field: K,
