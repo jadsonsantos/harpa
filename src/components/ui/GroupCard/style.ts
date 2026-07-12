@@ -1,11 +1,17 @@
 'use client'
+import { TextSmall } from '@/components/Text/styles'
+import { media } from '@/styles/mediaQueries'
 import { flex, flexBetween } from '@/styles/mixins'
+import { borders, colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
+
+const dateTagBackground = '#A03434'
+const paginationBackground = 'rgba(0, 0, 0, 0.5)'
 
 export const Card = styled.article`
   position: relative;
-  min-width: 330px;
-  max-width: 414px;
+  width: 330px;
+  flex-shrink: 0;
   height: 500px;
   border-radius: 32px;
   overflow: hidden;
@@ -14,6 +20,18 @@ export const Card = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  img {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.08);
+  }
+
+  ${media.tabletUp} {
+    width: 414px;
+  }
 `
 
 export const CardTags = styled.div`
@@ -40,4 +58,162 @@ export const CardSubtitle = styled.h4`
 export const CardActions = styled.div`
   ${flexBetween}
   margin-top: 24px;
+`
+
+export const Carousel = styled.div`
+  width: 100%;
+  height: 200px;
+
+  swiper-container,
+  swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-container {
+    --swiper-pagination-color: ${colors.light};
+    --swiper-pagination-bullet-inactive-color: ${colors.light};
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bullet-size: 5px;
+    --swiper-pagination-bullet-horizontal-gap: 2px;
+  }
+
+  swiper-container::part(pagination) {
+    left: 50%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 40px;
+    background-color: ${paginationBackground};
+    transform: translateX(-50%);
+  }
+
+  ${media.desktopUp} {
+    height: 240px;
+  }
+`
+
+export const ModalBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${spacings.small};
+  padding: 20px;
+
+  .modal-description {
+    color: ${colors.dark};
+  }
+
+  ${media.desktopUp} {
+    padding: ${spacings.medium};
+  }
+`
+
+export const ModalTitle = styled(CardTitle)`
+  color: ${colors.dark};
+`
+
+export const ModalSubtitle = styled(TextSmall)`
+  color: ${colors.dark};
+`
+
+export const DatesSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${spacings.xsmall};
+
+  .dates-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+    color: ${colors.dark};
+  }
+`
+
+export const DateList = styled.div`
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+export const DateCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 110px;
+  overflow: hidden;
+  border: 1px solid ${colors.border};
+  border-radius: ${borders.small};
+`
+
+export const DateTag = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 8px;
+  background: ${dateTagBackground};
+  color: ${colors.light};
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+`
+
+export const DateBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px 16px;
+`
+
+export const DateRange = styled.span`
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  text-align: center;
+  color: ${colors.dark};
+`
+
+export const DateYear = styled.span`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.16px;
+  color: ${colors.secondary};
+`
+
+export const InvestmentSection = styled.div`
+  ${flexBetween}
+  gap: ${spacings.xsmall};
+`
+
+export const InvestmentInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const InvestmentLabel = styled.span`
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.14px;
+  color: rgba(0, 0, 0, 0.7);
+`
+
+export const InvestmentValue = styled.span`
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.34px;
+  text-align: center;
+  color: ${colors.dark};
 `
