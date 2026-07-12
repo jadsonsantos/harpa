@@ -1,42 +1,104 @@
+import Container from '@/patterns/Container'
+import { useTranslations } from 'next-intl'
+import * as S from './styles'
+
+type PrivacyPolicyKeys = Parameters<
+  ReturnType<typeof useTranslations<'PrivacyPolicy'>>
+>[0]
+
+const section2Items: PrivacyPolicyKeys[] = [
+  'section2Item1',
+  'section2Item2',
+  'section2Item3',
+  'section2Item4',
+  'section2Item5',
+  'section2Item6',
+  'section2Item7'
+]
+
+const section3Items: PrivacyPolicyKeys[] = [
+  'section3Item1',
+  'section3Item2',
+  'section3Item3',
+  'section3Item4',
+  'section3Item5'
+]
+
+const section6Items: PrivacyPolicyKeys[] = [
+  'section6Item1',
+  'section6Item2',
+  'section6Item3',
+  'section6Item4',
+  'section6Item5',
+  'section6Item6'
+]
+
 export default function PrivacyPolicy() {
+  const t = useTranslations('PrivacyPolicy')
+
   return (
-    <div>
-      <h1>Política de Privacidade</h1>
-      <p>
-        Esta é a política de privacidade da Harpa, uma empresa dedicada a
-        fornecer soluções de tecnologia para o setor de saúde. A proteção da
-        privacidade dos nossos usuários é uma prioridade para nós. Esta política
-        descreve como coletamos, usamos e protegemos as informações pessoais dos
-        nossos usuários.
-      </p>
-      <h2>Coleta de Informações</h2>
-      <p>
-        Coletamos informações pessoais que os usuários fornecem voluntariamente
-        ao se registrarem em nosso site, utilizarem nossos serviços ou entrarem
-        em contato conosco. Essas informações podem incluir nome, endereço de
-        e-mail, número de telefone e outras informações relevantes para a
-        prestação dos nossos serviços.
-      </p>
-      <h2>Uso das Informações</h2>
-      <p>
-        As informações coletadas são usadas para fornecer e melhorar nossos
-        serviços, personalizar a experiência do usuário, responder a perguntas e
-        solicitações, enviar atualizações e comunicações relacionadas aos nossos
-        serviços, e para fins de segurança e prevenção de fraudes.
-      </p>
-      <h2>Proteção das Informações</h2>
-      <p>
-        Implementamos medidas de segurança para proteger as informações pessoais
-        dos nossos usuários contra acesso não autorizado, alteração, divulgação
-        ou destruição. Utilizamos tecnologias de criptografia e outras práticas
-        recomendadas para garantir a segurança dos dados.
-      </p>
-      <h2>Compartilhamento de Informações</h2>
-      <p>
-        Não compartilhamos as informações pessoais dos nossos usuários com
-        terceiros, exceto quando necessário para fornecer nossos serviços,
-        cumprir obrigações legais ou proteger nossos direitos.
-      </p>
-    </div>
+    <S.Wrapper>
+      <Container>
+        <S.Title>
+          {t('titlePrefix')}
+          <em>{t('titleHighlight')}</em>
+        </S.Title>
+
+        <S.Content>
+          <S.Section>
+            <S.SectionTitle>{t('section1Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section1Text')}</S.Paragraph>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section2Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section2Intro')}</S.Paragraph>
+            <S.List>
+              {section2Items.map((key) => (
+                <S.ListItem key={key}>{t(key)}</S.ListItem>
+              ))}
+            </S.List>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section3Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section3Intro')}</S.Paragraph>
+            <S.List>
+              {section3Items.map((key) => (
+                <S.ListItem key={key}>{t(key)}</S.ListItem>
+              ))}
+            </S.List>
+            <S.Paragraph>{t('section3Outro')}</S.Paragraph>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section4Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section4Text1')}</S.Paragraph>
+            <S.Paragraph>{t('section4Text2')}</S.Paragraph>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section5Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section5Text1')}</S.Paragraph>
+            <S.Paragraph>{t('section5Text2')}</S.Paragraph>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section6Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section6Intro')}</S.Paragraph>
+            <S.List>
+              {section6Items.map((key) => (
+                <S.ListItem key={key}>{t(key)}</S.ListItem>
+              ))}
+            </S.List>
+          </S.Section>
+
+          <S.Section>
+            <S.SectionTitle>{t('section7Title')}</S.SectionTitle>
+            <S.Paragraph>{t('section7Text')}</S.Paragraph>
+          </S.Section>
+        </S.Content>
+      </Container>
+    </S.Wrapper>
   )
 }
