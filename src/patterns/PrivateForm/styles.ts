@@ -121,7 +121,7 @@ export const CounterButton = styled(TertiaryButton)`
   justify-content: center;
   font-size: 20px;
   line-height: 1;
-  background: ${colors.dark};
+  background: #131313;
   border: 1px solid transparent;
 
   &:hover:not(:disabled) {

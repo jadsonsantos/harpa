@@ -1,8 +1,8 @@
 'use client'
 
 import { Text } from '@/components/Text/styles'
+import { Link } from '@/i18n/navigation'
 import { hideOnMobile } from '@/styles/mixins'
-import Link from 'next/link'
 import styled from 'styled-components'
 
 export const BackLink = styled(Link)`

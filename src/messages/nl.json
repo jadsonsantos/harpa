@@ -149,25 +149,21 @@
           { "tag": "OKT-NOV", "range": "20-12", "year": "2026" },
           { "tag": "MEI", "range": "01-12", "year": "2027" }
         ],
-        "investment": "Nog te bepalen"
+        "investment": "R$ 24.000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "Het Land van Noordse Kunst, Architectuur en Design.",
         "description": "Een onderdompeling in de Noordse esthetiek en levensstijl, langs bestemmingen waar kunst, design en cultuur samenkomen.",
-        "dates": [
-          { "tag": "BINNENKORT", "range": "--", "year": "----" }
-        ],
-        "investment": "Nog te bepalen"
+        "dates": [{ "tag": "JUN-JUL", "range": "20-02", "year": "2026" }],
+        "investment": "R$ 24.000"
       },
       "thailand": {
         "title": "Thailand",
         "subtitle": "Het Land van Tempels, Smaken en Tradities.",
         "description": "Een onderdompeling in de rijke Thaise cultuur, met bestemmingen waar spiritualiteit, gastronomie, natuur en gastvrijheid onvergetelijke ervaringen creëren.",
-        "dates": [
-          { "tag": "BINNENKORT", "range": "--", "year": "----" }
-        ],
-        "investment": "Nog te bepalen"
+        "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2026" }],
+        "investment": "R$ 24.000"
       }
     }
   },

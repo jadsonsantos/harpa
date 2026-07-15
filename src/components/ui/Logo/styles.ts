@@ -1,7 +1,7 @@
 'use client'
+import { Link } from '@/i18n/navigation'
 import { media } from '@/styles/mediaQueries'
 import Image from 'next/image'
-import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
 export type LogoVariant = 'header' | 'footer'

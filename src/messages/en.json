@@ -149,25 +149,21 @@
           { "tag": "OCT-NOV", "range": "20-12", "year": "2026" },
           { "tag": "MAY", "range": "01-12", "year": "2027" }
         ],
-        "investment": "TBD"
+        "investment": "R$ 24.000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "The Land of Nordic Art, Architecture and Design.",
         "description": "An immersion into Nordic aesthetics and way of life, journeying through destinations where art, design and culture meet.",
-        "dates": [
-          { "tag": "COMING SOON", "range": "--", "year": "----" }
-        ],
-        "investment": "TBD"
+        "dates": [{ "tag": "JUN-JUL", "range": "20-02", "year": "2026" }],
+        "investment": "R$ 24.000"
       },
       "thailand": {
         "title": "Thailand",
         "subtitle": "The Land of Temples, Flavors and Traditions.",
         "description": "An immersion into rich Thai culture, exploring destinations where spirituality, gastronomy, nature and hospitality create unforgettable experiences.",
-        "dates": [
-          { "tag": "COMING SOON", "range": "--", "year": "----" }
-        ],
-        "investment": "TBD"
+        "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2026" }],
+        "investment": "R$ 24.000"
       }
     }
   },
