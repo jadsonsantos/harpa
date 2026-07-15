@@ -1,7 +1,7 @@
 'use client'
+import { Link } from '@/i18n/navigation'
 import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 import * as S from './styles'
 
 const Footer = () => {

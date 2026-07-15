@@ -106,7 +106,7 @@ export const ModalBody = styled.div`
   }
 
   ${media.desktopUp} {
-    padding: ${spacings.medium};
+    padding: 0 ${spacings.medium} ${spacings.medium};
   }
 `
 

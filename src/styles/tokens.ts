@@ -1,7 +1,7 @@
 'use client'
 
 export const colors = {
-  primary: '#1F1F1F',
+  primary: '#1E1E1E',
   secondary: '#818181',
   success: '#28a745',
   info: '#17a2b8',

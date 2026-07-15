@@ -1,11 +1,10 @@
 'use client'
-import Link, { LinkProps } from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
+import { Link, usePathname } from '@/i18n/navigation'
+import { ComponentProps, ReactNode } from 'react'
 import * as S from './styles'
 
-type MenuItemProps = LinkProps & {
-  children: React.ReactNode
+type MenuItemProps = ComponentProps<typeof Link> & {
+  children: ReactNode
 }
 
 const MenuItem = ({ children, href, ...props }: MenuItemProps) => {

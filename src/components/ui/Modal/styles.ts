@@ -84,6 +84,7 @@ export const Media = styled.div`
 `
 
 export const Scroll = styled.div`
+  margin-top: ${spacings.medium};
   flex: 1;
   min-height: 0;
   overflow-y: auto;

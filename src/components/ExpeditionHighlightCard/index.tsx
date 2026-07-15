@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { PrimaryButton, SecondaryButton } from '../Button/styles'
 import { Tag } from '../ui/Tag'
 import * as S from './styles'

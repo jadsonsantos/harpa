@@ -25,7 +25,7 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 0;
+  padding: 20px 0;
   border-top: 1px solid ${colors.border};
 
   &:first-child {

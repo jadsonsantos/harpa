@@ -1,6 +1,6 @@
 'use client'
 import { CheckIcon, MinusIcon, PlusIcon } from '@/components/icons'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import * as S from './styles'
 import {
   MAX_DREAM_LENGTH,
