@@ -22,7 +22,7 @@ export default async function NotFound() {
             <Providers>
               <Container>
                 <S.Wrapper>
-                  <Logo />
+                  <Logo variant="notFound" />
 
                   <S.Content>
                     <S.Title>

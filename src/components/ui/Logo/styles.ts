@@ -4,7 +4,7 @@ import { media } from '@/styles/mediaQueries'
 import Image from 'next/image'
 import styled, { css } from 'styled-components'
 
-export type LogoVariant = 'header' | 'footer'
+export type LogoVariant = 'header' | 'footer' | 'notFound'
 
 const variantStyles: Record<LogoVariant, ReturnType<typeof css>> = {
   header: css`
@@ -23,6 +23,15 @@ const variantStyles: Record<LogoVariant, ReturnType<typeof css>> = {
     ${media.mobileDown} {
       width: 147px;
       height: 24px;
+    }
+  `,
+  notFound: css`
+    width: 196px;
+    height: 32px;
+
+    ${media.mobileDown} {
+      width: 160px;
+      height: 26px;
     }
   `
 }
