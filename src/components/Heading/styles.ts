@@ -21,6 +21,5 @@ export const Heading = styled.h3`
   ${media.desktopUp} {
     margin-bottom: ${spacings.large};
     font-size: 64px;
-    text-align: center;
   }
 `

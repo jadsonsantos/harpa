@@ -43,10 +43,6 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
-  h3, h4 {
-    font-weight: normal;
-  }
-
   a {
     display: inline-block;
     color: inherit;

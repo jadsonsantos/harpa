@@ -84,6 +84,7 @@ export const ExpeditionCard = styled(BaseCard)`
 
 export const ExpeditionCountry = styled.h3`
   display: none;
+  font-weight: normal;
   font-size: 16px;
   line-height: 130%;
   letter-spacing: -0.16px;
@@ -157,6 +158,7 @@ export const ExpeditionStatus = styled.div`
 `
 
 export const ExpeditionDate = styled.h4`
+  font-weight: normal;
   font-size: 24px;
   line-height: 130%;
   letter-spacing: -0.24px;

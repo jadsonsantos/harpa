@@ -13,7 +13,7 @@ export const colors = {
 } as const
 
 export const fonts = {
-  sans: '"Helvetica Neue", var(--font-inter), Arial, Helvetica, sans-serif',
+  sans: 'Helvetica Neue, var(--font-inter), Arial, Helvetica, sans-serif',
   serif: 'var(--font-playfair), Georgia, serif'
 } as const
 

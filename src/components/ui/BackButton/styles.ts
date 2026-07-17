@@ -10,8 +10,13 @@ export const BackLink = styled(Link)`
   align-items: center;
   gap: 28px;
   padding: 12px 0;
+
+  &:hover span {
+    border-bottom-color: currentColor;
+  }
 `
 
 export const BackLabel = styled(Text).attrs({ as: 'span' })`
+  border-bottom: 1px solid transparent;
   ${hideOnMobile}
 `

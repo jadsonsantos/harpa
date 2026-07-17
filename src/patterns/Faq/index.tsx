@@ -19,7 +19,7 @@ const Faq = ({ titlePrefix, titleHighlight, items }: Props) => (
     <Container>
       <S.FaqWrapper>
         <S.FaqTitle>
-          {titlePrefix} <strong>{titleHighlight}</strong>
+          {titlePrefix} <span>{titleHighlight}</span>
         </S.FaqTitle>
         {items.map((item) => (
           <Details
