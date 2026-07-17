@@ -21,6 +21,10 @@ export const Wrapper = styled.section`
 export const ExpeditionHeading = styled(Heading)`
   max-width: 670px;
   margin: auto;
+
+  ${media.desktopUp} {
+    text-align: center;
+  }
 `
 
 export const NextExpeditionsContainer = styled.div`

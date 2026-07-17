@@ -20,5 +20,6 @@ export const FaqTitle = styled(Heading)`
 
   ${media.desktopUp} {
     font-size: 54px;
+    text-align: center;
   }
 `
