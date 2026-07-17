@@ -8,7 +8,7 @@ export const Heading = styled.h3`
   margin-bottom: ${spacings.medium};
   font-family: ${fonts.sans};
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1;
   letter-spacing: -0.02em;
 

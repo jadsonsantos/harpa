@@ -6,7 +6,7 @@ import * as S from './styles'
 
 const locales = [
   { code: 'pt', label: 'PT-BR', flag: '/images/flags/pt.svg' },
-  { code: 'en', label: 'EN-USA', flag: '/images/flags/en.svg' },
+  { code: 'en', label: 'EN-UK', flag: '/images/flags/gb.svg' },
   { code: 'nl', label: 'NL-NL', flag: '/images/flags/nl.svg' }
 ]
 
