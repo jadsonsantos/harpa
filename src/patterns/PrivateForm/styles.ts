@@ -209,7 +209,6 @@ export const PrivacyLabel = styled.span`
 export const SubmitButton = styled(PrimaryButton)`
   width: 100%;
   justify-content: center;
-  margin-top: ${spacings.xsmall};
 
   &:hover {
     background: ${colors.background};

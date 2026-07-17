@@ -1,4 +1,6 @@
 'use client'
+import { PrimaryButton } from '@/components/Button/styles'
+import { media } from '@/styles/mediaQueries'
 import { colors, fonts, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -8,7 +10,9 @@ export const Wrapper = styled.main`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  gap: ${spacings.large};
+  gap: ${spacings.medium};
+  padding: ${spacings.medium} 0;
+  text-align: center;
 `
 
 export const Content = styled.div`
@@ -16,14 +20,19 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: ${spacings.medium};
+  gap: ${spacings.small};
+
+  ${media.desktopUp} {
+    gap: ${spacings.medium};
+  }
 `
 
 export const Title = styled.h1`
+  max-width: 620px;
   font-family: ${fonts.sans};
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 100;
-  line-height: 104%;
+  line-height: 1.15;
   letter-spacing: -0.01em;
 
   em {
@@ -39,27 +48,29 @@ export const Title = styled.h1`
   strong {
     font-weight: 700;
   }
+
+  ${media.desktopUp} {
+    max-width: 820px;
+    font-size: 64px;
+    line-height: 104%;
+  }
 `
 
 export const Subtitle = styled.p`
-  font-size: 16px;
-  color: ${colors.secondary};
-  line-height: 160%;
+  max-width: 360px;
+  font-size: 18px;
+  color: ${colors.dark};
+  line-height: 130%;
+
+  ${media.desktopUp} {
+    max-width: 540px;
+  }
 `
 
-export const ButtonLink = styled.a`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 40px;
+export const ButtonLink = styled(PrimaryButton)`
+  background-color: transparent;
   border: 1px solid ${colors.primary};
-  border-radius: 60px;
-  font-size: 16px;
   color: ${colors.primary};
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
 
   &:hover {
     background-color: ${colors.primary};

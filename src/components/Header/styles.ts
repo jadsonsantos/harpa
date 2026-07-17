@@ -29,6 +29,6 @@ export const Header = styled.header<{ $dark?: boolean }>`
 
   ${media.tabletUp} {
     display: flex;
-    height: 82px;
+    height: 70px;
   }
 `

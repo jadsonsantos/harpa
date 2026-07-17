@@ -1,6 +1,7 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
+import { Container } from '../Container/styles'
 
 export const Wrapper = styled.section`
   position: relative;
@@ -46,4 +47,8 @@ export const CardsGrid = styled.section`
   ${media.desktopUp} {
     padding: 60px 0 112px;
   }
+`
+
+export const BackButtonSection = styled(Container)`
+  margin: 32px auto 10px;
 `

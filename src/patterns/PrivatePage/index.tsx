@@ -38,10 +38,12 @@ export default function PrivatePage() {
           src="/images/world-map-private.svg"
           width={1061}
           height={1191}
+          position="0% 100%"
+          zIndex={0}
         />
-        <Container>
+        <S.BackButtonSection>
           <BackButton href="/" />
-        </Container>
+        </S.BackButtonSection>
         <S.MainWrapper>
           <Container>
             <S.TextColumn>

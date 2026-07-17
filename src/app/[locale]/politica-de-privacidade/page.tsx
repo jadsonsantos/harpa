@@ -1,3 +1,4 @@
+import { BackButton } from '@/components/ui/BackButton'
 import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'
 import * as S from './styles'
@@ -39,6 +40,7 @@ export default function PrivacyPolicy() {
   return (
     <S.Wrapper>
       <Container>
+        <BackButton href="/" />
         <S.Title>
           {t('titlePrefix')}
           <em>{t('titleHighlight')}</em>

@@ -7,7 +7,7 @@ import { Text } from '../Text/styles'
 export const Details = styled.details`
   margin: 0 -${spacings.small};
   padding: ${spacings.small};
-  border-bottom: 1px solid ${colors.secondary};
+  border-bottom: 1px solid ${colors.border};
 
   &.active {
     .summary-title:after {
@@ -34,7 +34,7 @@ export const SummaryTitle = styled(Text)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
+  font-weight: 500;
 
   &:after {
     content: url('/images/icons/plus.svg');
@@ -50,6 +50,8 @@ export const Content = styled.div`
   margin-top: 24px;
 
   .text {
+    color: ${colors.primary};
+
     &:not(:last-of-type) {
       margin: 0 0 20px;
     }
