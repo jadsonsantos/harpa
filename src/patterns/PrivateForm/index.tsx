@@ -8,6 +8,21 @@ import {
   usePrivateForm
 } from './usePrivateForm'
 
+// Abre o seletor nativo de data já no primeiro clique: o input começa como
+// texto (pra mostrar o placeholder) e só vira type="date" no focus, mas
+// trocar o type via estado do React é assíncrono — o calendário não abre
+// nesse mesmo clique. Por isso trocamos o type direto no DOM aqui e
+// chamamos showPicker() de forma síncrona, ainda dentro do gesto do clique.
+const openDatePicker = (
+  event: React.FocusEvent<HTMLInputElement>,
+  setFocused: (value: boolean) => void
+) => {
+  const input = event.currentTarget
+  input.type = 'date'
+  input.showPicker?.()
+  setFocused(true)
+}
+
 const PrivateForm = () => {
   const {
     t,
@@ -118,7 +133,7 @@ const PrivateForm = () => {
             aria-label={t('departurePlaceholder')}
             value={form.departureDate}
             min={minDeparture}
-            onFocus={() => setDepartureFocused(true)}
+            onFocus={(event) => openDatePicker(event, setDepartureFocused)}
             onBlur={() => {
               setDepartureFocused(false)
               handleBlur('departureDate')
@@ -137,7 +152,7 @@ const PrivateForm = () => {
             value={form.returnDate}
             min={form.departureDate || minDeparture}
             disabled={!form.departureDate}
-            onFocus={() => setReturnFocused(true)}
+            onFocus={(event) => openDatePicker(event, setReturnFocused)}
             onBlur={() => {
               setReturnFocused(false)
               handleBlur('returnDate')
