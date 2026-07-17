@@ -32,7 +32,11 @@ export const InstagramLink = styled(CustomLink)`
   text-decoration: none;
   color: inherit;
 
+  .text {
+    text-decoration: underline;
+  }
+
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 `
