@@ -1,4 +1,3 @@
-'use client'
 import PageHeading from '@/components/PageHeading'
 import { Swiper, SwiperSlide } from '@/components/Swipper'
 import { BackButton } from '@/components/ui/BackButton'

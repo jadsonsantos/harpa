@@ -1,4 +1,3 @@
-'use client'
 import { Link } from '@/i18n/navigation'
 import Container from '@/patterns/Container'
 import { useTranslations } from 'next-intl'

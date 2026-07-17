@@ -1,5 +1,3 @@
-'use client'
-
 import { ArrowLeftIcon } from '@/components/icons'
 import { useTranslations } from 'next-intl'
 import { BackLabel, BackLink } from './styles'

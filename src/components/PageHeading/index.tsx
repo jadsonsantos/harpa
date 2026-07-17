@@ -1,4 +1,3 @@
-'use client'
 import Container from '@/patterns/Container'
 import * as S from './styles'
 

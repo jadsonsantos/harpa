@@ -1,4 +1,3 @@
-'use client'
 import ExpeditionHighlightCard from '@/components/ExpeditionHighlightCard'
 import MapBackground from '@/components/ui/MapBackground'
 import { Tag } from '@/components/ui/Tag'

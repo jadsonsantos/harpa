@@ -1,4 +1,3 @@
-'use client'
 import CustomLink from '@/components/CustomLink'
 import { InstagramIcon } from '@/components/icons'
 import Text from '@/components/Text'

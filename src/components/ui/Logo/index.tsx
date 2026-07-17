@@ -1,4 +1,3 @@
-'use client'
 import type { LogoVariant } from './styles'
 import * as S from './styles'
 

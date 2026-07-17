@@ -1,4 +1,3 @@
-'use client'
 import Details from '@/components/Details'
 import Container from '../Container'
 import * as S from './styles'

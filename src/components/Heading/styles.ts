@@ -1,5 +1,3 @@
-'use client'
-
 import { media } from '@/styles/mediaQueries'
 import { fonts, spacings } from '@/styles/tokens'
 import styled from 'styled-components'

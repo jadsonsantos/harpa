@@ -1,4 +1,3 @@
-'use client'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import Logo from '@/components/ui/Logo'
 import Container from '@/patterns/Container'

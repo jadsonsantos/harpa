@@ -1,4 +1,3 @@
-'use client'
 import PageHeading from '@/components/PageHeading'
 import { BackButton } from '@/components/ui/BackButton'
 import MapBackground from '@/components/ui/MapBackground'

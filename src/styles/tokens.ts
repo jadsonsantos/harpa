@@ -1,5 +1,3 @@
-'use client'
-
 export const colors = {
   primary: '#1E1E1E',
   secondary: '#818181',
