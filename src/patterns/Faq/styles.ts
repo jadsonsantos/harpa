@@ -17,4 +17,8 @@ export const FaqWrapper = styled.div`
 
 export const FaqTitle = styled(Heading)`
   margin-bottom: 80px;
+
+  ${media.desktopUp} {
+    font-size: 54px;
+  }
 `

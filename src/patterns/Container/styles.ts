@@ -1,6 +1,5 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
-import { spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -8,7 +7,7 @@ export const Container = styled.div`
   max-width: 1418px;
 
   margin: 0 auto;
-  padding: 0 ${spacings.small};
+  padding: 0 20px;
 
   ${media.tabletUp} {
     padding: 0 40px;

@@ -5,9 +5,9 @@ import { useEffect, useRef, useState } from 'react'
 import * as S from './styles'
 
 const locales = [
-  { code: 'pt', label: 'PT-BR', flag: '🇧🇷' },
-  { code: 'en', label: 'EN-USA', flag: '🇺🇸' },
-  { code: 'nl', label: 'NL-NL', flag: '🇳🇱' }
+  { code: 'pt', label: 'PT-BR', flag: '/images/flags/pt.svg' },
+  { code: 'en', label: 'EN-USA', flag: '/images/flags/en.svg' },
+  { code: 'nl', label: 'NL-NL', flag: '/images/flags/nl.svg' }
 ]
 
 interface LanguageSwitcherProps {
@@ -52,7 +52,7 @@ const LanguageSwitcher = ({ dark = false }: LanguageSwitcherProps) => {
         aria-expanded={open}
       >
         <span>{current.label}</span>
-        <S.Flag>{current.flag}</S.Flag>
+        <S.Flag src={current.flag} alt="" width={30} height={20} />
         <S.Chevron $open={open} $dark={dark} />
       </S.Trigger>
       {open && (
@@ -64,7 +64,7 @@ const LanguageSwitcher = ({ dark = false }: LanguageSwitcherProps) => {
               $active={l.code === locale}
             >
               <span>{l.label}</span>
-              <S.Flag>{l.flag}</S.Flag>
+              <S.Flag src={l.flag} alt="" width={30} height={20} />
             </S.Option>
           ))}
         </S.Dropdown>

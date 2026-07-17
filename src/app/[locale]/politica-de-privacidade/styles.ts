@@ -23,7 +23,7 @@ export const Title = styled.h1`
   font-weight: 100;
   line-height: 1.1;
   color: ${colors.primary};
-  margin-bottom: 56px;
+  margin: 40px 0;
 
   em {
     display: block;
@@ -34,7 +34,6 @@ export const Title = styled.h1`
 
   ${media.tabletUp} {
     font-size: 64px;
-    margin-bottom: 72px;
 
     em {
       display: inline;
@@ -74,7 +73,6 @@ export const Paragraph = styled(Text)`
   font-size: 15px;
   line-height: 1.6;
   color: ${colors.primary};
-  opacity: 0.75;
   margin-bottom: 12px;
 
   &:last-child {
@@ -101,7 +99,6 @@ export const ListItem = styled.li`
   font-weight: 400;
   line-height: 1.6;
   color: ${colors.primary};
-  opacity: 0.75;
   padding-left: 16px;
   position: relative;
 
@@ -109,7 +106,6 @@ export const ListItem = styled.li`
     content: '•';
     position: absolute;
     left: 0;
-    opacity: 1;
   }
 
   ${media.tabletUp} {

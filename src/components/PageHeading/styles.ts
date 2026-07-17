@@ -1,6 +1,6 @@
 'use client'
 import { Heading } from '@/components/Heading/styles'
-import { TextSmall } from '@/components/Text/styles'
+import { Text } from '@/components/Text/styles'
 import { media } from '@/styles/mediaQueries'
 import styled from 'styled-components'
 
@@ -17,9 +17,9 @@ export const Title = styled(Heading)`
   margin-bottom: 40px;
 `
 
-export const Description = styled(TextSmall)`
+export const Description = styled(Text)`
   ${media.desktopUp} {
-    max-width: 316px;
+    max-width: 323px;
     align-self: flex-end;
   }
 `

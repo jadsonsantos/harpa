@@ -6,6 +6,8 @@ type WrapperProps = {
   $src: string
   $width: number
   $height: number
+  $position: string
+  $zIndex?: number
 }
 
 export const Wrapper = styled.div<WrapperProps>`
@@ -14,7 +16,7 @@ export const Wrapper = styled.div<WrapperProps>`
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: ${({ $zIndex }) => $zIndex ?? -1};
   pointer-events: none;
   display: none;
 
@@ -22,6 +24,7 @@ export const Wrapper = styled.div<WrapperProps>`
     display: block;
     background-image: url(${({ $src }) => $src});
     background-repeat: no-repeat;
+    background-position: ${({ $position }) => $position};
     background-size: ${({ $width, $height }) => `${$width}px ${$height}px`};
   }
 `

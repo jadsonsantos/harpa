@@ -1,11 +1,10 @@
 'use client'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
 import PageHeading from '@/components/PageHeading'
+import { Swiper, SwiperSlide } from '@/components/Swipper'
 import { BackButton } from '@/components/ui/BackButton'
 import GroupCard from '@/components/ui/GroupCard'
 import MapBackground from '@/components/ui/MapBackground'
 import { useTranslations } from 'next-intl'
-import Container from '../Container'
 import Faq from '../Faq'
 import * as S from './styles'
 
@@ -17,8 +16,7 @@ const imageThailand = '/images/groups/thailand.png'
 const buildCarouselImages = (slug: string) =>
   Array.from(
     { length: 6 },
-    (_, index) =>
-      `/images/groups/${slug}/${slug}-0${index + 1}.webp`
+    (_, index) => `/images/groups/${slug}/${slug}-0${index + 1}.webp`
   )
 
 const carouselIceland = buildCarouselImages('islandia')
@@ -96,10 +94,11 @@ export default function GroupsPage() {
         src="/images/world-map-groups.svg"
         width={1061}
         height={1191}
+        position="top right"
       />
-      <Container>
+      <S.BackButtonSection>
         <BackButton href="/" />
-      </Container>
+      </S.BackButtonSection>
       <PageHeading
         titlePrefix={t('heading.titlePrefix')}
         titleMiddle={t('heading.titleMiddle')}

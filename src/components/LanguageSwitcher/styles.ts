@@ -1,5 +1,6 @@
 'use client'
 import { colors } from '@/styles/tokens'
+import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
@@ -21,9 +22,11 @@ export const Trigger = styled.button<{ $dark?: boolean }>`
   padding: 0;
 `
 
-export const Flag = styled.span`
-  font-size: 22px;
-  line-height: 1;
+export const Flag = styled(Image)`
+  width: 30px;
+  height: 20px;
+  border-radius: 2px;
+  object-fit: cover;
 `
 
 export const Chevron = styled.span<{ $open: boolean; $dark?: boolean }>`
@@ -38,6 +41,10 @@ export const Chevron = styled.span<{ $open: boolean; $dark?: boolean }>`
     $open ? 'rotate(-135deg) translateY(3px)' : 'rotate(45deg)'};
   transition: transform 0.2s ease;
   margin-left: 2px;
+
+  ${Trigger}:hover & {
+    /* transform: rotate(-135deg) translateY(3px); */
+  }
 `
 
 export const Dropdown = styled.ul`
@@ -46,7 +53,7 @@ export const Dropdown = styled.ul`
   right: 0;
   background: ${colors.light};
   border: 1px solid ${colors.border};
-  min-width: 140px;
+  min-width: 150px;
   list-style: none;
   overflow: hidden;
   z-index: 10;
@@ -57,18 +64,19 @@ export const Option = styled.li<{ $active: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 14px 20px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: ${({ $active }) => ($active ? '700' : '400')};
+  font-weight: ${({ $active }) => ($active ? '500' : '400')};
   border-bottom: 1px solid ${colors.border};
-  transition: background 0.15s ease;
+  transition: color 0.15s ease;
 
   &:last-child {
     border-bottom: none;
   }
 
-  &:hover {
-    background: ${colors.background};
+  &:hover span {
+    text-decoration: underline;
   }
 `

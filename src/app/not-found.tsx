@@ -28,8 +28,7 @@ export default async function NotFound() {
                     <S.Title>
                       {t.rich('titleLine1', {
                         em: (chunks) => <em>{chunks}</em>
-                      })}
-                      <br />
+                      })}{' '}
                       {t.rich('titleLine2', {
                         span: (chunks) => <span>{chunks}</span>
                       })}
@@ -37,7 +36,7 @@ export default async function NotFound() {
 
                     <S.Subtitle>{t('subtitle')}</S.Subtitle>
 
-                    <S.ButtonLink href={`/${locale}`} as={Link}>
+                    <S.ButtonLink as={Link} href={`/${locale}`}>
                       {t('button')}
                     </S.ButtonLink>
                   </S.Content>

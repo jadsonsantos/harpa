@@ -210,10 +210,14 @@ export const InvestmentLabel = styled.span`
 `
 
 export const InvestmentValue = styled.span`
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: -0.34px;
   text-align: center;
   color: ${colors.dark};
+
+  ${media.desktopUp} {
+    font-size: 34px;
+  }
 `

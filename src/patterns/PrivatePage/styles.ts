@@ -2,6 +2,7 @@
 import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
+import { Container } from '../Container/styles'
 
 export const Wrapper = styled.section`
   position: relative;
@@ -28,12 +29,21 @@ export const MainWrapper = styled.div`
   }
 `
 
+export const BackButtonSection = styled(Container)`
+  margin-top: 32px;
+
+  ${media.desktopUp} {
+    margin-top: 40px;
+  }
+`
+
 export const TextColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacings.medium};
 
   ${media.desktopUp} {
+    margin-top: 24px;
     gap: ${spacings.large};
   }
 `
@@ -43,4 +53,8 @@ export const HeroImage = styled.div`
   width: 100%;
   aspect-ratio: 800 / 371;
   overflow: hidden;
+
+  ${media.desktopUp} {
+    width: 500px;
+  }
 `

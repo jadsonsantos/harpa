@@ -11,7 +11,12 @@ const NextExpeditions = () => {
 
   return (
     <S.Wrapper>
-      <MapBackground src="/images/world-map.svg" width={791} height={927} />
+      <MapBackground
+        src="/images/world-map.svg"
+        width={791}
+        height={927}
+        position=""
+      />
       <Container>
         <S.TagWrapper>
           <Tag>{t('tag')}</Tag>
