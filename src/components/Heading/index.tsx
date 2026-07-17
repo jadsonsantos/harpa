@@ -8,11 +8,15 @@ type HeadingProps = ComponentProps<'h3'> & {
   className?: string
 }
 
-const Heading = ({ children, selector, className }: HeadingProps) => {
+const Heading = ({ children, selector, className, ...rest }: HeadingProps) => {
   const customClass = `heading ${selector ?? ''} ${className ?? ''}`.trim()
 
   if (typeof children !== 'string') {
-    return <S.Heading className={customClass}> {children} </S.Heading>
+    return (
+      <S.Heading {...rest} className={customClass}>
+        {children}
+      </S.Heading>
+    )
   }
 
   const htmlString =
@@ -22,6 +26,7 @@ const Heading = ({ children, selector, className }: HeadingProps) => {
 
   return (
     <S.Heading
+      {...rest}
       className={customClass}
       dangerouslySetInnerHTML={{ __html: htmlString }}
     />

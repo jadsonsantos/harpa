@@ -8,11 +8,15 @@ type TextProps = ComponentProps<'p'> & {
   className?: string
 }
 
-const Text = ({ children, selector, className }: TextProps) => {
+const Text = ({ children, selector, className, ...rest }: TextProps) => {
   const combinedClassName = `text ${selector ?? ''} ${className ?? ''}`.trim()
 
   if (typeof children !== 'string') {
-    return <S.Text className={combinedClassName}> {children} </S.Text>
+    return (
+      <S.Text {...rest} className={combinedClassName}>
+        {children}
+      </S.Text>
+    )
   }
 
   const htmlString =
@@ -22,6 +26,7 @@ const Text = ({ children, selector, className }: TextProps) => {
 
   return (
     <S.Text
+      {...rest}
       className={combinedClassName}
       dangerouslySetInnerHTML={{ __html: htmlString }}
     />
