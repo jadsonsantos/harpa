@@ -7,6 +7,34 @@ import styled from 'styled-components'
 // styled(PrimaryButton) no styles.ts do componente-pai — ver exemplo em
 // src/styles/not-found.styles.ts (ButtonLink).
 
+// Slot do ícone de seta que aparece ao lado do texto no hover (Primary/
+// Secondary). Fica colapsado por padrão (width 0, opacity 0) e expande no
+// hover do botão — ver regra `&:hover` no Wrapper abaixo.
+export const IconSlot = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  min-width: 0;
+  margin-left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  color: inherit;
+  transition:
+    width 0.3s ease,
+    margin-left 0.3s ease,
+    opacity 0.3s ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: inherit;
+    transform: rotate(180deg);
+  }
+`
+
 // Base compartilhada: formato pílula (border-radius 60px), altura 60px.
 // Não usar diretamente — sempre estender via Primary/Secondary/Tertiary.
 export const Wrapper = styled.button`
@@ -26,8 +54,10 @@ export const Wrapper = styled.button`
     background-color 0.3s ease,
     color 0.3s ease;
 
-  * {
-    padding: inherit;
+  &:hover ${IconSlot} {
+    width: 16px;
+    margin-left: 8px;
+    opacity: 1;
   }
 `
 

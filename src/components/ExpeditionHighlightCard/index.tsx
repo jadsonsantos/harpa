@@ -1,6 +1,7 @@
 'use client'
 import { Link } from '@/i18n/navigation'
-import { PrimaryButton, SecondaryButton } from '../Button/styles'
+import { IconSlot, PrimaryButton, SecondaryButton } from '../Button/styles'
+import { ArrowLeftIcon } from '../icons'
 import { Tag } from '../ui/Tag'
 import * as S from './styles'
 
@@ -42,6 +43,9 @@ const ExpeditionHighlightCard = ({
         <S.CardTitle>{title}</S.CardTitle>
         <Button as={Link} href={href}>
           {buttonLabel}
+          <IconSlot>
+            <ArrowLeftIcon />
+          </IconSlot>
         </Button>
       </S.CardWrapper>
     </Card>
