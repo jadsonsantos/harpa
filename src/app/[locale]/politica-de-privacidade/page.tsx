@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
   return (
     <S.Wrapper>
       <Container>
-        <BackButton href="" />
+        <BackButton href="/" />
         <S.Title>
           {t('titlePrefix')}
           <em>{t('titleHighlight')}</em>
