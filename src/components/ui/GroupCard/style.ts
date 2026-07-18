@@ -96,12 +96,10 @@ export const Carousel = styled.div`
 `
 
 export const ModalBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${spacings.small};
   padding: 20px;
 
   .modal-description {
+    margin-bottom: 40px;
     color: ${colors.dark};
   }
 
@@ -111,17 +109,21 @@ export const ModalBody = styled.div`
 `
 
 export const ModalTitle = styled(CardTitle)`
+  margin: 20px 0 4px;
   color: ${colors.dark};
 `
 
 export const ModalSubtitle = styled(TextSmall)`
+  margin: 0 0 24px;
   color: ${colors.dark};
+  font-size: 15px;
 `
 
 export const DatesSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacings.xsmall};
+  margin-bottom: 40px;
 
   .dates-label {
     font-size: 16px;

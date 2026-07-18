@@ -1,12 +1,8 @@
 'use client'
-import { colors, spacings } from '@/styles/tokens'
+import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${spacings.xsmall};
-
   .included-list-title {
     font-size: 16px;
     font-weight: 500;
