@@ -54,17 +54,7 @@ export default function GroupCard({
 
   return (
     <>
-      <S.Card
-        role="button"
-        tabIndex={0}
-        onClick={() => setIsModalOpen(true)}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault()
-            setIsModalOpen(true)
-          }
-        }}
-      >
+      <S.Card onClick={() => setIsModalOpen(true)}>
         <Image
           src={imageSrc}
           alt={title + ' - ' + subtitle}

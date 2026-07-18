@@ -21,9 +21,6 @@ export const FaqTitle = styled(Heading)`
 
   ${media.tabletUp} {
     margin-bottom: 80px;
-  }
-
-  ${media.tabletUp} {
     font-size: 54px;
     text-align: center;
   }

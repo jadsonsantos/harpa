@@ -18,16 +18,27 @@ export function BackButton({ href }: BackButtonProps) {
   const router = useRouter()
 
   if (href) {
+    const normalizedHref = href.startsWith('/') ? href : `/${href}`
+
     return (
-      <BackLink href={`/${href}`}>
+      <BackLink href={normalizedHref}>
         <ArrowLeftIcon />
         <BackLabel>{t('back')}</BackLabel>
       </BackLink>
     )
   }
 
+  const handleBack = () => {
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      router.back()
+      return
+    }
+
+    router.push('/')
+  }
+
   return (
-    <BackButtonEl type="button" onClick={() => router.back()}>
+    <BackButtonEl type="button" onClick={handleBack}>
       <ArrowLeftIcon />
       <BackLabel>{t('back')}</BackLabel>
     </BackButtonEl>

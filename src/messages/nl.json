@@ -3,6 +3,10 @@
     "back": "Terug",
     "close": "Sluiten"
   },
+  "NavigationButtons": {
+    "prevLabel": "Vorige slide",
+    "nextLabel": "Volgende slide"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Thailand | Kortom... Overal."
   },

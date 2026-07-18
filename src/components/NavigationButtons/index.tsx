@@ -1,5 +1,6 @@
 'use client'
 import { ArrowLeftIcon } from '@/components/icons'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import * as S from './styles'
 
@@ -13,18 +14,23 @@ interface NavigationButtonsProps {
 
 const NavigationButtons = ({
   hasPrevButton = true,
-  prevLabel = 'Slide anterior',
-  nextLabel = 'Próximo slide'
+  prevLabel,
+  nextLabel
 }: NavigationButtonsProps) => {
+  const t = useTranslations('NavigationButtons')
   const swiper = useSwiper()
-  const [isBeginning, setIsBeginning] = useState(swiper.isBeginning)
-  const [isEnd, setIsEnd] = useState(swiper.isEnd)
+  const [isBeginning, setIsBeginning] = useState(
+    swiper ? swiper.isBeginning : true
+  )
+  const [isEnd, setIsEnd] = useState(swiper ? swiper.isEnd : false)
 
   // Em sliders com `loop`, isBeginning/isEnd praticamente nunca ficam
   // `true` (o Swiper trata as bordas como contínuas), então os botões
   // continuam sempre habilitados nesse caso — o disabled só entra em
   // jogo de fato em sliders sem loop (ex: GroupsSlider).
   useEffect(() => {
+    if (!swiper) return
+
     const updateNavState = () => {
       setIsBeginning(swiper.isBeginning)
       setIsEnd(swiper.isEnd)
@@ -40,6 +46,11 @@ const NavigationButtons = ({
     }
   }, [swiper])
 
+  if (!swiper) return null
+
+  const resolvedPrevLabel = prevLabel ?? t('prevLabel')
+  const resolvedNextLabel = nextLabel ?? t('nextLabel')
+
   return (
     <S.NavigationWrapper className="navigation-buttons">
       {hasPrevButton && (
@@ -47,8 +58,8 @@ const NavigationButtons = ({
           className="swiper-button swiper-button-prev"
           onClick={() => swiper.slidePrev()}
           disabled={isBeginning}
-          aria-label={prevLabel}
-          title={prevLabel}
+          aria-label={resolvedPrevLabel}
+          title={resolvedPrevLabel}
         >
           <ArrowLeftIcon />
         </S.PrevButton>
@@ -57,8 +68,8 @@ const NavigationButtons = ({
         className="swiper-button swiper-button-next"
         onClick={() => swiper.slideNext()}
         disabled={isEnd}
-        aria-label={nextLabel}
-        title={nextLabel}
+        aria-label={resolvedNextLabel}
+        title={resolvedNextLabel}
       >
         <ArrowLeftIcon />
       </S.NextButton>

@@ -15,7 +15,6 @@ const fieldBase = css<{ $error?: boolean }>`
   font-size: 16px;
   color: ${colors.light};
   transition: all ease-in-out;
-  z-index: 1;
 
   &::placeholder {
     color: ${colors.border};
@@ -128,7 +127,6 @@ export const CounterButton = styled(TertiaryButton)`
   line-height: 1;
   background: #131313;
   border: 1px solid transparent;
-  z-index: 1;
 
   &:hover:not(:disabled) {
     border-color: #4b4b4b;

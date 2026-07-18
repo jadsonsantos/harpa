@@ -3,6 +3,10 @@
     "back": "Voltar",
     "close": "Fechar"
   },
+  "NavigationButtons": {
+    "prevLabel": "Slide anterior",
+    "nextLabel": "Próximo slide"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Tailândia | Enfim... Todos os lugares."
   },

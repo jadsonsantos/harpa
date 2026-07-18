@@ -17,6 +17,9 @@ export const Wrapper = styled.section`
 `
 
 export const MainWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+
   .container {
     display: flex;
     flex-direction: column;
@@ -30,6 +33,8 @@ export const MainWrapper = styled.div`
 `
 
 export const BackButtonSection = styled(Container)`
+  position: relative;
+  z-index: 1;
   margin-top: 32px;
 
   ${media.desktopUp} {
