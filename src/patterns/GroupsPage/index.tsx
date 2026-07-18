@@ -95,7 +95,7 @@ export default function GroupsPage() {
         position="top right"
       />
       <S.BackButtonSection>
-        <BackButton href="/" />
+        <BackButton />
       </S.BackButtonSection>
       <PageHeading
         titlePrefix={t('heading.titlePrefix')}

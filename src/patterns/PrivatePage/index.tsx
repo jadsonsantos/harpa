@@ -41,7 +41,7 @@ export default function PrivatePage() {
           zIndex={0}
         />
         <S.BackButtonSection>
-          <BackButton href="/" />
+          <BackButton />
         </S.BackButtonSection>
         <S.MainWrapper>
           <Container>
