@@ -15,7 +15,7 @@ export const Wrapper = styled.div<WrapperProps>`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: ${({ $height }) => `${$height}px`};
   z-index: ${({ $zIndex }) => $zIndex ?? -1};
   pointer-events: none;
   display: none;
