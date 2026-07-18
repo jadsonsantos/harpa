@@ -79,8 +79,6 @@ export const DatesRow = styled.div`
 
 export const DateInput = styled.input<{ $error?: boolean }>`
   ${fieldBase}
-  color-scheme: dark;
-  cursor: pointer;
 `
 
 export const TextareaWrapper = styled.div`
