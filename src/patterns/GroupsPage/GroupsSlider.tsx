@@ -35,8 +35,8 @@ export default function GroupsSlider({ cards }: GroupsSliderProps) {
           768: { spaceBetween: 24, centeredSlides: false }
         }}
       >
-        {cards.map((card) => (
-          <SwiperSlide key={card.id}>
+        {cards.map(({ id, ...card }) => (
+          <SwiperSlide key={id}>
             <GroupCard {...card} />
           </SwiperSlide>
         ))}
