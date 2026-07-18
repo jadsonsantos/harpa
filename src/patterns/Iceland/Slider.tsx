@@ -2,7 +2,11 @@
 import useIsDeviceType from '@/utils/useIsDeviceType'
 import Image from 'next/image'
 
-import { Swiper, SwiperSlide } from '@/components/Swipper'
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/pagination'
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const Slider = () => {
   const isTablet = useIsDeviceType('tablet')
@@ -21,10 +25,10 @@ const Slider = () => {
   return (
     <Swiper
       slidesPerView={1}
-      draggable={false}
       pagination={{ clickable: true }}
       autoplay={true}
       effect="fade"
+      modules={[Autoplay, EffectFade, Pagination]}
     >
       {Array.from({ length: 4 }, (_, i) => {
         return (

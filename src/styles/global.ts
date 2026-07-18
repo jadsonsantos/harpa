@@ -63,11 +63,6 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     background: none;
   }
-
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
-    border-radius: 100%;
-  }
 `
 
 export default GlobalStyles

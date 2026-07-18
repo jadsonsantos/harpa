@@ -65,14 +65,13 @@ export const Carousel = styled.div`
   width: 100%;
   height: 200px;
 
-  swiper-container,
-  swiper-slide {
-    display: block;
+  .swiper,
+  .swiper-slide {
     width: 100%;
     height: 100%;
   }
 
-  swiper-container {
+  .swiper {
     --swiper-pagination-color: ${colors.light};
     --swiper-pagination-bullet-inactive-color: ${colors.light};
     --swiper-pagination-bullet-inactive-opacity: 0.5;
@@ -80,7 +79,7 @@ export const Carousel = styled.div`
     --swiper-pagination-bullet-horizontal-gap: 2px;
   }
 
-  swiper-container::part(pagination) {
+  .swiper-pagination {
     left: 50%;
     width: fit-content;
     display: flex;
@@ -148,7 +147,7 @@ export const DateCard = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  min-width: 110px;
+  width: 90px;
   overflow: hidden;
   border: 1px solid ${colors.border};
   border-radius: ${borders.small};
@@ -176,7 +175,7 @@ export const DateBody = styled.div`
 `
 
 export const DateRange = styled.span`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -0.24px;
@@ -186,9 +185,9 @@ export const DateRange = styled.span`
 
 export const DateYear = styled.span`
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 120%;
-  letter-spacing: -0.16px;
+  letter-spacing: -0.48px;
   color: ${colors.secondary};
 `
 

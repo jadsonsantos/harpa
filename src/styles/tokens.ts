@@ -9,7 +9,8 @@ export const colors = {
   dark: '#000000',
   background: '#fafafa',
   text: '#DFDFDF',
-  border: '#DFDFDF'
+  border: '#DFDFDF',
+  gray: '#ECECEC'
 } as const
 
 export const fonts = {
