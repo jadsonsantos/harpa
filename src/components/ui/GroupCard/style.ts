@@ -20,6 +20,7 @@ export const Card = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
   img {
     transition: transform 0.5s ease;

@@ -7,7 +7,7 @@ import Modal from '@/components/ui/Modal'
 import { WHATSAPP_NUMBER } from '@/constants'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { useState } from 'react'
+import { MouseEvent, useState } from 'react'
 import { Tag } from '../Tag'
 import * as S from './style'
 
@@ -39,7 +39,9 @@ export default function GroupCard({
   const t = useTranslations('GroupCard')
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleInterestClick = () => {
+  const handleInterestClick = (event: MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation()
+
     const message = t('whatsappMessage', { destino: title })
     const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
       message
@@ -49,7 +51,17 @@ export default function GroupCard({
 
   return (
     <>
-      <S.Card>
+      <S.Card
+        role="button"
+        tabIndex={0}
+        onClick={() => setIsModalOpen(true)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            setIsModalOpen(true)
+          }
+        }}
+      >
         <Image
           src={imageSrc}
           alt={title + ' - ' + subtitle}
@@ -68,7 +80,13 @@ export default function GroupCard({
             <Button variant="primary" onClick={handleInterestClick}>
               {t('interested')}
             </Button>
-            <Button variant="tertiary" onClick={() => setIsModalOpen(true)}>
+            <Button
+              variant="tertiary"
+              onClick={(event) => {
+                event.stopPropagation()
+                setIsModalOpen(true)
+              }}
+            >
               {t('learnMore')}
             </Button>
           </S.CardActions>
