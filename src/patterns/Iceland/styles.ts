@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
     padding: ${spacings.xxlarge} 0;
   }
 
-  swiper-slide,
+  .swiper-slide,
   img {
     border-radius: ${spacings.medium};
     max-width: 100%;

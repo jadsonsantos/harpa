@@ -20,6 +20,7 @@ export const Card = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
   img {
     transition: transform 0.5s ease;
@@ -64,14 +65,13 @@ export const Carousel = styled.div`
   width: 100%;
   height: 200px;
 
-  swiper-container,
-  swiper-slide {
-    display: block;
+  .swiper,
+  .swiper-slide {
     width: 100%;
     height: 100%;
   }
 
-  swiper-container {
+  .swiper {
     --swiper-pagination-color: ${colors.light};
     --swiper-pagination-bullet-inactive-color: ${colors.light};
     --swiper-pagination-bullet-inactive-opacity: 0.5;
@@ -79,7 +79,7 @@ export const Carousel = styled.div`
     --swiper-pagination-bullet-horizontal-gap: 2px;
   }
 
-  swiper-container::part(pagination) {
+  .swiper-pagination {
     left: 50%;
     width: fit-content;
     display: flex;
@@ -96,12 +96,10 @@ export const Carousel = styled.div`
 `
 
 export const ModalBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${spacings.small};
   padding: 20px;
 
   .modal-description {
+    margin-bottom: 40px;
     color: ${colors.dark};
   }
 
@@ -111,17 +109,21 @@ export const ModalBody = styled.div`
 `
 
 export const ModalTitle = styled(CardTitle)`
+  margin: 20px 0 4px;
   color: ${colors.dark};
 `
 
 export const ModalSubtitle = styled(TextSmall)`
+  margin: 0 0 24px;
   color: ${colors.dark};
+  font-size: 15px;
 `
 
 export const DatesSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacings.xsmall};
+  margin-bottom: 40px;
 
   .dates-label {
     font-size: 16px;
@@ -147,7 +149,7 @@ export const DateCard = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  min-width: 110px;
+  width: 90px;
   overflow: hidden;
   border: 1px solid ${colors.border};
   border-radius: ${borders.small};
@@ -175,7 +177,7 @@ export const DateBody = styled.div`
 `
 
 export const DateRange = styled.span`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -0.24px;
@@ -185,9 +187,9 @@ export const DateRange = styled.span`
 
 export const DateYear = styled.span`
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 120%;
-  letter-spacing: -0.16px;
+  letter-spacing: -0.48px;
   color: ${colors.secondary};
 `
 

@@ -28,7 +28,7 @@ const ExpeditionHighlightCard = ({
   const tagVariant = variant === 'dark' ? 'light' : 'dark'
 
   return (
-    <Card>
+    <Card as={Link} href={href}>
       <S.CardTop>
         <S.CardTags>
           {tags.map((tag) => (
@@ -41,7 +41,7 @@ const ExpeditionHighlightCard = ({
       </S.CardTop>
       <S.CardWrapper>
         <S.CardTitle>{title}</S.CardTitle>
-        <Button as={Link} href={href}>
+        <Button as="span">
           {buttonLabel}
           <IconSlot>
             <ArrowLeftIcon />

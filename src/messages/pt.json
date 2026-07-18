@@ -3,6 +3,10 @@
     "back": "Voltar",
     "close": "Fechar"
   },
+  "NavigationButtons": {
+    "prevLabel": "Slide anterior",
+    "nextLabel": "Próximo slide"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Tailândia | Enfim... Todos os lugares."
   },
@@ -112,6 +116,10 @@
       "titleHighlight": "únicas",
       "description": "Jornadas em grupo para quem busca viver experiências autênticas, sem abrir mão do conforto e da praticidade."
     },
+    "navigation": {
+      "prevLabel": "Slide anterior",
+      "nextLabel": "Próximo slide"
+    },
     "faq": {
       "titlePrefix": "Perguntas frequentes sobre os",
       "titleHighlight": "Grupos",
@@ -152,17 +160,14 @@
         "title": "Japão",
         "subtitle": "Terra do Sol Nascente.",
         "description": "Uma imersão na cultura, gastronomia e paisagens do Japão, conduzida pela curadoria exclusiva da HÁRPÁ.",
-        "dates": [
-          { "tag": "OUT-NOV", "range": "20-12", "year": "2026" },
-          { "tag": "MAIO", "range": "01-12", "year": "2027" }
-        ],
+        "dates": [{ "tag": "MAIO", "range": "01-12", "year": "2027" }],
         "investment": "R$ 24.000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos.",
         "description": "Uma imersão na estética e no modo de viver nórdico, percorrendo destinos onde arte, design e cultura se encontram.",
-        "dates": [{ "tag": "JUN-JUL", "range": "20-02", "year": "2026" }],
+        "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
         "investment": "R$ 24.000"
       }
     }

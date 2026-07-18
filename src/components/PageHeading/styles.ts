@@ -18,7 +18,7 @@ export const Title = styled(Heading)`
 `
 
 export const Description = styled(Text)`
-  ${media.desktopUp} {
+  ${media.tabletUp} {
     max-width: 323px;
     align-self: flex-end;
   }

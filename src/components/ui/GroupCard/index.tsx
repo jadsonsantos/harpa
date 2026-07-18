@@ -1,13 +1,16 @@
 'use client'
 import Button from '@/components/Button'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
 import Text from '@/components/Text'
 import IncludedList from '@/components/ui/IncludedList'
 import Modal from '@/components/ui/Modal'
 import { WHATSAPP_NUMBER } from '@/constants'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { useState } from 'react'
+import { MouseEvent, useState } from 'react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Tag } from '../Tag'
 import * as S from './style'
 
@@ -39,7 +42,9 @@ export default function GroupCard({
   const t = useTranslations('GroupCard')
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleInterestClick = () => {
+  const handleInterestClick = (event: MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation()
+
     const message = t('whatsappMessage', { destino: title })
     const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
       message
@@ -49,7 +54,18 @@ export default function GroupCard({
 
   return (
     <>
-      <S.Card>
+      <S.Card
+        role="button"
+        tabIndex={0}
+        aria-haspopup="dialog"
+        onClick={() => setIsModalOpen(true)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            setIsModalOpen(true)
+          }
+        }}
+      >
         <Image
           src={imageSrc}
           alt={title + ' - ' + subtitle}
@@ -68,7 +84,13 @@ export default function GroupCard({
             <Button variant="primary" onClick={handleInterestClick}>
               {t('interested')}
             </Button>
-            <Button variant="tertiary" onClick={() => setIsModalOpen(true)}>
+            <Button
+              variant="tertiary"
+              onClick={(event) => {
+                event.stopPropagation()
+                setIsModalOpen(true)
+              }}
+            >
               {t('learnMore')}
             </Button>
           </S.CardActions>
@@ -85,6 +107,7 @@ export default function GroupCard({
               pagination={{ clickable: true }}
               loop={true}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
+              modules={[Autoplay, Pagination]}
             >
               {images.map((image, index) => (
                 <SwiperSlide key={image} style={{ position: 'relative' }}>

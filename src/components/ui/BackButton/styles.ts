@@ -3,9 +3,9 @@
 import { Text } from '@/components/Text/styles'
 import { Link } from '@/i18n/navigation'
 import { hideOnMobile } from '@/styles/mixins'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const BackLink = styled(Link)`
+const backButtonLayout = css`
   display: inline-flex;
   align-items: center;
   gap: 28px;
@@ -14,6 +14,19 @@ export const BackLink = styled(Link)`
   &:hover span {
     border-bottom-color: currentColor;
   }
+`
+
+export const BackLink = styled(Link)`
+  ${backButtonLayout}
+`
+
+export const BackButtonEl = styled.button`
+  ${backButtonLayout}
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
 `
 
 export const BackLabel = styled(Text).attrs({ as: 'span' })`

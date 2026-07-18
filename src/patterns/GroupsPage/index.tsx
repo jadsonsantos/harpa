@@ -1,10 +1,9 @@
 import PageHeading from '@/components/PageHeading'
-import { Swiper, SwiperSlide } from '@/components/Swipper'
 import { BackButton } from '@/components/ui/BackButton'
-import GroupCard from '@/components/ui/GroupCard'
 import MapBackground from '@/components/ui/MapBackground'
 import { useTranslations } from 'next-intl'
 import Faq from '../Faq'
+import GroupsSlider from './GroupsSlider'
 import * as S from './styles'
 
 const imageIceland = '/images/groups/islandia.png'
@@ -46,16 +45,6 @@ export default function GroupsPage() {
 
   const cards = [
     {
-      id: 'nordart',
-      title: t('cards.nordart.title'),
-      subtitle: t('cards.nordart.subtitle'),
-      description: t('cards.nordart.description'),
-      dates: t.raw('cards.nordart.dates'),
-      investment: t('cards.nordart.investment'),
-      imageSrc: imageNordArt,
-      images: carouselNordArt
-    },
-    {
       id: 'thailand',
       title: t('cards.thailand.title'),
       subtitle: t('cards.thailand.subtitle'),
@@ -64,6 +53,16 @@ export default function GroupsPage() {
       investment: t('cards.thailand.investment'),
       imageSrc: imageThailand,
       images: carouselThailand
+    },
+    {
+      id: 'nordart',
+      title: t('cards.nordart.title'),
+      subtitle: t('cards.nordart.subtitle'),
+      description: t('cards.nordart.description'),
+      dates: t.raw('cards.nordart.dates'),
+      investment: t('cards.nordart.investment'),
+      imageSrc: imageNordArt,
+      images: carouselNordArt
     },
     {
       id: 'japan',
@@ -94,9 +93,10 @@ export default function GroupsPage() {
         width={1061}
         height={1191}
         position="top right"
+        hideOnTablet
       />
       <S.BackButtonSection>
-        <BackButton href="/" />
+        <BackButton />
       </S.BackButtonSection>
       <PageHeading
         titlePrefix={t('heading.titlePrefix')}
@@ -104,27 +104,7 @@ export default function GroupsPage() {
         titleHighlight={t('heading.titleHighlight')}
         description={t('heading.description')}
       />
-      <S.CardsGrid>
-        <Swiper
-          slidesPerView="auto"
-          spaceBetween={16}
-          grabCursor={true}
-          observer={true}
-          observeParents={true}
-          freeMode={{ enabled: true, sticky: true }}
-          touchRatio={1.2}
-          mousewheel={{ forceToAxis: true }}
-          breakpoints={{
-            768: { spaceBetween: 24 }
-          }}
-        >
-          {cards.map((card) => (
-            <SwiperSlide key={card.id}>
-              <GroupCard {...card} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </S.CardsGrid>
+      <GroupsSlider cards={cards} />
       <Faq
         titlePrefix={t('faq.titlePrefix')}
         titleHighlight={t('faq.titleHighlight')}

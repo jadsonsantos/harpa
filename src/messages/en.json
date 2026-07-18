@@ -3,6 +3,10 @@
     "back": "Back",
     "close": "Close"
   },
+  "NavigationButtons": {
+    "prevLabel": "Previous slide",
+    "nextLabel": "Next slide"
+  },
   "Contact": {
     "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhagen, Stockholm, Amsterdam | Thailand | After all... Everywhere."
   },
@@ -112,6 +116,10 @@
       "titleHighlight": "experiences",
       "description": "Group journeys for those who seek authentic experiences, without giving up comfort and convenience."
     },
+    "navigation": {
+      "prevLabel": "Previous slide",
+      "nextLabel": "Next slide"
+    },
     "faq": {
       "titlePrefix": "Frequently asked questions about",
       "titleHighlight": "Groups",
@@ -145,17 +153,14 @@
         "title": "Japan",
         "subtitle": "Land of the Rising Sun.",
         "description": "An immersion into the culture, gastronomy and landscapes of Japan, led by HÁRPÁ's exclusive curation.",
-        "dates": [
-          { "tag": "OCT-NOV", "range": "20-12", "year": "2026" },
-          { "tag": "MAY", "range": "01-12", "year": "2027" }
-        ],
+        "dates": [{ "tag": "MAY", "range": "01-12", "year": "2027" }],
         "investment": "R$ 24,000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "The Land of Nordic Art, Architecture and Design.",
         "description": "An immersion into Nordic aesthetics and way of life, journeying through destinations where art, design and culture meet.",
-        "dates": [{ "tag": "JUN-JUL", "range": "20-02", "year": "2026" }],
+        "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
         "investment": "R$ 24,000"
       },
       "thailand": {

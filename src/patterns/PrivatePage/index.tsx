@@ -35,13 +35,14 @@ export default function PrivatePage() {
       <S.Wrapper>
         <MapBackground
           src="/images/world-map-private.svg"
-          width={1061}
-          height={1191}
-          position="0% 100%"
+          width={1356}
+          height={924}
+          position="-50% 50%"
           zIndex={0}
+          hideOnTablet
         />
         <S.BackButtonSection>
-          <BackButton href="/" />
+          <BackButton />
         </S.BackButtonSection>
         <S.MainWrapper>
           <Container>

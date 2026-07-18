@@ -8,21 +8,6 @@ import {
   usePrivateForm
 } from './usePrivateForm'
 
-// Abre o seletor nativo de data já no primeiro clique: o input começa como
-// texto (pra mostrar o placeholder) e só vira type="date" no focus, mas
-// trocar o type via estado do React é assíncrono — o calendário não abre
-// nesse mesmo clique. Por isso trocamos o type direto no DOM aqui e
-// chamamos showPicker() de forma síncrona, ainda dentro do gesto do clique.
-const openDatePicker = (
-  event: React.FocusEvent<HTMLInputElement>,
-  setFocused: (value: boolean) => void
-) => {
-  const input = event.currentTarget
-  input.type = 'date'
-  input.showPicker?.()
-  setFocused(true)
-}
-
 const PrivateForm = () => {
   const {
     t,
@@ -31,15 +16,8 @@ const PrivateForm = () => {
     errors,
     handleBlur,
     travelersAtMin,
-    minDeparture,
-    departureFocused,
-    setDepartureFocused,
-    returnFocused,
-    setReturnFocused,
     decreaseTravelers,
     increaseTravelers,
-    handleDepartureChange,
-    handleReturnChange,
     handleSubmit
   } = usePrivateForm()
 
@@ -123,7 +101,7 @@ const PrivateForm = () => {
         <S.FieldLabel>{t('datesLabel')}</S.FieldLabel>
         <S.DatesRow>
           <S.DateInput
-            type={departureFocused || form.departureDate ? 'date' : 'text'}
+            type="text"
             id="departureDate"
             name="departureDate"
             required
@@ -132,16 +110,11 @@ const PrivateForm = () => {
             placeholder={t('departurePlaceholder')}
             aria-label={t('departurePlaceholder')}
             value={form.departureDate}
-            min={minDeparture}
-            onFocus={(event) => openDatePicker(event, setDepartureFocused)}
-            onBlur={() => {
-              setDepartureFocused(false)
-              handleBlur('departureDate')
-            }}
-            onChange={(event) => handleDepartureChange(event.target.value)}
+            onChange={(event) => setField('departureDate', event.target.value)}
+            onBlur={() => handleBlur('departureDate')}
           />
           <S.DateInput
-            type={returnFocused || form.returnDate ? 'date' : 'text'}
+            type="text"
             id="returnDate"
             name="returnDate"
             required
@@ -150,14 +123,8 @@ const PrivateForm = () => {
             placeholder={t('returnPlaceholder')}
             aria-label={t('returnPlaceholder')}
             value={form.returnDate}
-            min={form.departureDate || minDeparture}
-            disabled={!form.departureDate}
-            onFocus={(event) => openDatePicker(event, setReturnFocused)}
-            onBlur={() => {
-              setReturnFocused(false)
-              handleBlur('returnDate')
-            }}
-            onChange={(event) => handleReturnChange(event.target.value)}
+            onChange={(event) => setField('returnDate', event.target.value)}
+            onBlur={() => handleBlur('returnDate')}
           />
         </S.DatesRow>
         {(errors.departureDate || errors.returnDate) && (
