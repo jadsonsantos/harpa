@@ -3,6 +3,7 @@ import { media } from '@/styles/mediaQueries'
 import { flex, flexBetween } from '@/styles/mixins'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
+import { IconSlot, PrimaryButton, SecondaryButton } from '../Button/styles'
 import { BaseCard } from '../ExpeditionCard/styles'
 import { TextSmall } from '../Text/styles'
 
@@ -10,14 +11,41 @@ export const CardLight = styled(BaseCard)`
   background: ${colors.light};
   flex-direction: column;
   border: 1px solid currentColor;
+  cursor: pointer;
+
+  &:hover {
+    ${SecondaryButton} {
+      background: ${colors.dark};
+      color: ${colors.light};
+    }
+
+    ${IconSlot} {
+      width: 16px;
+      margin-left: 8px;
+      opacity: 1;
+    }
+  }
 `
 
 export const CardDark = styled(BaseCard)`
   background: ${colors.primary};
   flex-direction: column;
+  cursor: pointer;
 
   p {
     color: ${colors.light};
+  }
+
+  &:hover {
+    ${PrimaryButton} {
+      background-color: #f0f0f0;
+    }
+
+    ${IconSlot} {
+      width: 16px;
+      margin-left: 8px;
+      opacity: 1;
+    }
   }
 `
 
