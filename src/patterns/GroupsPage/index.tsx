@@ -93,6 +93,7 @@ export default function GroupsPage() {
         width={1061}
         height={1191}
         position="top right"
+        hideOnTablet
       />
       <S.BackButtonSection>
         <BackButton />

@@ -1,7 +1,7 @@
 'use client'
 import { PrimaryButton, TertiaryButton } from '@/components/Button/styles'
 import { media } from '@/styles/mediaQueries'
-import { flex } from '@/styles/mixins'
+import { flex, flexBetween } from '@/styles/mixins'
 import { borders, colors, fonts, spacings } from '@/styles/tokens'
 import styled, { css } from 'styled-components'
 
@@ -40,11 +40,14 @@ export const Wrapper = styled.form`
   flex-direction: column;
   gap: ${spacings.small};
 
-  max-width: 500px;
   margin: 0 auto;
   width: 100%;
 
   color: ${colors.light};
+
+  ${media.desktopUp} {
+    max-width: 500px;
+  }
 `
 
 export const Field = styled.div`
@@ -108,9 +111,12 @@ export const ErrorMessage = styled.span`
 `
 
 export const Counter = styled.div`
-  display: inline-flex;
-  align-items: center;
+  ${flexBetween}
   gap: ${spacings.small};
+
+  ${media.desktopUp} {
+    justify-content: revert;
+  }
 `
 
 export const CounterButton = styled(TertiaryButton)`

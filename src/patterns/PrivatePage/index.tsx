@@ -39,6 +39,7 @@ export default function PrivatePage() {
           height={924}
           position="-50% 50%"
           zIndex={0}
+          hideOnTablet
         />
         <S.BackButtonSection>
           <BackButton />
