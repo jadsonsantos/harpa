@@ -18,7 +18,7 @@ export const Heading = styled.h3`
     font-family: ${fonts.serif};
   }
 
-  ${media.desktopUp} {
+  ${media.tabletUp} {
     margin-bottom: ${spacings.large};
     font-size: 64px;
   }

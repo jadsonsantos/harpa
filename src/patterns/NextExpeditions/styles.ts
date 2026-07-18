@@ -20,10 +20,15 @@ export const Wrapper = styled.section`
 
 export const ExpeditionHeading = styled(Heading)`
   max-width: 670px;
-  margin: auto;
+  margin: 0 auto 16px;
+
+  ${media.tabletUp} {
+    margin-bottom: 80px;
+    text-align: center;
+  }
 
   ${media.desktopUp} {
-    text-align: center;
+    margin-bottom: 0;
   }
 `
 
@@ -32,6 +37,7 @@ export const NextExpeditionsContainer = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   gap: 24px;
+  margin-top: 32px;
 
   ${media.desktopUp} {
     display: grid;
@@ -43,16 +49,20 @@ export const TagWrapper = styled.div`
   ${flex}
   margin-bottom: ${spacings.xsmall};
 
-  ${media.desktopUp} {
+  ${media.tabletUp} {
     justify-content: center;
   }
 `
 
 export const Coordinates = styled(TextSmall)`
-  margin: 16px 0 32px;
   text-align: right;
+
+  ${media.tabletUp} {
+    display: none;
+  }
 
   ${media.desktopUp} {
     margin: 0 0 48px;
+    display: block;
   }
 `
