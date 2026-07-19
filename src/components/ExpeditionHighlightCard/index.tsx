@@ -41,7 +41,7 @@ const ExpeditionHighlightCard = ({
       </S.CardTop>
       <S.CardWrapper>
         <S.CardTitle>{title}</S.CardTitle>
-        <Button as="span">
+        <Button as="span" className="button-info">
           {buttonLabel}
           <IconSlot>
             <ArrowLeftIcon />

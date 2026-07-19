@@ -1,4 +1,5 @@
 'use client'
+import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -54,10 +55,12 @@ export const Wrapper = styled.button`
     background-color 0.3s ease,
     color 0.3s ease;
 
-  &:hover ${IconSlot} {
-    width: 16px;
-    margin-left: 8px;
-    opacity: 1;
+  ${media.desktopUp} {
+    &:hover ${IconSlot} {
+      width: 16px;
+      margin-left: 8px;
+      opacity: 1;
+    }
   }
 `
 
@@ -70,8 +73,10 @@ export const PrimaryButton = styled(Wrapper)`
   background-color: ${colors.light};
   color: ${colors.primary};
 
-  &:hover {
-    background-color: #f0f0f0;
+  ${media.desktopUp} {
+    &:hover {
+      background-color: #f0f0f0;
+    }
   }
 `
 
@@ -83,9 +88,11 @@ export const SecondaryButton = styled(Wrapper)`
   background-color: ${colors.primary};
   color: ${colors.light};
 
-  &:hover {
-    background: ${colors.dark};
-    color: ${colors.light};
+  ${media.desktopUp} {
+    &:hover {
+      background: ${colors.dark};
+      color: ${colors.light};
+    }
   }
 `
 

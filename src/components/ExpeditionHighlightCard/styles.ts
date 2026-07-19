@@ -12,17 +12,20 @@ export const CardLight = styled(BaseCard)`
   flex-direction: column;
   border: 1px solid currentColor;
   cursor: pointer;
+  padding: 24px 16px;
 
-  &:hover {
-    ${SecondaryButton} {
-      background: ${colors.dark};
-      color: ${colors.light};
-    }
+  ${media.desktopUp} {
+    &:hover {
+      ${SecondaryButton} {
+        background: ${colors.dark};
+        color: ${colors.light};
+      }
 
-    ${IconSlot} {
-      width: 16px;
-      margin-left: 8px;
-      opacity: 1;
+      ${IconSlot} {
+        width: 16px;
+        margin-left: 8px;
+        opacity: 1;
+      }
     }
   }
 `
@@ -31,20 +34,23 @@ export const CardDark = styled(BaseCard)`
   background: ${colors.primary};
   flex-direction: column;
   cursor: pointer;
+  padding: 24px 16px;
 
   p {
     color: ${colors.light};
   }
 
-  &:hover {
-    ${PrimaryButton} {
-      background-color: #f0f0f0;
-    }
+  ${media.desktopUp} {
+    &:hover {
+      ${PrimaryButton} {
+        background-color: #f0f0f0;
+      }
 
-    ${IconSlot} {
-      width: 16px;
-      margin-left: 8px;
-      opacity: 1;
+      ${IconSlot} {
+        width: 16px;
+        margin-left: 8px;
+        opacity: 1;
+      }
     }
   }
 `
@@ -57,6 +63,10 @@ export const CardSubTitle = styled(TextSmall)``
 
 export const CardWrapper = styled.div`
   ${flexBetween}
+
+  .button-info {
+    padding: 0 16px;
+  }
 `
 
 export const CardTags = styled.div`
@@ -65,7 +75,7 @@ export const CardTags = styled.div`
 `
 
 export const CardTitle = styled.p`
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 200;
   line-height: 1.3;
 

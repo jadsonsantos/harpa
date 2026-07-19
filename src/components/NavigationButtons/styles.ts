@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export const NavigationWrapper = styled.div`
   ${flexCenter}
-  gap: ${spacings.medium};
+  gap: ${spacings.xsmall};
 `
 
 export const Button = styled.button`
