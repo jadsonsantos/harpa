@@ -50,10 +50,14 @@ export const Wrapper = styled.button`
   font-weight: 500;
   line-height: 1.3;
 
-  padding: 20px ${spacings.small};
+  padding: 20px ${spacings.xsmall};
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+
+  ${media.tabletUp} {
+    padding: 20px ${spacings.small};
+  }
 
   ${media.desktopUp} {
     &:hover ${IconSlot} {

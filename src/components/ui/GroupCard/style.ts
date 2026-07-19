@@ -15,7 +15,7 @@ export const Card = styled.article`
   height: 500px;
   border-radius: 32px;
   overflow: hidden;
-  padding: 24px;
+  padding: 24px 16px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@ export const Card = styled.article`
 
   ${media.tabletUp} {
     width: 414px;
+    padding: 24px;
   }
 `
 
