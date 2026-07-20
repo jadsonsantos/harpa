@@ -6,6 +6,38 @@ import { FormEvent, useState } from 'react'
 export const MAX_DREAM_LENGTH = 400
 export const MIN_TRAVELERS = 1
 
+export const formatDateInput = (value: string) => {
+  const digits = value.replace(/\D/g, '').slice(0, 8)
+
+  if (digits.length <= 2) return digits
+  if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`
+
+  return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`
+}
+
+const DATE_PATTERN = /^(\d{2})\/(\d{2})\/(\d{4})$/
+
+export const isValidDate = (value: string) => {
+  const match = value.match(DATE_PATTERN)
+  if (!match) return false
+
+  const day = Number(match[1])
+  const month = Number(match[2])
+  const year = Number(match[3])
+
+  if (month < 1 || month > 12) return false
+
+  // new Date faz "carry-over" de dias inválidos (ex: 31/02 vira 03/03),
+  // então confirmamos validando os campos de volta a partir do resultado.
+  const date = new Date(year, month - 1, day)
+
+  return (
+    date.getFullYear() === year &&
+    date.getMonth() === month - 1 &&
+    date.getDate() === day
+  )
+}
+
 type FormValues = {
   fullName: string
   phone: string
@@ -57,8 +89,11 @@ export const usePrivateForm = () => {
 
   const errors = {
     fullName: touched.fullName && !form.fullName.trim(),
-    departureDate: touched.departureDate && !form.departureDate,
-    returnDate: touched.returnDate && !form.returnDate,
+    departureDate:
+      touched.departureDate &&
+      (!form.departureDate || !isValidDate(form.departureDate)),
+    returnDate:
+      touched.returnDate && (!form.returnDate || !isValidDate(form.returnDate)),
     dream: touched.dream && !form.dream.trim(),
     agreed: touched.agreed && !form.agreed
   }
@@ -86,8 +121,8 @@ export const usePrivateForm = () => {
 
     const hasErrors =
       !form.fullName.trim() ||
-      !form.departureDate ||
-      !form.returnDate ||
+      !isValidDate(form.departureDate) ||
+      !isValidDate(form.returnDate) ||
       !form.dream.trim() ||
       !form.agreed
 

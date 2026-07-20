@@ -3,6 +3,7 @@ import { CheckIcon, MinusIcon, PlusIcon } from '@/components/icons'
 import { Link } from '@/i18n/navigation'
 import * as S from './styles'
 import {
+  formatDateInput,
   MAX_DREAM_LENGTH,
   MIN_TRAVELERS,
   usePrivateForm
@@ -102,6 +103,8 @@ const PrivateForm = () => {
         <S.DatesRow>
           <S.DateInput
             type="text"
+            inputMode="numeric"
+            maxLength={10}
             id="departureDate"
             name="departureDate"
             required
@@ -110,11 +113,15 @@ const PrivateForm = () => {
             placeholder={t('departurePlaceholder')}
             aria-label={t('departurePlaceholder')}
             value={form.departureDate}
-            onChange={(event) => setField('departureDate', event.target.value)}
+            onChange={(event) =>
+              setField('departureDate', formatDateInput(event.target.value))
+            }
             onBlur={() => handleBlur('departureDate')}
           />
           <S.DateInput
             type="text"
+            inputMode="numeric"
+            maxLength={10}
             id="returnDate"
             name="returnDate"
             required
@@ -123,12 +130,19 @@ const PrivateForm = () => {
             placeholder={t('returnPlaceholder')}
             aria-label={t('returnPlaceholder')}
             value={form.returnDate}
-            onChange={(event) => setField('returnDate', event.target.value)}
+            onChange={(event) =>
+              setField('returnDate', formatDateInput(event.target.value))
+            }
             onBlur={() => handleBlur('returnDate')}
           />
         </S.DatesRow>
         {(errors.departureDate || errors.returnDate) && (
-          <S.ErrorMessage>{t('requiredError')}</S.ErrorMessage>
+          <S.ErrorMessage>
+            {(errors.departureDate && !form.departureDate) ||
+            (errors.returnDate && !form.returnDate)
+              ? t('requiredError')
+              : t('invalidDateError')}
+          </S.ErrorMessage>
         )}
       </S.Field>
 
