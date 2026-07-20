@@ -137,7 +137,12 @@ const PrivateForm = () => {
           />
         </S.DatesRow>
         {(errors.departureDate || errors.returnDate) && (
-          <S.ErrorMessage>{t('requiredError')}</S.ErrorMessage>
+          <S.ErrorMessage>
+            {(errors.departureDate && !form.departureDate) ||
+            (errors.returnDate && !form.returnDate)
+              ? t('requiredError')
+              : t('invalidDateError')}
+          </S.ErrorMessage>
         )}
       </S.Field>
 

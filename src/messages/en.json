@@ -189,6 +189,7 @@
     "dreamPlaceholder": "Describe your dream trip*",
     "charCount": "{count}/{max}",
     "requiredError": "Required field.",
+    "invalidDateError": "Invalid date. Use the format DD/MM/YYYY.",
     "minTravelersError": "Minimum of 1 traveler.",
     "privacyLabel": "I have read and agree to the ",
     "privacyLinkText": "Privacy Policy",

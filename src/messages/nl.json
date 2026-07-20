@@ -189,6 +189,7 @@
     "dreamPlaceholder": "Beschrijf uw droomreis*",
     "charCount": "{count}/{max}",
     "requiredError": "Verplicht veld.",
+    "invalidDateError": "Ongeldige datum. Gebruik het formaat DD/MM/JJJJ.",
     "minTravelersError": "Minimaal 1 reiziger.",
     "privacyLabel": "Ik heb het ",
     "privacyLinkText": "Privacybeleid",
