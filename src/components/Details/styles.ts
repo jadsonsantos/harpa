@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Text } from '../Text/styles'
 
 export const Details = styled.details`
-  margin: 0 -${spacings.small};
+  margin: 0 -20px;
   padding: ${spacings.small};
   border-bottom: 1px solid ${colors.border};
 
