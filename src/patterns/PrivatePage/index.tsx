@@ -32,43 +32,45 @@ export default function PrivatePage() {
 
   return (
     <>
-      <S.Wrapper>
-        <MapBackground
-          src="/images/world-map-private.svg"
-          width={1356}
-          height={924}
-          position="-50% 50%"
-          zIndex={0}
-          hideOnTablet
-        />
-        <S.BackButtonSection>
-          <BackButton />
-        </S.BackButtonSection>
-        <S.MainWrapper>
-          <Container>
-            <S.TextColumn>
-              <PageHeading
-                titlePrefix={t('titlePrefix')}
-                titleMiddle={t('titleMiddle')}
-                titleHighlight={t('titleHighlight')}
-                titleSuffix={t('titleSuffix')}
-                description={t('description')}
-                withContainer={false}
-              />
-              <S.HeroImage>
-                <Image
-                  src="/images/private.png"
-                  alt={t('imageAlt')}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  sizes="(max-width: 1200px) 100vw, 600px"
+      <S.Backdrop>
+        <S.Wrapper>
+          <MapBackground
+            src="/images/world-map-private.svg"
+            width={1356}
+            height={924}
+            position="-50% 50%"
+            zIndex={0}
+            hideOnTablet
+          />
+          <S.BackButtonSection>
+            <BackButton />
+          </S.BackButtonSection>
+          <S.MainWrapper>
+            <Container>
+              <S.TextColumn>
+                <PageHeading
+                  titlePrefix={t('titlePrefix')}
+                  titleMiddle={t('titleMiddle')}
+                  titleHighlight={t('titleHighlight')}
+                  titleSuffix={t('titleSuffix')}
+                  description={t('description')}
+                  withContainer={false}
                 />
-              </S.HeroImage>
-            </S.TextColumn>
-            <PrivateForm />
-          </Container>
-        </S.MainWrapper>
-      </S.Wrapper>
+                <S.HeroImage>
+                  <Image
+                    src="/images/private.png"
+                    alt={t('imageAlt')}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 1200px) 100vw, 600px"
+                  />
+                </S.HeroImage>
+              </S.TextColumn>
+              <PrivateForm />
+            </Container>
+          </S.MainWrapper>
+        </S.Wrapper>
+      </S.Backdrop>
       <Faq
         titlePrefix={tFaq('titlePrefix')}
         titleHighlight={tFaq('titleHighlight')}

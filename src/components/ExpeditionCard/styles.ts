@@ -23,12 +23,15 @@ export const BaseCard = styled.article`
   justify-content: space-between;
 
   border-radius: ${borders.xsmall};
-  padding: ${spacings.small};
+  padding: ${spacings.small} ${spacings.xsmall};
   height: 250px;
+
+  ${media.tabletUp} {
+    padding: ${spacings.medium};
+  }
 
   ${media.desktopUp} {
     border-radius: ${borders.medium};
-    padding: ${spacings.medium};
     height: 290px;
   }
 `

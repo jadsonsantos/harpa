@@ -1,6 +1,7 @@
 'use client'
+import { navbarEnter } from '@/styles/animations'
 import { media } from '@/styles/mediaQueries'
-import { flex } from '@/styles/mixins'
+import { flex, reducedMotionOff } from '@/styles/mixins'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -31,4 +32,10 @@ export const Header = styled.header<{ $dark?: boolean }>`
     display: flex;
     height: 70px;
   }
+`
+
+export const HeaderContent = styled.div`
+  width: 100%;
+  animation: ${navbarEnter} 700ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
+  ${reducedMotionOff}
 `

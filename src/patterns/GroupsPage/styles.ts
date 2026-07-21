@@ -1,6 +1,7 @@
 'use client'
+import { heroEnter } from '@/styles/animations'
 import { media } from '@/styles/mediaQueries'
-import { flex } from '@/styles/mixins'
+import { flex, reducedMotionOff } from '@/styles/mixins'
 import { spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Container } from '../Container/styles'
@@ -8,6 +9,8 @@ import { Container } from '../Container/styles'
 export const Wrapper = styled.section`
   position: relative;
   overflow: hidden;
+  animation: ${heroEnter} 900ms cubic-bezier(0.22, 1, 0.36, 1) 250ms both;
+  ${reducedMotionOff}
 `
 
 export const CardsGrid = styled.section`

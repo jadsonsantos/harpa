@@ -15,12 +15,14 @@ const Header = () => {
 
   return (
     <S.Header $dark={isDark}>
-      <Container>
-        <Logo dark={isDark} />
-        <S.Nav>
-          <LanguageSwitcher dark={isDark} />
-        </S.Nav>
-      </Container>
+      <S.HeaderContent key={pathname}>
+        <Container>
+          <Logo dark={isDark} />
+          <S.Nav>
+            <LanguageSwitcher dark={isDark} />
+          </S.Nav>
+        </Container>
+      </S.HeaderContent>
     </S.Header>
   )
 }
