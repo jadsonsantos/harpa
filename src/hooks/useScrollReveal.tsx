@@ -26,13 +26,25 @@ const useScrollReveal = <T extends HTMLElement = HTMLElement>({
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(false)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [resetKey])
-
-  useEffect(() => {
     const element = ref.current
-    if (!element || isVisible) return
+    if (!element) return
+
+    setIsVisible(false)
+
+    // Sem suporte a IntersectionObserver (navegador antigo, ambiente de
+    // teste, etc.): mostra o conteúdo direto em vez de deixá-lo invisível
+    // para sempre.
+    if (typeof IntersectionObserver === 'undefined') {
+      setIsVisible(true)
+      return
+    }
+
+    // Usuário pediu redução de movimento: mostra o conteúdo direto, sem
+    // esperar o scroll (o CSS também garante isso de forma independente).
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setIsVisible(true)
+      return
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -47,7 +59,7 @@ const useScrollReveal = <T extends HTMLElement = HTMLElement>({
     observer.observe(element)
 
     return () => observer.disconnect()
-  }, [threshold, isVisible, resetKey])
+  }, [threshold, resetKey])
 
   return { ref, isVisible }
 }

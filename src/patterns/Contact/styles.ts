@@ -3,6 +3,7 @@
 import CustomLink from '@/components/CustomLink'
 import { Text } from '@/components/Text/styles'
 import { media } from '@/styles/mediaQueries'
+import { reducedMotionVisible } from '@/styles/mixins'
 import { css, keyframes, styled } from 'styled-components'
 
 const fadeInUp = keyframes`
@@ -27,6 +28,8 @@ export const Wrapper = styled.section<{ $visible?: boolean }>`
     css`
       animation: ${fadeInUp} 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
     `}
+
+  ${reducedMotionVisible}
 
   ${media.tabletUp} {
     padding-top: 60px;
