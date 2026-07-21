@@ -2,7 +2,18 @@
 import { media } from '@/styles/mediaQueries'
 import { flex } from '@/styles/mixins'
 import { colors } from '@/styles/tokens'
-import styled from 'styled-components'
+import { keyframes, styled } from 'styled-components'
+
+export const navbarEnter = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
 
 export const Nav = styled.div`
   display: flex;
@@ -31,4 +42,9 @@ export const Header = styled.header<{ $dark?: boolean }>`
     display: flex;
     height: 70px;
   }
+`
+
+export const HeaderContent = styled.div`
+  width: 100%;
+  animation: ${navbarEnter} 700ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
 `

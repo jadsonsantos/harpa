@@ -3,11 +3,30 @@
 import CustomLink from '@/components/CustomLink'
 import { Text } from '@/components/Text/styles'
 import { media } from '@/styles/mediaQueries'
-import styled from 'styled-components'
+import { css, keyframes, styled } from 'styled-components'
 
-export const Wrapper = styled.section`
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+export const Wrapper = styled.section<{ $visible?: boolean }>`
   padding: 100px 0;
   text-align: center;
+  opacity: 0;
+  transform: translateY(48px);
+
+  ${({ $visible }) =>
+    $visible &&
+    css`
+      animation: ${fadeInUp} 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    `}
 
   ${media.tabletUp} {
     padding-top: 60px;

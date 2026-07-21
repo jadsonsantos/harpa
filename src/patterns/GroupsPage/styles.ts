@@ -2,12 +2,24 @@
 import { media } from '@/styles/mediaQueries'
 import { flex } from '@/styles/mixins'
 import { spacings } from '@/styles/tokens'
-import styled from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 import { Container } from '../Container/styles'
+
+const heroEnter = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
 
 export const Wrapper = styled.section`
   position: relative;
   overflow: hidden;
+  animation: ${heroEnter} 900ms cubic-bezier(0.22, 1, 0.36, 1) 250ms both;
 `
 
 export const CardsGrid = styled.section`

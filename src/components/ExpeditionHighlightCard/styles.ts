@@ -12,7 +12,6 @@ export const CardLight = styled(BaseCard)`
   flex-direction: column;
   border: 1px solid currentColor;
   cursor: pointer;
-  padding: 24px 16px;
 
   ${media.desktopUp} {
     &:hover {
@@ -34,7 +33,6 @@ export const CardDark = styled(BaseCard)`
   background: ${colors.primary};
   flex-direction: column;
   cursor: pointer;
-  padding: 24px 16px;
 
   p {
     color: ${colors.light};
@@ -64,8 +62,10 @@ export const CardSubTitle = styled(TextSmall)``
 export const CardWrapper = styled.div`
   ${flexBetween}
 
-  .button-info {
-    padding: 0 16px;
+  ${media.mobileDown} {
+    .button-info {
+      padding: 0 16px;
+    }
   }
 `
 

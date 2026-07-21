@@ -1,10 +1,21 @@
 'use client'
 import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
-import styled from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 import { Container } from '../Container/styles'
 
-export const Wrapper = styled.section`
+const heroEnter = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+export const Backdrop = styled.section`
   position: relative;
   overflow: hidden;
   background-color: ${colors.primary};
@@ -14,6 +25,10 @@ export const Wrapper = styled.section`
   ${media.desktopUp} {
     padding-bottom: 80px;
   }
+`
+
+export const Wrapper = styled.div`
+  animation: ${heroEnter} 900ms cubic-bezier(0.22, 1, 0.36, 1) 250ms both;
 `
 
 export const MainWrapper = styled.div`
