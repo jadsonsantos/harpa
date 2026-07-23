@@ -1,5 +1,3 @@
-'use client'
-
 export const media = {
   largeDesktopUp: '@media (min-width: 1440px)',
   desktopUp: '@media (min-width: 1200px)',
@@ -7,6 +5,8 @@ export const media = {
   smallDesktopBelow: '@media (max-width: 1023px)',
   largeTabletUp: '@media (min-width: 834px)',
   tabletUp: '@media (min-width: 768px)',
+  tabletBelow: '@media (max-width: 767px)',
+  tabletOnly: '@media (min-width: 768px) and (max-width: 1023px)',
   mobileUp: '@media (min-width: 480px)',
   mobileDown: '@media (max-width: 479px)'
 } as const

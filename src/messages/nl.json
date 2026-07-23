@@ -1,0 +1,230 @@
+{
+  "common": {
+    "back": "Terug",
+    "close": "Sluiten"
+  },
+  "NavigationButtons": {
+    "prevLabel": "Vorige slide",
+    "nextLabel": "Volgende slide"
+  },
+  "Contact": {
+    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Kopenhagen, Stockholm, Amsterdam | Thailand | Kortom... Overal."
+  },
+  "Metadata": {
+    "title": "HÁRPÁ - Tweetalige expedities en executive consulting.",
+    "description": "Reis naar elke bestemming ter wereld met HÁRPÁ. Specialisten in 🇮🇸 IJsland en 🇯🇵 Japan."
+  },
+  "NextExpeditions": {
+    "tag": "EXPEDITIES",
+    "heading": "<span>Reizen</span> die ooit <i>dromen</i> waren",
+    "coordinatesDMS": "64°08′51′′N 21°56′06′′W",
+    "groupsTitle": "Groepen",
+    "buttonLabel": "Ontdek meer",
+    "groupsTag1": "Groepen",
+    "groupsTag2": "Beperkte plaatsen",
+    "privateSubtitle": "/ Jij droomt. Wij creëren.",
+    "privateTag1": "Op maat"
+  },
+  "Footer": {
+    "copyright": "Copyright © {year} HÁRPÁ • Alle rechten voorbehouden",
+    "privacyPolicy": "Privacybeleid"
+  },
+  "NotFound": {
+    "titleLine1": "De <em>pagina</em> die u zoekt",
+    "titleLine2": "is <span>niet gevonden.</span>",
+    "subtitle": "Mogelijk heeft u het adres verkeerd getypt of is de pagina verwijderd.",
+    "button": "Startpagina"
+  },
+  "PrivacyPolicy": {
+    "back": "Terug",
+    "title": "Privacybeleid",
+    "titlePrefix": "",
+    "titleHighlight": "Privacybeleid",
+    "section1Title": "1. Toewijding aan uw privacy",
+    "section1Text": "HÁRPÁ hecht waarde aan uw privacy en zet zich in voor de bescherming van de persoonlijke gegevens die via dit formulier worden gedeeld. Wij gebruiken uw informatie uitsluitend om uw behoeften te begrijpen, onze service te personaliseren en ervaringen aan te bieden die aansluiten bij uw interesses.",
+    "section2Title": "2. Welke gegevens wij verzamelen",
+    "section2Intro": "Door dit formulier in te vullen, kunnen wij de volgende gegevens verzamelen:",
+    "section2Item1": "Volledige naam;",
+    "section2Item2": "Contactinformatie (e-mail en/of telefoonnummer);",
+    "section2Item3": "Aantal reizigers;",
+    "section2Item4": "Gewenste reisdata;",
+    "section2Item5": "Bestemmingen van interesse;",
+    "section2Item6": "Voorkeuren en informatie gedeeld over de gewenste reis;",
+    "section2Item7": "Overige informatie die u vrijwillig verstrekt.",
+    "section3Title": "3. Hoe wij uw gegevens gebruiken",
+    "section3Intro": "De verzamelde gegevens kunnen worden gebruikt voor:",
+    "section3Item1": "Contact opnemen over uw verzoek;",
+    "section3Item2": "Het opstellen van gepersonaliseerde voorstellen en ervaringen;",
+    "section3Item3": "Het bieden van adviserend contact;",
+    "section3Item4": "Het verbeteren van onze diensten en processen;",
+    "section3Item5": "Het naleven van wettelijke en reglementaire verplichtingen.",
+    "section3Outro": "Wij zullen uw informatie niet gebruiken voor doeleinden die onverenigbaar zijn met de doeleinden die in dit Beleid worden beschreven.",
+    "section4Title": "4. Delen van informatie",
+    "section4Text1": "Uw gegevens kunnen alleen worden gedeeld wanneer dat noodzakelijk is om de gevraagde dienst mogelijk te maken, inclusief strategische partners, dienstverleners of bevoegde autoriteiten, altijd in overeenstemming met de toepasselijke wetgeving inzake gegevensbescherming.",
+    "section4Text2": "Wij verkopen of verhandelen uw persoonlijke gegevens niet aan derden.",
+    "section5Title": "5. Opslag en beveiliging",
+    "section5Text1": "Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen onbevoegde toegang, verlies, wijziging, openbaarmaking of onrechtmatige vernietiging.",
+    "section5Text2": "Gegevens worden bewaard zolang als nodig is om de in dit Beleid beschreven doeleinden te vervullen of zoals wettelijk vereist.",
+    "section6Title": "6. Uw rechten",
+    "section6Intro": "U kunt op elk moment verzoeken om:",
+    "section6Item1": "Bevestiging van het bestaan van gegevensverwerking;",
+    "section6Item2": "Toegang tot opgeslagen gegevens;",
+    "section6Item3": "Correctie van onvolledige of verouderde informatie;",
+    "section6Item4": "Verwijdering van gegevens waar van toepassing;",
+    "section6Item5": "Intrekking van gegeven toestemming;",
+    "section6Item6": "Informatie over het delen van gegevens.",
+    "section7Title": "7. Contact",
+    "section7Text": "Voor vragen, verzoeken of het uitoefenen van uw rechten met betrekking tot privacy en gegevensbescherming kunt u contact met ons opnemen via de officiële kanalen van HÁRPÁ."
+  },
+  "HomePage": {
+    "heroTag": "EXPEDITIES",
+    "heroTitle": "Reizen die ooit <em>dromen</em> waren",
+    "heroCoordinates": "64°08'51''N 21°56'06''W / 64.1475, -21.935",
+    "groupsTag": "GROEPEN",
+    "limitedSpotsTag": "BEPERKTE PLAATSEN",
+    "groupsTitle": "Groepen",
+    "customTag": "OP MAAT",
+    "customSubtitle": "/ U droomt. Wij creëren.",
+    "privateTitle": "Private",
+    "learnMore": "Meer weten"
+  },
+  "GroupCard": {
+    "tagGroups": "Groepen",
+    "tagLimited": "Beperkte plaatsen",
+    "interested": "Ik heb interesse",
+    "learnMore": "Meer weten",
+    "availableDates": "Beschikbare data:",
+    "investment": "Investering",
+    "whatsappMessage": "Hallo! Ik heb interesse om deel te nemen aan de HÁRPÁ Groepsexpeditie.\nBestemming: *{destino}*\n\nIk wacht op contact van een consultant om de planning van mijn reis voort te zetten."
+  },
+  "IncludedList": {
+    "title": "Inbegrepen in de ervaring:",
+    "route": "Volledige reisroute met accommodatie, tickets en ervaringen inbegrepen",
+    "guide": "24-uurs tweetalige gids",
+    "hotel": "Bekroonde 4- tot 5-sterrenhotels",
+    "transport": "Exclusief groepsvervoer",
+    "advisory": "Reisadvies",
+    "flight": "Vliegticket"
+  },
+  "GroupsPage": {
+    "metadata": {
+      "title": "Groepen | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Groepen:",
+      "titleMiddle": "Gedeelde reizen. Unieke",
+      "titleHighlight": "ervaringen",
+      "description": "Groepsreizen voor wie authentieke ervaringen wil beleven, zonder in te leveren op comfort en gemak."
+    },
+    "navigation": {
+      "prevLabel": "Vorige slide",
+      "nextLabel": "Volgende slide"
+    },
+    "faq": {
+      "titlePrefix": "Veelgestelde vragen over",
+      "titleHighlight": "Groepen",
+      "items": {
+        "whatAre": {
+          "title": "Wat zijn Groepsexpedities?",
+          "description": "Groepsexpedities zijn reizen met maximaal 10 deelnemers, zorgvuldig georganiseerd door het HÁRPÁ-team om een meeslepende, exclusieve en authentieke ervaring te bieden."
+        },
+        "ownGroup": {
+          "title": "Kan ik mijn eigen groep samenstellen voor een Groepsexpeditie?",
+          "description": "Ja! Je kunt je eigen groep van maximaal 10 deelnemers samenstellen en de datum van de expeditie kiezen. Het HÁRPÁ-team organiseert de reis volgens de voorkeuren van de groep, voor een persoonlijke en unieke ervaring."
+        },
+        "whyChoose": {
+          "title": "Waarom kiezen voor Groepsexpedities?",
+          "description": "Groepsexpedities bieden de kans om unieke en gedenkwaardige momenten te beleven, bijzondere momenten te delen met andere deelnemers en te profiteren van de expertise van het HÁRPÁ-team voor een onvergetelijke reis."
+        }
+      }
+    },
+    "cards": {
+      "iceland": {
+        "title": "IJsland",
+        "subtitle": "Land van IJs en Vuur.",
+        "description": "Een reis langs de meest buitengewone landschappen, van natuurlijke iconen tot geheime, ongerepte plekken.",
+        "dates": [
+          { "tag": "OKT", "range": "1-10", "year": "2026" },
+          { "tag": "MRT", "range": "1-10", "year": "2027" }
+        ],
+        "investment": "R$ 24.000"
+      },
+      "japan": {
+        "title": "Japan",
+        "subtitle": "Land van de Rijzende Zon.",
+        "description": "Een onderdompeling in de cultuur, gastronomie en landschappen van Japan, onder exclusieve curatie van HÁRPÁ.",
+        "dates": [{ "tag": "MEI", "range": "01-12", "year": "2027" }],
+        "investment": "R$ 34.000"
+      },
+      "nordart": {
+        "title": "NordArt",
+        "subtitle": "Het Land van Noordse Kunst, Architectuur en Design.",
+        "description": "Een onderdompeling in de Noordse esthetiek en levensstijl, langs bestemmingen waar kunst, design en cultuur samenkomen.",
+        "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
+        "investment": "R$ 34.000"
+      },
+      "thailand": {
+        "title": "Thailand",
+        "subtitle": "Het Land van Tempels, Smaken en Tradities.",
+        "description": "Een onderdompeling in de rijke Thaise cultuur, met bestemmingen waar spiritualiteit, gastronomie, natuur en gastvrijheid onvergetelijke ervaringen creëren.",
+        "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2026" }],
+        "investment": "R$ 36.000"
+      }
+    }
+  },
+  "PrivateForm": {
+    "fullNameLabel": "Volledige naam",
+    "fullNamePlaceholder": "Volledige naam*",
+    "phoneLabel": "Telefoon",
+    "phonePlaceholder": "Telefoon (WhatsApp)*",
+    "destinationLabel": "Gewenste bestemming",
+    "destinationPlaceholder": "Gewenste bestemming*",
+    "travelersLabel": "Met hoeveel personen reist u?*",
+    "decreaseTravelers": "Aantal reizigers verminderen",
+    "increaseTravelers": "Aantal reizigers verhogen",
+    "datesLabel": "Wanneer wilt u reizen?*",
+    "departurePlaceholder": "Vertrekdatum",
+    "returnPlaceholder": "Retourdatum",
+    "dreamLabel": "Welke bestemming droomt u van te verkennen?*",
+    "dreamPlaceholder": "Beschrijf uw droomreis*",
+    "charCount": "{count}/{max}",
+    "requiredError": "Verplicht veld.",
+    "invalidDateError": "Ongeldige datum. Gebruik het formaat DD/MM/JJJJ.",
+    "minTravelersError": "Minimaal 1 reiziger.",
+    "privacyLabel": "Ik heb het ",
+    "privacyLinkText": "Privacybeleid",
+    "submitButton": "Spreek met een Private consultant",
+    "whatsappMessage": "Hallo! Ik wil graag een Private-ervaring plannen met HÁRPÁ.\n\nNaam: {name}\nAantal reizigers: {travelers}\nGewenste periode: {departure} tot {returnDate}\nOver de gewenste ervaring:\n{dream}\n\nIk zie uit naar contact met een consultant om de planning van mijn reis voort te zetten."
+  },
+  "PrivatePage": {
+    "metadata": {
+      "title": "Private | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Private:",
+      "titleMiddle": "Op jouw",
+      "titleHighlight": "manier",
+      "titleSuffix": "Totale exclusiviteit.",
+      "description": "Een reis die exclusief voor u is ontworpen. Kies wanneer u reist, waarheen u gaat en met wie u een unieke ervaring wilt delen.",
+      "imageAlt": "Noorderlicht boven een fjord in IJsland"
+    },
+    "faq": {
+      "titlePrefix": "Veelgestelde vragen over",
+      "titleHighlight": "Private",
+      "items": {
+        "whatIs": {
+          "title": "Wat is de Private-ervaring?",
+          "description": "Private is een volledig gepersonaliseerde ervaring. U kiest de bestemming, de data, wie u vergezelt en het tempo van de reis. Op basis van uw interesses ontwikkelt het HÁRPÁ-team een exclusieve reis, speciaal op maat gemaakt voor u. Indien gewenst kunt u de volledige route van de Groepsexpeditie gebruiken en aanpassen aan uw voorkeuren."
+        },
+        "guide": {
+          "title": "Gaat er een gids mee tijdens de Private-reis?",
+          "description": "Niet per se. In tegenstelling tot de Groepsexpedities omvat de Private-optie geen persoonlijke begeleiding tijdens de reis. Toch blijft het HÁRPÁ-team 24 uur per dag beschikbaar via WhatsApp voor ondersteuning, advies en eventuele aanpassingen tijdens de reis."
+        },
+        "whyChoose": {
+          "title": "Waarom kiezen voor de Private-ervaring?",
+          "description": "De Private-ervaring is ideaal voor wie volledige vrijheid zoekt om in eigen tempo te reizen. Met flexibele data, bestemmingen naar keuze en een route die exclusief is ontworpen rond uw interesses, wordt elke reis zorgvuldig gepland om te weerspiegelen wat een reis voor u werkelijk bijzonder maakt."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match snapshot 1`] = `
+.c1 {
+  width: 100%;
+  max-width: 1418px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.c0 {
+  border-top: 1px solid #DFDFDF;
+  padding: 20px 0;
+  color: #1F1F1F;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.c0 a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .c1 {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c1 {
+    padding: 0 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .c0 {
+    padding: 20px 0 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c0 {
+    padding: 20px 0 14px;
+  }
+}
+
+<footer
+  class="c0"
+>
+  <div
+    class="c1 container"
+  >
+    <p>
+      Copyright © 
+      2026
+       HÁRPÁ • Todos os direitos reservados •
+       
+      <a
+        href="/politica-de-privacidade"
+      >
+        Política de Privacidade
+      </a>
+    </p>
+  </div>
+</footer>
+`;

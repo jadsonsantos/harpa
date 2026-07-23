@@ -1,24 +1,25 @@
-'use client'
-
 export const colors = {
-  primary: '#000000',
+  primary: '#1E1E1E',
   secondary: '#818181',
   success: '#28a745',
   info: '#17a2b8',
   warning: '#ffc107',
-  danger: '#dc3545',
+  danger: '#FFAAAA',
   light: '#ffffff',
   dark: '#000000',
   background: '#fafafa',
-  text: '#333333'
+  text: '#DFDFDF',
+  border: '#DFDFDF',
+  gray: '#ECECEC'
 } as const
 
 export const fonts = {
-  sans: 'Roboto, Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif'
+  sans: 'Helvetica Neue, var(--font-inter), Arial, Helvetica, sans-serif',
+  serif: 'var(--font-playfair), Georgia, serif'
 } as const
 
 export const spacings = {
+  xxsmall: '8px',
   xsmall: '16px', // Extra Small spacing
   small: '24px', // Small spacing, typically used for gaps between elements
   medium: '32px', // Medium spacing

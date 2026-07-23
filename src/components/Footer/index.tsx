@@ -1,14 +1,19 @@
-'use client'
-import Container from '../../patterns/Container'
+import { Link } from '@/i18n/navigation'
+import Container from '@/patterns/Container'
+import { useTranslations } from 'next-intl'
 import * as S from './styles'
 
 const Footer = () => {
+  const t = useTranslations('Footer')
   const currentYear = new Date().getFullYear()
 
   return (
     <S.Wrapper>
       <Container>
-        <p>Copyright ©️ {currentYear} HÁRPÁ • Todos os direitos reservados.</p>
+        <p>
+          {t('copyright', { year: currentYear })} •{' '}
+          <Link href="/politica-de-privacidade">{t('privacyPolicy')}</Link>
+        </p>
       </Container>
     </S.Wrapper>
   )

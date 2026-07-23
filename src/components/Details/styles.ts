@@ -1,13 +1,13 @@
 'use client'
+import { media } from '@/styles/mediaQueries'
 import { colors, spacings } from '@/styles/tokens'
 import styled from 'styled-components'
 import { Text } from '../Text/styles'
-import { media } from '@/styles/mediaQueries'
 
 export const Details = styled.details`
-  margin: 0 -${spacings.small};
+  margin: 0 -20px;
   padding: ${spacings.small};
-  border-bottom: 1px solid ${colors.secondary};
+  border-bottom: 1px solid ${colors.border};
 
   &.active {
     .summary-title:after {
@@ -34,7 +34,7 @@ export const SummaryTitle = styled(Text)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
+  font-weight: 500;
 
   &:after {
     content: url('/images/icons/plus.svg');
@@ -50,7 +50,7 @@ export const Content = styled.div`
   margin-top: 24px;
 
   .text {
-    max-width: 240px;
+    color: ${colors.primary};
 
     &:not(:last-of-type) {
       margin: 0 0 20px;
@@ -59,15 +59,8 @@ export const Content = styled.div`
 
   ${media.tabletUp} {
     .text {
-      max-width: 582px;
       font-size: 16px;
       letter-spacing: -0.16px;
-    }
-  }
-
-  ${media.desktopUp} {
-    .text {
-      max-width: 716px;
     }
   }
 `

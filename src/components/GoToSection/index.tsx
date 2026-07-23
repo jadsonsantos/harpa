@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { HoverEffectComponent } from '../HoverEffect'
 import * as S from './styles'
 

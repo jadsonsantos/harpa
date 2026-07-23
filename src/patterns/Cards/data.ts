@@ -1,4 +1,4 @@
-import { WHATSSAPP_URL } from '@/constants'
+import { WHATSAPP_URL } from '@/constants'
 
 const data = [
   {
@@ -10,7 +10,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: WHATSSAPP_URL
+      href: WHATSAPP_URL
     }
   },
   {
@@ -22,7 +22,7 @@ const data = [
     ],
     link: {
       text: 'Enviar mensagem para a HÁRPÁ',
-      href: WHATSSAPP_URL
+      href: WHATSAPP_URL
     }
   }
 ]

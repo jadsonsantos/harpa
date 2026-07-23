@@ -1,0 +1,230 @@
+{
+  "common": {
+    "back": "Voltar",
+    "close": "Fechar"
+  },
+  "NavigationButtons": {
+    "prevLabel": "Slide anterior",
+    "nextLabel": "Próximo slide"
+  },
+  "Contact": {
+    "address": "São Paulo | Reykjavik | Tokyo | Oslo, Copenhague, Estocolmo, Amsterdã | Tailândia | Enfim... Todos os lugares."
+  },
+  "Metadata": {
+    "title": "HÁRPÁ - Expedições e consultoria executiva bilíngue.",
+    "description": "Viaje para qualquer destino do mundo com a HÁRPÁ. Especialistas em 🇮🇸 Islândia e 🇯🇵 Japão."
+  },
+  "NextExpeditions": {
+    "tag": "EXPEDIÇÕES",
+    "heading": "<span>Viagens</span> que um dia foram <i>sonhos</i>",
+    "coordinatesDMS": "64°08′51′′N 21°56′06′′O",
+    "groupsTitle": "Grupos",
+    "buttonLabel": "Saiba mais",
+    "groupsTag1": "Grupos",
+    "groupsTag2": "Vagas limitadas",
+    "privateSubtitle": "/ Você sonha. A gente cria.",
+    "privateTag1": "Customizado"
+  },
+  "Footer": {
+    "copyright": "Copyright © {year} HÁRPÁ • Todos os direitos reservados",
+    "privacyPolicy": "Política de Privacidade"
+  },
+  "NotFound": {
+    "titleLine1": "A <em>página</em> que você está",
+    "titleLine2": "procurando <span>não foi encontrada.</span>",
+    "subtitle": "Você pode ter digitado incorretamente o endereço ou a página pode ter sido removida.",
+    "button": "Página inicial"
+  },
+  "PrivacyPolicy": {
+    "back": "Voltar",
+    "title": "Política de privacidade",
+    "titlePrefix": "Política de ",
+    "titleHighlight": "privacidade",
+    "section1Title": "1. Compromisso com sua privacidade",
+    "section1Text": "A HÁRPÁ valoriza a sua privacidade e se compromete a proteger os dados pessoais compartilhados por meio deste formulário. Utilizamos suas informações exclusivamente para compreender suas necessidades, personalizar o atendimento e oferecer experiências alinhadas aos seus interesses.",
+    "section2Title": "2. Quais dados coletamos",
+    "section2Intro": "Ao preencher este formulário, podemos coletar:",
+    "section2Item1": "Nome completo;",
+    "section2Item2": "Informações de contato (e-mail e/ou telefone);",
+    "section2Item3": "Número de viajantes;",
+    "section2Item4": "Datas desejadas para a viagem;",
+    "section2Item5": "Destinos de interesse;",
+    "section2Item6": "Preferências e informações compartilhadas sobre a viagem desejada;",
+    "section2Item7": "Outras informações fornecidas voluntariamente por você.",
+    "section3Title": "3. Como utilizamos seus dados",
+    "section3Intro": "Os dados coletados poderão ser utilizados para:",
+    "section3Item1": "Entrar em contato sobre sua solicitação;",
+    "section3Item2": "Elaborar propostas e experiências personalizadas;",
+    "section3Item3": "Prestar atendimento consultivo;",
+    "section3Item4": "Melhorar nossos serviços e processos;",
+    "section3Item5": "Cumprir obrigações legais e regulatórias.",
+    "section3Outro": "Não utilizaremos suas informações para finalidades incompatíveis com aquelas descritas nesta Política.",
+    "section4Title": "4. Compartilhamento de informações",
+    "section4Text1": "Seus dados poderão ser compartilhados apenas quando necessário para viabilizar o atendimento solicitado, incluindo parceiros estratégicos, fornecedores de serviços ou autoridades competentes, sempre observando os princípios da Lei Geral de Proteção de Dados (LGPD).",
+    "section4Text2": "Não comercializamos ou vendemos seus dados pessoais a terceiros.",
+    "section5Title": "5. Armazenamento e segurança",
+    "section5Text1": "Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acessos não autorizados, perda, alteração, divulgação ou destruição indevida.",
+    "section5Text2": "Os dados serão armazenados pelo período necessário para cumprir as finalidades descritas nesta Política ou conforme exigido por lei.",
+    "section6Title": "6. Seus direitos",
+    "section6Intro": "Nos termos da LGPD (Lei nº 13.709/2018), você poderá solicitar a qualquer momento:",
+    "section6Item1": "Confirmação da existência de tratamento dos seus dados;",
+    "section6Item2": "Acesso aos dados armazenados;",
+    "section6Item3": "Correção de informações incompletas ou desatualizadas;",
+    "section6Item4": "Exclusão de dados quando aplicável;",
+    "section6Item5": "Revogação do consentimento fornecido;",
+    "section6Item6": "Informações sobre compartilhamento de dados.",
+    "section7Title": "7. Contato",
+    "section7Text": "Em caso de dúvidas, solicitações ou exercício dos seus direitos relacionados à privacidade e proteção de dados, entre em contato conosco pelos canais oficiais disponibilizados pela HÁRPÁ."
+  },
+  "HomePage": {
+    "heroTag": "EXPEDIÇÕES",
+    "heroTitle": "Viagens que um dia foram <em>sonhos</em>",
+    "heroCoordinates": "64°08'51''N 21°56'06''O / 64.1475, -21.935",
+    "groupsTag": "GRUPOS",
+    "limitedSpotsTag": "VAGAS LIMITADAS",
+    "groupsTitle": "Grupos",
+    "customTag": "CUSTOMIZADO",
+    "customSubtitle": "/ Você sonha. A gente cria.",
+    "privateTitle": "Private",
+    "learnMore": "Saiba mais"
+  },
+  "GroupCard": {
+    "tagGroups": "Grupos",
+    "tagLimited": "Vagas limitadas",
+    "interested": "Tenho interesse",
+    "learnMore": "Saiba mais",
+    "availableDates": "Datas disponíveis:",
+    "investment": "Investimento",
+    "whatsappMessage": "Olá! Tenho interesse em participar da Expedição em Grupo da HÁRPÁ.\nDestino: *{destino}*\n\nAguardo o contato de um consultor para dar continuidade ao planejamento da minha viagem."
+  },
+  "IncludedList": {
+    "title": "Incluso na experiência:",
+    "route": "Roteiro completo com hospedagens, ingressos e experiências inclusas",
+    "guide": "Guia bilíngue 24 horas",
+    "hotel": "Hotéis premiados de 4 a 5 estrelas",
+    "transport": "Transporte exclusivo do grupo",
+    "advisory": "Assessoria de viagem",
+    "flight": "Passagem aérea"
+  },
+  "GroupsPage": {
+    "metadata": {
+      "title": "Grupos | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Grupos:",
+      "titleMiddle": "Jornadas compartilhadas. Experiências",
+      "titleHighlight": "únicas",
+      "description": "Jornadas em grupo para quem busca viver experiências autênticas, sem abrir mão do conforto e da praticidade."
+    },
+    "navigation": {
+      "prevLabel": "Slide anterior",
+      "nextLabel": "Próximo slide"
+    },
+    "faq": {
+      "titlePrefix": "Perguntas frequentes sobre os",
+      "titleHighlight": "Grupos",
+      "items": {
+        "whatAre": {
+          "title": "O que são as Expedições em Grupo?",
+          "description": "As Expedições em Grupo são jornadas em grupo de até 10 participantes, cuidadosamente organizados pela equipe HÁRPÁ para proporcionar uma experiência imersiva, exclusiva e autêntica."
+        },
+        "ownGroup": {
+          "title": "Posso montar meu grupo para a Expedição em Grupo?",
+          "description": "Sim! Você pode montar seu próprio grupo de até 10 participantes e escolher a data da expedição. A equipe HÁRPÁ irá organizar a jornada de acordo com as preferências do grupo, garantindo uma experiência personalizada e única."
+        },
+        "whyChoose": {
+          "title": "Por que escolher as Expedições em Grupo?",
+          "description": "As Expedições em Grupo oferecem a oportunidade de vivenciar experiências únicas e memoráveis, compartilhando momentos especiais com outros participantes e contando com a expertise da equipe HÁRPÁ para garantir uma jornada inesquecível."
+        }
+      }
+    },
+    "cards": {
+      "iceland": {
+        "title": "Islândia",
+        "subtitle": "Terra do Gelo e do Fogo.",
+        "description": "Uma jornada pelos cenários mais extraordinários, explorando desde ícones naturais, até lugares secretos e intocados.",
+        "dates": [
+          { "tag": "OUT", "range": "1-10", "year": "2026" },
+          { "tag": "MAR", "range": "1-10", "year": "2027" }
+        ],
+        "investment": "R$ 24.000"
+      },
+      "thailand": {
+        "title": "Tailândia",
+        "subtitle": "A Terra dos Templos, Sabores e Tradições.",
+        "description": "Uma imersão na rica cultura tailandesa, explorando destinos onde espiritualidade, gastronomia, natureza e hospitalidade criam experiências inesquecíveis.",
+        "dates": [{ "tag": "DEZ-JAN", "range": "27-08", "year": "2026" }],
+        "investment": "R$ 36.000"
+      },
+      "japan": {
+        "title": "Japão",
+        "subtitle": "Terra do Sol Nascente.",
+        "description": "Uma imersão na cultura, gastronomia e paisagens do Japão, conduzida pela curadoria exclusiva da HÁRPÁ.",
+        "dates": [{ "tag": "MAIO", "range": "01-12", "year": "2027" }],
+        "investment": "R$ 34.000"
+      },
+      "nordart": {
+        "title": "NordArt",
+        "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos.",
+        "description": "Uma imersão na estética e no modo de viver nórdico, percorrendo destinos onde arte, design e cultura se encontram.",
+        "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
+        "investment": "R$ 34.000"
+      }
+    }
+  },
+  "PrivateForm": {
+    "fullNameLabel": "Nome completo",
+    "fullNamePlaceholder": "Nome completo*",
+    "phoneLabel": "Telefone",
+    "phonePlaceholder": "Telefone (WhatsApp)*",
+    "destinationLabel": "Destino de interesse",
+    "destinationPlaceholder": "Destino de interesse*",
+    "travelersLabel": "Quantas pessoas irão viajar?*",
+    "decreaseTravelers": "Diminuir número de pessoas",
+    "increaseTravelers": "Aumentar número de pessoas",
+    "datesLabel": "Quando gostaria de viajar?*",
+    "departurePlaceholder": "Data de partida",
+    "returnPlaceholder": "Data de retorno",
+    "dreamLabel": "Qual destino você sonha explorar?*",
+    "dreamPlaceholder": "Descreva a sua viagem dos sonhos*",
+    "charCount": "{count}/{max}",
+    "requiredError": "Campo obrigatório.",
+    "invalidDateError": "Data inválida. Use o formato DD/MM/AAAA.",
+    "minTravelersError": "Quantidade mínima de 1 viajante.",
+    "privacyLabel": "Li e concordo com a ",
+    "privacyLinkText": "Política de Privacidade",
+    "submitButton": "Falar com consultor Private",
+    "whatsappMessage": "Olá! Gostaria de planejar uma experiência Private com a HÁRPÁ.\n\nNome: {name}\nQuantidade de viajantes: {travelers}\nPeríodo desejado: {departure} até {returnDate}\nSobre a experiência desejada:\n{dream}\n\nAguardo o contato de um consultor para dar continuidade ao planejamento da minha viagem."
+  },
+  "PrivatePage": {
+    "metadata": {
+      "title": "Private | HÁRPÁ"
+    },
+    "heading": {
+      "titlePrefix": "Private:",
+      "titleMiddle": "Do seu",
+      "titleHighlight": "jeito",
+      "titleSuffix": "Total exclusividade.",
+      "description": "Uma jornada desenhada exclusivamente para você. Escolha quando viajar, para onde ir e com quem compartilhar uma experiência única.",
+      "imageAlt": "Aurora boreal sobre um fiorde na Islândia"
+    },
+    "faq": {
+      "titlePrefix": "Perguntas frequentes sobre",
+      "titleHighlight": "Private",
+      "items": {
+        "whatIs": {
+          "title": "O que é a Experiência Private?",
+          "description": "O Private é uma experiência totalmente personalizada. Você escolhe o destino, as datas, quem irá acompanhá-lo e o ritmo da viagem. A partir dos seus interesses, a equipe HÁRPÁ desenvolve uma jornada exclusiva, desenhada sob medida para você. Caso deseje, é possível utilizar todo o itinerário da Expedição em Grupo e adaptar às suas preferências."
+        },
+        "guide": {
+          "title": "O guia acompanha a viagem Private?",
+          "description": "Não necessariamente. Diferentemente das Expedições em Grupo, a modalidade Private não inclui acompanhamento presencial durante a viagem. Ainda assim, a equipe HÁRPÁ permanece disponível 24h por dia via WhatsApp para suporte, orientações e eventuais ajustes ao longo da jornada."
+        },
+        "whyChoose": {
+          "title": "Por que escolher a Experiência Private?",
+          "description": "A experiência Private é ideal para quem busca total liberdade para viajar no seu próprio ritmo. Com datas flexíveis, destinos à sua escolha e um roteiro desenvolvido exclusivamente para os seus interesses, cada jornada é acuradamente planejada para refletir aquilo que torna uma viagem verdadeiramente especial para você."
+        }
+      }
+    }
+  }
+}

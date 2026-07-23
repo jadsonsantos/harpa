@@ -1,12 +1,31 @@
 'use client'
 
 import { createGlobalStyle } from 'styled-components'
+import { fonts } from './tokens'
+
+const scrollbarThumb = '#D9D9D9'
 
 const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: ${scrollbarThumb} transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${scrollbarThumb};
+    border-radius: 40px;
   }
 
   html {
@@ -18,12 +37,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 82px;
-  }
-
-  h3, h4 {
-    font-weight: normal;
+    font-family: ${fonts.sans};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   a {
@@ -42,13 +59,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
+    font-family: ${fonts.sans};
     border: none;
     background: none;
-  }
-
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
-    border-radius: 100%;
   }
 `
 
