@@ -154,21 +154,21 @@
         "subtitle": "A Terra dos Templos, Sabores e Tradições.",
         "description": "Uma imersão na rica cultura tailandesa, explorando destinos onde espiritualidade, gastronomia, natureza e hospitalidade criam experiências inesquecíveis.",
         "dates": [{ "tag": "DEZ-JAN", "range": "27-08", "year": "2026" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 36.000"
       },
       "japan": {
         "title": "Japão",
         "subtitle": "Terra do Sol Nascente.",
         "description": "Uma imersão na cultura, gastronomia e paisagens do Japão, conduzida pela curadoria exclusiva da HÁRPÁ.",
         "dates": [{ "tag": "MAIO", "range": "01-12", "year": "2027" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 34.000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "A Terra da Arte, Arquitetura e Design Nórdicos.",
         "description": "Uma imersão na estética e no modo de viver nórdico, percorrendo destinos onde arte, design e cultura se encontram.",
         "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 34.000"
       }
     }
   },

@@ -154,21 +154,21 @@
         "subtitle": "Land van de Rijzende Zon.",
         "description": "Een onderdompeling in de cultuur, gastronomie en landschappen van Japan, onder exclusieve curatie van HÁRPÁ.",
         "dates": [{ "tag": "MEI", "range": "01-12", "year": "2027" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 34.000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "Het Land van Noordse Kunst, Architectuur en Design.",
         "description": "Een onderdompeling in de Noordse esthetiek en levensstijl, langs bestemmingen waar kunst, design en cultuur samenkomen.",
         "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 34.000"
       },
       "thailand": {
         "title": "Thailand",
         "subtitle": "Het Land van Tempels, Smaken en Tradities.",
         "description": "Een onderdompeling in de rijke Thaise cultuur, met bestemmingen waar spiritualiteit, gastronomie, natuur en gastvrijheid onvergetelijke ervaringen creëren.",
         "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2026" }],
-        "investment": "R$ 24.000"
+        "investment": "R$ 36.000"
       }
     }
   },
