@@ -21,9 +21,9 @@ export function BackButton({ href }: BackButtonProps) {
     const normalizedHref = href.startsWith('/') ? href : `/${href}`
 
     return (
-      <BackLink href={normalizedHref}>
+      <BackLink href={normalizedHref} aria-label={t('back')}>
         <ArrowLeftIcon />
-        <BackLabel>{t('back')}</BackLabel>
+        <BackLabel aria-hidden="true">{t('back')}</BackLabel>
       </BackLink>
     )
   }
@@ -38,9 +38,9 @@ export function BackButton({ href }: BackButtonProps) {
   }
 
   return (
-    <BackButtonEl type="button" onClick={handleBack}>
+    <BackButtonEl type="button" onClick={handleBack} aria-label={t('back')}>
       <ArrowLeftIcon />
-      <BackLabel>{t('back')}</BackLabel>
+      <BackLabel aria-hidden="true">{t('back')}</BackLabel>
     </BackButtonEl>
   )
 }
