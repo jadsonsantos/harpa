@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const dateTagBackground = '#A03434'
 const paginationBackground = 'rgba(0, 0, 0, 0.5)'
 
-export const Card = styled.article`
+export const Card = styled.div`
   position: relative;
   width: 330px;
   flex-shrink: 0;
