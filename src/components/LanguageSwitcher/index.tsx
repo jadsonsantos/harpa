@@ -52,13 +52,7 @@ const LanguageSwitcher = ({ dark = false }: LanguageSwitcherProps) => {
         aria-expanded={open}
       >
         <span>{current.label}</span>
-        <S.Flag
-          src={current.flag}
-          alt=""
-          width={30}
-          height={20}
-          loading="eager"
-        />
+        <S.Flag src={current.flag} alt="" width={30} height={20} priority />
         <S.Chevron $open={open} $dark={dark} />
       </S.Trigger>
       {open && (
@@ -70,13 +64,7 @@ const LanguageSwitcher = ({ dark = false }: LanguageSwitcherProps) => {
               $active={l.code === locale}
             >
               <span>{l.label}</span>
-              <S.Flag
-                src={l.flag}
-                alt=""
-                width={30}
-                height={20}
-                loading="eager"
-              />
+              <S.Flag src={l.flag} alt="" width={30} height={20} priority />
             </S.Option>
           ))}
         </S.Dropdown>
