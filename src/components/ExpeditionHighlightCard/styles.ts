@@ -57,7 +57,12 @@ export const CardTop = styled.div`
   ${flexBetween}
 `
 
-export const CardSubTitle = styled(TextSmall)``
+export const CardSubTitle = styled(TextSmall)`
+  ${media.extraSmallMobileDown} {
+    font-size: 12px;
+    letter-spacing: -0.02em;
+  }
+`
 
 export const CardWrapper = styled.div`
   ${flexBetween}
