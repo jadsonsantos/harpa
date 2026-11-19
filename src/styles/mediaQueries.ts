@@ -8,5 +8,6 @@ export const media = {
   tabletBelow: '@media (max-width: 767px)',
   tabletOnly: '@media (min-width: 768px) and (max-width: 1023px)',
   mobileUp: '@media (min-width: 480px)',
-  mobileDown: '@media (max-width: 479px)'
+  mobileDown: '@media (max-width: 479px)',
+  extraSmallMobileDown: '@media (max-width: 320px)'
 } as const
