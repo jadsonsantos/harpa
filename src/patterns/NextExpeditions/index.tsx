@@ -41,6 +41,7 @@ const NextExpeditions = () => {
             variant="dark"
             title="Private"
             subtitle={t('privateSubtitle')}
+            subtitle2={t('privateSubtitle2')}
             buttonLabel={t('buttonLabel')}
             href="/private"
             tags={[t('privateTag1')]}

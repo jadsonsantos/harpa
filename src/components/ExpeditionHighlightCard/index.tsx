@@ -9,6 +9,7 @@ interface ExpeditionHighlightCardProps {
   variant: 'light' | 'dark'
   title: string
   subtitle?: string
+  subtitle2?: string
   buttonLabel: string
   href: string
   tags: string[]
@@ -18,6 +19,7 @@ const ExpeditionHighlightCard = ({
   variant,
   title,
   subtitle,
+  subtitle2,
   buttonLabel,
   href,
   tags
@@ -37,7 +39,10 @@ const ExpeditionHighlightCard = ({
             </Tag>
           ))}
         </S.CardTags>
-        {subtitle && <S.CardSubTitle>{subtitle}</S.CardSubTitle>}
+        <S.CardSubTitles>
+          {subtitle && <S.CardSubTitle>{subtitle}</S.CardSubTitle>}
+          {subtitle2 && <S.CardSubTitle>{subtitle2}</S.CardSubTitle>}
+        </S.CardSubTitles>
       </S.CardTop>
       <S.CardWrapper>
         <S.CardTitle>{title}</S.CardTitle>

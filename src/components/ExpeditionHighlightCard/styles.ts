@@ -57,6 +57,17 @@ export const CardTop = styled.div`
   ${flexBetween}
 `
 
+export const CardSubTitles = styled.div`
+  ${flex}
+  gap: 4px;
+
+  ${media.mobileDown} {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+  }
+`
+
 export const CardSubTitle = styled(TextSmall)``
 
 export const CardWrapper = styled.div`

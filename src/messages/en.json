@@ -22,7 +22,8 @@
     "buttonLabel": "Learn more",
     "groupsTag1": "Groups",
     "groupsTag2": "Limited spots",
-    "privateSubtitle": "/ You dream. We create.",
+    "privateSubtitle": "/ You dream.",
+    "privateSubtitle2": "We create.",
     "privateTag1": "Custom"
   },
   "Footer": {
@@ -143,31 +144,28 @@
         "title": "Iceland",
         "subtitle": "Land of Ice and Fire.",
         "description": "A journey through the most extraordinary landscapes, exploring everything from natural landmarks to secret, untouched places.",
-        "dates": [
-          { "tag": "OCT", "range": "1-10", "year": "2026" },
-          { "tag": "MAR", "range": "1-10", "year": "2027" }
-        ],
+        "dates": [{ "tag": "MAR", "range": "1-10", "year": "2027" }],
         "investment": "R$ 24,000"
       },
       "japan": {
         "title": "Japan",
         "subtitle": "Land of the Rising Sun.",
         "description": "An immersion into the culture, gastronomy and landscapes of Japan, led by HÁRPÁ's exclusive curation.",
-        "dates": [{ "tag": "MAY", "range": "01-12", "year": "2027" }],
+        "dates": [{ "tag": "MAY", "range": "01-13", "year": "2027" }],
         "investment": "R$ 34,000"
       },
       "nordart": {
         "title": "NordArt",
         "subtitle": "The Land of Nordic Art, Architecture and Design.",
         "description": "An immersion into Nordic aesthetics and way of life, journeying through destinations where art, design and culture meet.",
-        "dates": [{ "tag": "JUL", "range": "01-12", "year": "2026" }],
+        "dates": [{ "tag": "JUL", "range": "01-13", "year": "2027" }],
         "investment": "R$ 34,000"
       },
       "thailand": {
         "title": "Thailand",
         "subtitle": "The Land of Temples, Flavors and Traditions.",
         "description": "An immersion into rich Thai culture, exploring destinations where spirituality, gastronomy, nature and hospitality create unforgettable experiences.",
-        "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2026" }],
+        "dates": [{ "tag": "DEC-JAN", "range": "27-08", "year": "2027" }],
         "investment": "R$ 36,000"
       }
     }
