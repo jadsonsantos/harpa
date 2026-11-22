@@ -1,5 +1,4 @@
 'use client'
-import { media } from '@/styles/mediaQueries'
 import { colors } from '@/styles/tokens'
 import styled from 'styled-components'
 
@@ -16,9 +15,4 @@ export const Tag = styled.span<{ $variant: 'dark' | 'light' }>`
   padding: 6px 10px;
   color: ${({ $variant }) =>
     $variant === 'dark' ? colors.primary : colors.light};
-
-  ${media.extraSmallMobileDown} {
-    font-size: 11px;
-    letter-spacing: -0.02em;
-  }
 `
